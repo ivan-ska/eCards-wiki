@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Терминология | eCards</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="https://raw.githubusercontent.com/ivan-ska/ecards-premium/refs/heads/main/imgs/0-header/Logo%20main.svg" alt="eCards Logo">
+            </a>
+
+            <div class="search-wrapper">
+                <div class="search-input-wrap">
+                    <span class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </span>
+                    <input id="search-input" class="search-input" type="search" placeholder="Поиск по базе знаний..." autocomplete="off">
+                    <button id="search-clear" class="search-clear" type="button" aria-label="Очистить поиск">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="search-dropdown" class="search-dropdown"></div>
+            </div>
+
+            <a href="https://ecards.cab/" target="_blank" class="main-link">Перейти на платформу</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="page-header">
+            <a class="back-btn" href="index.html">← Назад на главную</a>
+            <h1>Терминология сервиса</h1>
+        </div>
+
+        <!-- Группа 1. Общие термины -->
+        <div class="theme-section" id="term-group-general">
+            <h2 class="theme-title">Общие понятия <button class="copy-link-btn" onclick="copyLink('term-group-general')">🔗</button></h2>
+
+            <div class="accordion" id="term-2fa">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>2FA</h3><button class="copy-link-btn" onclick="copyLink('term-2fa', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Двухфакторная аутентификация — дополнительный уровень защиты аккаунта. После ввода пароля требуется подтвердить вход одноразовым кодом из приложения-аутентификатора. Настраивается в <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Безопасность</span>.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-decline-rate">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Decline Rate</h3><button class="copy-link-btn" onclick="copyLink('term-decline-rate', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Процент отклонённых операций. Влияет на размер штрафа за каждый деклайн. Рассчитывается при наличии более 100 операций:</p>
+                    <blockquote>(деклайны / операции) × 100</blockquote>
+                    <p>Если Decline Rate превышает <strong>50%</strong> — размер штрафа может быть увеличен, аккаунт может быть заблокирован. Текущее значение отображается в <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Главная</span>.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-referral">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Реферал</h3><button class="copy-link-btn" onclick="copyLink('term-referral', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Новый пользователь, зарегистрировавшийся по вашей реферальной ссылке. Вы получаете <strong>0,25%</strong> со всех его платежей в течение 6 месяцев с момента регистрации.</p>
+                </div></div>
+            </div>
+        </div>
+
+        <!-- Группа 2. Счета -->
+        <div class="theme-section" id="term-group-accounts">
+            <h2 class="theme-title">Счета <button class="copy-link-btn" onclick="copyLink('term-group-accounts')">🔗</button></h2>
+
+            <div class="accordion" id="term-base-acc">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Базовые счета</h3><button class="copy-link-btn" onclick="copyLink('term-base-acc', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Счета для зачисления внешних средств (пополнений). В кабинете доступны два: в <strong>USD</strong> и <strong>EUR</strong>. Пополнение — без комиссии. С базового счёта средства переводятся на счета карт.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-limit-acc">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Лимитные счета</h3><button class="copy-link-btn" onclick="copyLink('term-limit-acc', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Счета, на которых у каждой карты есть собственный баланс (лимит). Средства зачисляются на конкретную карту, а не на общий пул.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-unified-acc">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Единые лимитные счета</h3><button class="copy-link-btn" onclick="copyLink('term-unified-acc', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Особый тип лимитного счёта, с которого можно выпускать карты <strong>разных БИНов</strong> (в отличие от обычного лимитного, привязанного к одному БИНу). Делегируется команде. Owner пополняет счёт — сотрудники выпускают на него карты и тратят общий баланс, каждый в своём кабинете.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-shared-acc">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Счета с общим балансом</h3><button class="copy-link-btn" onclick="copyLink('term-shared-acc', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Счёт, где все карты тратят из единого пула средств без индивидуальных лимитов. Пополняется общий счёт, а не отдельные карты. Пока доступен только для EUR-BIN.</p>
+                </div></div>
+            </div>
+        </div>
+
+        <!-- Группа 3. Карты и лимиты -->
+        <div class="theme-section" id="term-group-cards">
+            <h2 class="theme-title">Карты и лимиты <button class="copy-link-btn" onclick="copyLink('term-group-cards')">🔗</button></h2>
+
+            <div class="accordion" id="term-limit-cards">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Лимитные карты</h3><button class="copy-link-btn" onclick="copyLink('term-limit-cards', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Карты с индивидуальным балансом. Пополняются через увеличение лимита. При выпуске можно задать стартовый баланс.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-shared-cards">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Карты с общим балансом</h3><button class="copy-link-btn" onclick="copyLink('term-shared-cards', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Карты, выпущенные на счёте с общим балансом. Не имеют индивидуального лимита — тратят из общего пула счёта.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-constant-limits">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Постоянные лимиты</h3><button class="copy-link-btn" onclick="copyLink('term-constant-limits', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Фиксированный лимит на карте, не сбрасывающийся автоматически. Устанавливается вручную через контекстное меню карты → <strong>«Изменить постоянный лимит»</strong>.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-cycle-limits">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Циклические лимиты</h3><button class="copy-link-btn" onclick="copyLink('term-cycle-limits', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Лимиты, автоматически сбрасывающиеся по истечении периода: <strong>день / неделя / месяц</strong>. Период отсчитывается от момента совершения транзакции, а не по календарю. Доступность зависит от BIN — уточняйте у поддержки.</p>
+                </div></div>
+            </div>
+        </div>
+
+        <!-- Группа 4. Команды и роли -->
+        <div class="theme-section" id="term-group-team">
+            <h2 class="theme-title">Команды и делегирование <button class="copy-link-btn" onclick="copyLink('term-group-team')">🔗</button></h2>
+
+            <div class="accordion" id="term-roles">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Команды и роли</h3><button class="copy-link-btn" onclick="copyLink('term-roles', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p><strong>Команда</strong> — группа сотрудников с общим доступом к определённым счетам.</p>
+                    <p><strong>Роли:</strong></p>
+                    <ul>
+                        <li><strong>Owner (Вл.)</strong> — владелец аккаунта, полный доступ.</li>
+                        <li><strong>Team Lead</strong> — руководитель команды. Имеет полный контроль над картами делегированных команде счетов: делегирует карты, изменяет лимиты, закрывает карты, добавляет в группы, редактирует заметки, переводит средства с/на делегированные счета, видит все операции по ним, получает 3DS коды по картам и уведомления с подтверждением действий фармеров.</li>
+                        <li><strong>Buyer</strong> — медиабайер, работает с картами в рамках делегированных счетов. Может передавать карты коллегам, видит свою команду и список коллег.</li>
+                        <li><strong>Farmer</strong> — работает с картами делегированного счёта, но все действия (выпуск и закрытие карт, изменение лимитов, редактирование заметок, добавление в группы) требуют подтверждения Owner. Owner получает уведомления о каждом действии фармера и может подтвердить или отклонить его. Баланс делегированного счёта для фармера скрыт.</li>
+                        <li><strong>Финансист</strong> — видит все карты и операции по картам/счетам, делегированным команде. Может выгружать отчёты. Не может совершать действия со счетами и картами.</li>
+                    </ul>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-delegation">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Делегирование</h3><button class="copy-link-btn" onclick="copyLink('term-delegation', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Предоставление сотруднику или команде доступа к счёту. Делегированный счёт отображается у сотрудника в кабинете — он может выпускать на него карты и видеть статистику.</p>
+                </div></div>
+            </div>
+        </div>
+
+        <!-- Группа 5. Операции и 3DS -->
+        <div class="theme-section" id="term-group-operations">
+            <h2 class="theme-title">Операции и статистика <button class="copy-link-btn" onclick="copyLink('term-group-operations')">🔗</button></h2>
+
+            <div class="accordion" id="term-card-status">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Статусы операций по картам</h3><button class="copy-link-btn" onclick="copyLink('term-card-status', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <ul>
+                        <li><strong>Debit (Authorization)</strong> — авторизация / холд (платёж инициирован, ожидает списания).</li>
+                        <li><strong>Debit (Declined)</strong> — операция отклонена.</li>
+                        <li><strong>Charge (Refund)</strong> — возврат средств на карту.</li>
+                    </ul>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-acc-status">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Статусы операций по счетам</h3><button class="copy-link-btn" onclick="copyLink('term-acc-status', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>Типы операций в разделе <span class="seq">Мои счета <span class="seq-arrow">→</span> Операции по счетам</span>:</p>
+                    <ul>
+                        <li>Перевод между счетами</li>
+                        <li>Изменение лимита карты</li>
+                        <li>Комиссия / штраф за деклайн</li>
+                        <li>Системные списания</li>
+                    </ul>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-stat-ops">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>Какие операции входят в статистику</h3><button class="copy-link-btn" onclick="copyLink('term-stat-ops', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <p>В разделе <strong>Статистика трат по картам</strong> учитываются фактические расходы по картам: операции типа <strong>Debit (Authorization)</strong> и <strong>Charge (Refund)</strong>. Деклайны в статистику расходов не входят.</p>
+                </div></div>
+            </div>
+
+            <div class="accordion" id="term-3ds">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-wrap">
+                        <h3>3DS SMS, 3DS пароль, код авторизации</h3><button class="copy-link-btn" onclick="copyLink('term-3ds', event)">🔗</button>
+                    </div><div class="chevron">▼</div>
+                </div>
+                <div class="accordion-body"><div class="accordion-content">
+                    <ul>
+                        <li><strong>3DS SMS</strong> — одноразовый код, приходящий при 3DS-подтверждении платежа. Поступает в Telegram-бот уведомлений.</li>
+                        <li><strong>3DS пароль</strong> — постоянный код, указанный в реквизитах карты. Запрашивается на некоторых сайтах как второй уровень подтверждения. Одинаковый для всех карт данного BIN.</li>
+                        <li><strong>Код авторизации</strong> — код, который рекламная платформа (Google Ads и др.) запрашивает при привязке карты. Приходит в Telegram-бот.</li>
+                    </ul>
+                </div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="support-block" style="max-width: 900px; margin: 0 auto 60px; padding: 0 20px;">
+        <div style="padding: 40px 30px; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 16px; text-align: center;">
+            <h3 style="color: var(--text-main); font-size: 22px; margin-bottom: 24px;">Связь с нами</h3>
+            <div class="support-grid">
+                <div class="support-item">
+                    <strong>Поддержка</strong>
+                    <a href="https://t.me/ecards_onboarding_bot" target="_blank">@ecards_onboarding_bot</a>
+                    <a href="https://t.me/tochka_cab_support" target="_blank">@tochka_cab_support</a>
+                </div>
+                <div class="support-item">
+                    <strong>Бот (частые вопросы)</strong>
+                    <a href="https://t.me/ecards_onboarding_bot" target="_blank">@ecards_onboarding_bot</a>
+                </div>
+                <div class="support-item">
+                    <strong>Новостной канал</strong>
+                    <a href="https://t.me/eCards_cab" target="_blank">@eCards_cab</a>
+                </div>
+            </div>
+            <p class="support-footer-text">Если ваш вопрос не нашёл ответа — обращайтесь в поддержку eCards напрямую.</p>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">Ссылка скопирована!</div>
+
+    <script src="js/search-data.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

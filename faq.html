@@ -35,7 +35,176 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="page-layout">
+
+        <!-- САЙДБАР -->
+        <nav class="sidebar" aria-label="Навигация по разделам">
+            <ul class="sidebar-nav">
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-security" href="#faq-security">1. Безопасность</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-2fa" href="#q-2fa">Настроить 2FA</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-change-login" href="#q-change-login">Сменить логин / почту</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-tg-bot" href="#faq-tg-bot">2. Telegram-бот</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-tg" href="#q-tg">Подключить бота</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-deposit" href="#faq-deposit">3. Пополнение баланса</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-how-deposit" href="#q-how-deposit">Как пополнить?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-min-deposit" href="#q-min-deposit">Минимальное пополнение</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-deposit-stuck" href="#q-deposit-stuck">Пополнение зависло</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-deposit-weekend" href="#q-deposit-weekend">В нерабочее время</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-fees" href="#faq-fees">4. Комиссия сервиса</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-fee-deposit" href="#q-fee-deposit">Комиссия при пополнении</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-fee-transactions" href="#q-fee-transactions">Комиссия за транзакции</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-fee-withdraw" href="#q-fee-withdraw">Комиссия за вывод</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-fee-custom" href="#q-fee-custom">Индивидуальные условия</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-base-acc" href="#faq-base-acc">5. Базовые счета</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-transfer-acc" href="#q-transfer-acc">Перевод между счетами</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-limit-acc" href="#faq-limit-acc">6. Лимитные счета</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-fund-limit-acc" href="#q-fund-limit-acc">Пополнить лимитный счёт</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-refund-limit-card" href="#q-refund-limit-card">Возврат на лимитную карту</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-unified-acc" href="#faq-unified-acc">7. Единые лимитные счета</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-unified-teamwork" href="#q-unified-teamwork">Командная работа</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-shared-acc" href="#faq-shared-acc">8. Счета с общим балансом</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-shared-acc-cards" href="#q-shared-acc-cards">Для каких карт?</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-issue-cards" href="#faq-issue-cards">9. Выпуск карт</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-how-issue" href="#q-how-issue">Как выпустить?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-available-cards" href="#q-available-cards">Какие карты доступны?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-services-cards" href="#q-services-cards">Для каких сервисов?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-billing-address" href="#q-billing-address">Billing address по BIN</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-card-declined" href="#q-card-declined">Карту не принимает площадка</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-forbidden" href="#q-forbidden">Что запрещено?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-closing-no-spend" href="#q-closing-no-spend">Закрытие без расходов</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-withdraw-funds" href="#q-withdraw-funds">Вывод средств</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-card-limits" href="#faq-card-limits">10. Лимиты карт</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-change-limit" href="#q-change-limit">Изменить лимит</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-one-time-limit" href="#q-one-time-limit">Лимит на транзакцию</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-teams-roles" href="#faq-teams-roles">11. Команды и роли</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-create-team" href="#q-create-team">Создать команду</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-invite-employee" href="#q-invite-employee">Пригласить сотрудника</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-multiple-teams" href="#q-multiple-teams">Несколько команд</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-edit-team" href="#q-edit-team">Изменить состав</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-delegation" href="#faq-delegation">12. Делегирование</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-delegate-new" href="#q-delegate-new">При создании счёта</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-delegate-existing" href="#q-delegate-existing">Для существующего счёта</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-transfer-card" href="#q-transfer-card">Перенос карты</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-card-filters" href="#faq-card-filters">13. Фильтры карт</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-add-card-group" href="#q-add-card-group">Добавить карту в группу</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-card-reports" href="#faq-card-reports">14. Отчёты по картам</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-how-to-card-report" href="#q-how-to-card-report">Сформировать отчёт</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-account-reports" href="#faq-account-reports">15. Отчёты по счетам</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-account-reports-info" href="#q-account-reports-info">Где посмотреть?</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-daily-stats" href="#faq-daily-stats">16. Статистика по дням</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-daily-stats-info" href="#q-daily-stats-info">Где смотреть статистику?</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-notifications-3ds" href="#faq-notifications-3ds">17. Уведомления и 3DS</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-receive-codes" href="#q-receive-codes">Как получать коды?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-no-sms" href="#q-no-sms">Не приходит SMS</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-disable-3ds" href="#q-disable-3ds">Отключить 3DS?</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-referral" href="#faq-referral">18. Реферальная программа</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-referral-works" href="#q-referral-works">Как работает?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-referral-withdraw" href="#q-referral-withdraw">Вывод начислений</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-group">
+                    <a class="sidebar-group-link" data-id="faq-refunds" href="#faq-refunds">19. Возвраты (Refund)</a>
+                    <ul class="sidebar-items">
+                        <li><a class="sidebar-item-link" data-id="q-when-refund" href="#q-when-refund">Когда придёт возврат?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-funds-lost" href="#q-funds-lost">Деньги потеряны?</a></li>
+                        <li><a class="sidebar-item-link" data-id="q-refund-limit-use" href="#q-refund-limit-use">Возврат на лимитную карту</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <div class="page-content">
 
         <div class="page-header">
             <a class="back-btn" href="index.html">← Назад на главную</a>
@@ -44,73 +213,65 @@
 
         <!-- Раздел 1. Безопасность -->
         <div class="theme-section" id="faq-security">
-            <h2 class="theme-title">1. Безопасность <button class="copy-link-btn" onclick="copyLink('faq-security')">🔗</button></h2>
+            <h2 class="theme-title">1. Безопасность <button class="copy-link-btn" onclick="copyLink('faq-security', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-2fa">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как настроить двухфакторную аутентификацию?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-2fa', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-2fa">
+                <div class="entry-header">
+                    <h3>Как настроить двухфакторную аутентификацию?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-2fa', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <ol>
                         <li>Перейдите в <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Безопасность</span>.</li>
                         <li>Включите двухфакторную аутентификацию.</li>
                         <li>Привяжите Google Authenticator, отсканировав QR-код.</li>
                     </ol>
                     <p>Если потеряли доступ к <a href="terminology.html#term-2fa">2FA</a> (сломался телефон, удалили приложение) — напишите в поддержку, 2FA будет отключена вручную после верификации.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-change-login">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как сменить логин или почту?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-change-login', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-change-login">
+                <div class="entry-header">
+                    <h3>Как сменить логин или почту?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-change-login', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Через <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Безопасность</span> (настройки профиля). Если возникли трудности — обратитесь в поддержку с указанием текущей почты и новых данных.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 2. Подключение Telegram-бота -->
         <div class="theme-section" id="faq-tg-bot">
-            <h2 class="theme-title">2. Подключение Telegram-бота <button class="copy-link-btn" onclick="copyLink('faq-tg-bot')">🔗</button></h2>
+            <h2 class="theme-title">2. Подключение Telegram-бота <button class="copy-link-btn" onclick="copyLink('faq-tg-bot', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-tg">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как подключить Telegram-бот для уведомлений?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-tg', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-tg">
+                <div class="entry-header">
+                    <h3>Как подключить Telegram-бот для уведомлений?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-tg', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Перейдите в <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Уведомления</span> и нажмите <strong>«Перейти»</strong> в блоке «Активация телеграм-бота». После активации уведомления об операциях, <a href="terminology.html#term-3ds">3DS SMS и кодах авторизации</a> будут приходить в Telegram.</p>
                     <ul>
                         <li>Каждый сотрудник подключает бота в своём кабинете и получает уведомления только по своим картам.</li>
                         <li>Если бот подключён с овнерского кабинета — уведомления приходят по всем счетам и картам.</li>
                         <li>Переподключить бота на другой Telegram — напишите в поддержку с вашим логином.</li>
                     </ul>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 3. Пополнение баланса -->
         <div class="theme-section" id="faq-deposit">
-            <h2 class="theme-title">3. Пополнение баланса <button class="copy-link-btn" onclick="copyLink('faq-deposit')">🔗</button></h2>
+            <h2 class="theme-title">3. Пополнение баланса <button class="copy-link-btn" onclick="copyLink('faq-deposit', event)">🔗</button></h2>
             <div class="section-intro">Пополнение осуществляется на <a href="terminology.html#term-base-acc">базовый счёт</a>.</div>
 
-            <div class="accordion" id="q-how-deposit">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как пополнить баланс?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-how-deposit', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-how-deposit">
+                <div class="entry-header">
+                    <h3>Как пополнить баланс?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-how-deposit', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <ol>
                         <li>Зайдите в кабинет и выберите нужный метод оплаты.</li>
                         <li>Создайте инвойс — появятся реквизиты для перевода.</li>
@@ -119,58 +280,50 @@
                         <li>Напишите в поддержку — они подтвердят зачисление.</li>
                     </ol>
                     <p><em>Важно: всегда создавайте инвойс ДО отправки средств — наличие инвойса является условием автоматического зачисления. Если хэш не вставлен в инвойс — автоматического зачисления не будет.</em></p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-min-deposit">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Какое минимальное пополнение?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-min-deposit', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-min-deposit">
+                <div class="entry-header">
+                    <h3>Какое минимальное пополнение?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-min-deposit', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Первое пополнение — от <strong>500 USD</strong>. Последующие — от <strong>100 USD</strong>.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-deposit-stuck">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Пополнение зависло / не зачисляется. Что делать?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-deposit-stuck', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-deposit-stuck">
+                <div class="entry-header">
+                    <h3>Пополнение зависло / не зачисляется. Что делать?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-deposit-stuck', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Напишите в поддержку и укажите хэш транзакции или номер инвойса. Поддержка проверит и зачислит вручную.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-deposit-weekend">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Можно ли пополнить в нерабочее время?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-deposit-weekend', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-deposit-weekend">
+                <div class="entry-header">
+                    <h3>Можно ли пополнить в нерабочее время?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-deposit-weekend', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Да. Заранее договоритесь с поддержкой — они могут запланировать зачисление в указанное время.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 4. Комиссия сервиса -->
         <div class="theme-section" id="faq-fees">
-            <h2 class="theme-title">4. Комиссия сервиса <button class="copy-link-btn" onclick="copyLink('faq-fees')">🔗</button></h2>
+            <h2 class="theme-title">4. Комиссия сервиса <button class="copy-link-btn" onclick="copyLink('faq-fees', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-fee-deposit">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Какая комиссия при пополнении?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-deposit', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-fee-deposit">
+                <div class="entry-header">
+                    <h3>Какая комиссия при пополнении?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-fee-deposit', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Пополнение <a href="terminology.html#term-base-acc">базового счёта</a> — <strong>без комиссии</strong>.</p>
                     <p>Комиссия взимается при <strong>переводе с базового счёта на счёт карт</strong>:</p>
                     <div class="table-responsive">
@@ -182,17 +335,15 @@
                     </div>
                     <p>Иные способы пополнения обсуждаются индивидуально.</p>
                     <p><em>*При обратном переводе (со счёта карт обратно на базовый) комиссия компенсируется.</em></p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-fee-transactions">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Есть ли комиссия за транзакции?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-fee-transactions">
+                <div class="entry-header">
+                    <h3>Есть ли комиссия за транзакции?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>За успешные транзакции комиссия не взимается. Исключение: для <strong>карт США</strong> — если принимающая сторона транзакции не из США, банк дополнительно удерживает <strong>1,5%</strong> за каждый платёж.</p>
                     <p>За каждую <strong>отклонённую операцию</strong> удерживается штраф в зависимости от <a href="terminology.html#term-decline-rate">Decline Rate</a>:</p>
                     <div class="table-responsive">
@@ -204,142 +355,124 @@
                             <tr><td>от 20%</td><td>0,5 €</td></tr>
                         </table>
                     </div>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-fee-withdraw">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Есть ли комиссия за вывод?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-withdraw', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-fee-withdraw">
+                <div class="entry-header">
+                    <h3>Есть ли комиссия за вывод?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-fee-withdraw', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Нет. Вывод без комиссии. Срок — от <strong>2 до 10 рабочих дней</strong>. После отправки поддержка пришлёт хэш транзакции.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-fee-custom">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Можно ли договориться об индивидуальных условиях?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-custom', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-fee-custom">
+                <div class="entry-header">
+                    <h3>Можно ли договориться об индивидуальных условиях?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-fee-custom', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Да, при значительном обороте условия обсуждаются индивидуально. Напишите в поддержку.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 5. Базовые счета -->
         <div class="theme-section" id="faq-base-acc">
-            <h2 class="theme-title">5. Базовые счета <button class="copy-link-btn" onclick="copyLink('faq-base-acc')">🔗</button></h2>
+            <h2 class="theme-title">5. Базовые счета <button class="copy-link-btn" onclick="copyLink('faq-base-acc', event)">🔗</button></h2>
             <div class="section-intro"><a href="terminology.html#term-base-acc">Базовый счёт</a> — счёт для зачисления внешних средств. В кабинете доступны два базовых счёта: в <strong>USD</strong> и <strong>EUR</strong>.</div>
 
-            <div class="accordion" id="q-transfer-acc">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как перевести средства между счетами?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-transfer-acc', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-transfer-acc">
+                <div class="entry-header">
+                    <h3>Как перевести средства между счетами?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-transfer-acc', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>В разделе <span class="seq">Мои счета <span class="seq-arrow">→</span> Все счета</span> нажмите <strong>«Перевод между счетами»</strong>. Поддерживается конвертация валюты — курс отображается в момент перевода.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 6. Лимитные счета -->
         <div class="theme-section" id="faq-limit-acc">
-            <h2 class="theme-title">6. Лимитные счета <button class="copy-link-btn" onclick="copyLink('faq-limit-acc')">🔗</button></h2>
+            <h2 class="theme-title">6. Лимитные счета <button class="copy-link-btn" onclick="copyLink('faq-limit-acc', event)">🔗</button></h2>
             <div class="section-intro"><a href="terminology.html#term-limit-acc">Лимитный счёт</a> — счёт, на котором у каждой карты собственный баланс.</div>
 
-            <div class="accordion" id="q-fund-limit-acc">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как пополнить лимитный счёт?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fund-limit-acc', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-fund-limit-acc">
+                <div class="entry-header">
+                    <h3>Как пополнить лимитный счёт?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-fund-limit-acc', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Переведите средства с базового счёта на лимитный, затем пополните нужные карты через увеличение их лимита.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-refund-limit-card">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Что происходит с возвратом на лимитную карту?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-refund-limit-card', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-refund-limit-card">
+                <div class="entry-header">
+                    <h3>Что происходит с возвратом на лимитную карту?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-refund-limit-card', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Возврат зачисляется на счёт, с которого выпущена карта. Чтобы снова использовать средства, нужно поднять лимит карты.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 7. Единые лимитные счета -->
         <div class="theme-section" id="faq-unified-acc">
-            <h2 class="theme-title">7. Единые лимитные счета <button class="copy-link-btn" onclick="copyLink('faq-unified-acc')">🔗</button></h2>
+            <h2 class="theme-title">7. Единые лимитные счета <button class="copy-link-btn" onclick="copyLink('faq-unified-acc', event)">🔗</button></h2>
             <div class="section-intro"><a href="terminology.html#term-unified-acc">Единый лимитный счёт</a> — особый тип лимитного счёта, с которого можно выпускать карты <strong>разных БИНов</strong>. Делегируется команде.</div>
 
-            <div class="accordion" id="q-unified-teamwork">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как использовать для командной работы?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-unified-teamwork', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-unified-teamwork">
+                <div class="entry-header">
+                    <h3>Как использовать для командной работы?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-unified-teamwork', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Owner пополняет счёт и делегирует его сотрудникам. Каждый сотрудник выпускает карты на этот счёт в своём кабинете и видит свою статистику. Баланс счёта расходуется в момент пополнения лимитных карт — средства списываются со счёта и зачисляются на карту.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 8. Счета с общим балансом -->
         <div class="theme-section" id="faq-shared-acc">
-            <h2 class="theme-title">8. Счета с общим балансом <button class="copy-link-btn" onclick="copyLink('faq-shared-acc')">🔗</button></h2>
+            <h2 class="theme-title">8. Счета с общим балансом <button class="copy-link-btn" onclick="copyLink('faq-shared-acc', event)">🔗</button></h2>
             <div class="section-intro"><a href="terminology.html#term-shared-acc">Счёт с общим балансом</a> — все карты используют общий баланс счёта без индивидуальных лимитов. При оплате денежные средства списываются напрямую со счёта, без предварительного пополнения карты.</div>
 
-            <div class="accordion" id="q-shared-acc-cards">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Для каких карт доступен?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-shared-acc-cards', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-shared-acc-cards">
+                <div class="entry-header">
+                    <h3>Для каких карт доступен?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-shared-acc-cards', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Пока доступен только для EUR-BIN. Для BIN США — в разработке.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 9. Выпуск карт -->
         <div class="theme-section" id="faq-issue-cards">
-            <h2 class="theme-title">9. Выпуск карт <button class="copy-link-btn" onclick="copyLink('faq-issue-cards')">🔗</button></h2>
+            <h2 class="theme-title">9. Выпуск карт <button class="copy-link-btn" onclick="copyLink('faq-issue-cards', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-how-issue">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как выпустить карты?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-how-issue', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-how-issue">
+                <div class="entry-header">
+                    <h3>Как выпустить карты?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-how-issue', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Перейдите в <span class="seq">Виртуальные карты <span class="seq-arrow">→</span> Выпустить карты</span>. Выберите BIN, укажите счёт и количество карт (до 100 за раз). Для <a href="terminology.html#term-limit-cards">лимитных карт</a> можно задать стартовый баланс. Нажмите <strong>«Купить»</strong>. Количество карт не ограничено.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-available-cards">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Какие карты доступны?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-available-cards', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-available-cards">
+                <div class="entry-header">
+                    <h3>Какие карты доступны?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-available-cards', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Карты в <strong>USD и EUR</strong> с разными BIN (США, Эстония, Гонконг). Карты бесплатные, с поддержкой 3DS. Начальный лимит выпуска — <strong>20 карт</strong>, увеличивается после 100 успешных транзакций.</p>
                     <p>Типы карт:</p>
                     <ul>
@@ -347,29 +480,25 @@
                         <li><a href="terminology.html#term-shared-cards">Карты с общим балансом</a> — все карты списывают средства с единого баланса счёта.</li>
                     </ul>
                     <p>Актуальный список рабочих BIN уточняйте у поддержки.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-services-cards">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Для каких сервисов можно использовать карты?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-services-cards', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-services-cards">
+                <div class="entry-header">
+                    <h3>Для каких сервисов можно использовать карты?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-services-cards', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Google Ads, TikTok Ads, Facebook/Meta, домены, хостинги и другие онлайн-сервисы. Привязать карту к Apple Pay нельзя.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-billing-address">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Какой billing address указывать для разных BIN?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-billing-address', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-billing-address">
+                <div class="entry-header">
+                    <h3>Какой billing address указывать для разных BIN?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-billing-address', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <div class="table-responsive">
                         <table>
                             <tr><th>Провайдер</th><th>BIN</th><th>Валюта</th><th>Комиссия</th><th>Billing address</th></tr>
@@ -385,17 +514,15 @@
                         <li>Провайдеры №1 и №2 не требуют подтверждения адреса — можно вводить любой из соответствующей страны.</li>
                         <li>Провайдер №4 — настоятельно рекомендуется указывать реальный адрес. Имя и фамилию можно указать любые.</li>
                     </ul>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-card-declined">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Карту не принимает рекламная площадка. Что делать?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-card-declined', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-card-declined">
+                <div class="entry-header">
+                    <h3>Карту не принимает рекламная площадка. Что делать?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-card-declined', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <ol>
                         <li><strong>Проверьте гео BIN и гео рекламного аккаунта</strong> — они должны совпадать. Гео аккаунта важнее, чем гео прокси.</li>
                         <li><strong>Проверьте billing address</strong> — для каждого провайдера свой адрес (см. таблицу выше). Если деклайны не приходят вообще — попробуйте ввести точный реальный адрес.</li>
@@ -409,42 +536,36 @@
                         <li><strong>ChatGPT</strong> — чувствителен к гео, требует соответствия.</li>
                         <li><strong>Google Books</strong> — не рекомендуется к оплате, высокий уровень деклайнов.</li>
                     </ul>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-forbidden">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Что запрещено оплачивать?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-forbidden', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-forbidden">
+                <div class="entry-header">
+                    <h3>Что запрещено оплачивать?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-forbidden', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Мошеннические действия и first-billing. За нарушения аккаунт блокируется со списанием баланса.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-closing-no-spend">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Что будет при закрытии карт без расходов?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-closing-no-spend', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-closing-no-spend">
+                <div class="entry-header">
+                    <h3>Что будет при закрытии карт без расходов?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-closing-no-spend', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>При закрытии большого количества карт без расходов аккаунт может быть заблокирован. Рекомендуем следить за тем, чтобы средний спенд по картам составлял <strong>не менее 10 USD</strong>:</p>
                     <blockquote>Потраченные средства / (закрытые + активные карты)</blockquote>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-withdraw-funds">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как вывести средства?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-withdraw-funds', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-withdraw-funds">
+                <div class="entry-header">
+                    <h3>Как вывести средства?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-withdraw-funds', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <ol>
                         <li>Закройте все активные карты.</li>
                         <li>Переведите средства на базовый счёт.</li>
@@ -452,133 +573,115 @@
                     </ol>
                     <p><em>*Средства выводятся на тот кошелёк, с которого производилось пополнение.</em></p>
                     <p>Срок вывода — от <strong>2 до 10 рабочих дней</strong>. После отправки поддержка пришлёт хэш транзакции. При наличии активных деклайнов или штрафов вывод может быть задержан.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 10. Лимиты карт -->
         <div class="theme-section" id="faq-card-limits">
-            <h2 class="theme-title">10. Лимиты карт <button class="copy-link-btn" onclick="copyLink('faq-card-limits')">🔗</button></h2>
+            <h2 class="theme-title">10. Лимиты карт <button class="copy-link-btn" onclick="copyLink('faq-card-limits', event)">🔗</button></h2>
             <div class="section-intro">Карты поддерживают два вида лимитов: <a href="terminology.html#term-constant-limits">постоянные</a> и <a href="terminology.html#term-cycle-limits">циклические</a>.</div>
 
-            <div class="accordion" id="q-change-limit">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как изменить лимит карты?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-change-limit', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-change-limit">
+                <div class="entry-header">
+                    <h3>Как изменить лимит карты?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-change-limit', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>В разделе <strong>Мои карты</strong> выберите лимитные карты и нажмите <strong>«Изменить лимиты»</strong>. Доступны быстрые кнопки: +50, +100, +200, +500 — или ввод точной суммы. Можно применить ко всем выбранным картам сразу.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-one-time-limit">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Можно ли установить лимит на одну транзакцию?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-one-time-limit', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-one-time-limit">
+                <div class="entry-header">
+                    <h3>Можно ли установить лимит на одну транзакцию?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-one-time-limit', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Уточните у поддержки — возможность зависит от BIN.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 11. Команды и роли -->
         <div class="theme-section" id="faq-teams-roles">
-            <h2 class="theme-title">11. Команды и роли <button class="copy-link-btn" onclick="copyLink('faq-teams-roles')">🔗</button></h2>
+            <h2 class="theme-title">11. Команды и роли <button class="copy-link-btn" onclick="copyLink('faq-teams-roles', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-create-team">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как создать команду?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-create-team', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-create-team">
+                <div class="entry-header">
+                    <h3>Как создать команду?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-create-team', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Перейдите в <span class="seq">Все сотрудники <span class="seq-arrow">→</span> Команды</span> и нажмите <strong>«+ Добавить команду»</strong>. Укажите название, добавьте сотрудников с <a href="terminology.html#term-roles">ролями</a> и привяжите счета.</p>
                     <div class="important-note">
                         <strong>Важно:</strong> роль сотрудника активируется только при одновременном выполнении двух условий — сотрудник добавлен в команду, и счёт делегирован этой команде. Если счёт делегирован напрямую сотруднику (минуя команду) — роль и её ограничения не применяются.
                     </div>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-invite-employee">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как пригласить сотрудника?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-invite-employee', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-invite-employee">
+                <div class="entry-header">
+                    <h3>Как пригласить сотрудника?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-invite-employee', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Перейдите в <span class="seq">Все сотрудники <span class="seq-arrow">→</span> Сотрудники</span> и нажмите <strong>«+ Пригласить сотрудника»</strong>. Введите email, добавьте пары «команда / роль» и нажмите <strong>«Пригласить»</strong>. Сотрудник должен принять приглашение в своём кабинете.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-multiple-teams">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Можно ли назначить сотрудника в несколько команд?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-multiple-teams', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-multiple-teams">
+                <div class="entry-header">
+                    <h3>Можно ли назначить сотрудника в несколько команд?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-multiple-teams', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Да. При приглашении или редактировании можно добавить несколько пар «команда / роль».</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-edit-team">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как изменить состав команды?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-edit-team', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-edit-team">
+                <div class="entry-header">
+                    <h3>Как изменить состав команды?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-edit-team', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>В разделе <span class="seq">Команды</span> выберите нужную команду и перейдите на вкладку <strong>«Члены команды»</strong>. Здесь можно добавить новых участников или удалить существующих.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 12. Делегирование -->
         <div class="theme-section" id="faq-delegation">
-            <h2 class="theme-title">12. Делегирование <button class="copy-link-btn" onclick="copyLink('faq-delegation')">🔗</button></h2>
+            <h2 class="theme-title">12. Делегирование <button class="copy-link-btn" onclick="copyLink('faq-delegation', event)">🔗</button></h2>
             <div class="section-intro"><a href="terminology.html#term-delegation">Делегирование</a> — предоставление доступа к счёту сотруднику или команде.</div>
 
-            <div class="accordion" id="q-delegate-new">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как делегировать счёт при его создании?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-delegate-new', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-delegate-new">
+                <div class="entry-header">
+                    <h3>Как делегировать счёт при его создании?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-delegate-new', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>При создании нового счёта можно сразу указать сотрудников или команды, которым он будет доступен.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-delegate-existing">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как делегировать уже открытый счёт?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-delegate-existing', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-delegate-existing">
+                <div class="entry-header">
+                    <h3>Как делегировать уже открытый счёт?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-delegate-existing', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Перейдите в <span class="seq">Мои счета <span class="seq-arrow">→</span> Все счета</span>, найдите нужный счёт и нажмите на три точки (меню действий). Выберите <strong>«Делегировать»</strong> и укажите сотрудника или команду.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-transfer-card">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Можно ли перенести карту между счетами?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-transfer-card', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-transfer-card">
+                <div class="entry-header">
+                    <h3>Можно ли перенести карту между счетами?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-transfer-card', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Да, лимитные карты можно передавать между счетами разных отделов (например, фарм и баинг). Для этого делегируйте нужные счета соответствующим отделам — сотрудники смогут передавать карты между ними.</p>
                     <p><strong>Требования к счёту, на который передаётся карта:</strong></p>
                     <ul>
@@ -590,13 +693,13 @@
                         <li>Карты с <strong>единого лимитного счёта</strong> передать нельзя. Если карта была передана на единый лимитный счёт — она останется там навсегда.</li>
                     </ul>
                     <p>Для передачи: в <span class="seq">Мои карты</span> откройте контекстное меню карты (три точки) и выберите <strong>«Передать карту на другой счёт»</strong>.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 13. Виртуальные карты — фильтры и отображение -->
         <div class="theme-section" id="faq-card-filters">
-            <h2 class="theme-title">13. Виртуальные карты — фильтры и отображение <button class="copy-link-btn" onclick="copyLink('faq-card-filters')">🔗</button></h2>
+            <h2 class="theme-title">13. Виртуальные карты — фильтры и отображение <button class="copy-link-btn" onclick="copyLink('faq-card-filters', event)">🔗</button></h2>
             <div class="section-intro">
                 <p>В разделе <span class="seq">Виртуальные карты <span class="seq-arrow">→</span> Мои карты</span> доступны:</p>
                 <ul>
@@ -607,35 +710,31 @@
                 </ul>
             </div>
 
-            <div class="accordion" id="q-add-card-group">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как добавить карту в группу?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-add-card-group', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-add-card-group">
+                <div class="entry-header">
+                    <h3>Как добавить карту в группу?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-add-card-group', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>В контекстном меню карты выберите <strong>«Редактировать карту»</strong> и назначьте группу. Группы создаются в <span class="seq">Виртуальные карты <span class="seq-arrow">→</span> Группы карт</span>.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 14. Отчёты по картам -->
         <div class="theme-section" id="faq-card-reports">
-            <h2 class="theme-title">14. Отчёты по картам <button class="copy-link-btn" onclick="copyLink('faq-card-reports')">🔗</button></h2>
+            <h2 class="theme-title">14. Отчёты по картам <button class="copy-link-btn" onclick="copyLink('faq-card-reports', event)">🔗</button></h2>
             <div class="section-intro">
                 Раздел <span class="seq">Виртуальные карты <span class="seq-arrow">→</span> Операции по картам</span>.<br>
                 Отображаются все операции по картам — авторизации, деклайны, возвраты (см. <a href="terminology.html#term-card-status">статусы операций</a>).
             </div>
 
-            <div class="accordion" id="q-how-to-card-report">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как сформировать отчёт по картам?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-how-to-card-report', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-how-to-card-report">
+                <div class="entry-header">
+                    <h3>Как сформировать отчёт по картам?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-how-to-card-report', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <ol>
                         <li>Перейдите в <span class="seq">Виртуальные карты <span class="seq-arrow">→</span> Операции по картам</span>.</li>
                         <li>Выставьте нужные фильтры.</li>
@@ -645,167 +744,149 @@
                     <p><strong>Доступные фильтры:</strong> карта, группа, счёт, держатель карты, автор операции, период, статус операции.</p>
                     <p><strong>Форматы выгрузки:</strong> CSV или XLSX.</p>
                     <p><em>*Рекомендация: CSV удобнее открывать через Google Таблицы — Excel может некорректно форматировать номера карт и CVV. Если используете Excel, после открытия файла вручную установите формат столбцов «Текст».</em></p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 15. Отчёты по счетам -->
         <div class="theme-section" id="faq-account-reports">
-            <h2 class="theme-title">15. Отчёты по счетам <button class="copy-link-btn" onclick="copyLink('faq-account-reports')">🔗</button></h2>
+            <h2 class="theme-title">15. Отчёты по счетам <button class="copy-link-btn" onclick="copyLink('faq-account-reports', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-account-reports-info">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Где посмотреть и скачать отчёт по счетам?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-account-reports-info', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-account-reports-info">
+                <div class="entry-header">
+                    <h3>Где посмотреть и скачать отчёт по счетам?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-account-reports-info', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Раздел <span class="seq">Мои счета <span class="seq-arrow">→</span> Операции по счетам</span>.</p>
                     <p>В нем отображаются переводы, изменения лимитов, штрафы и системные списания (см. <a href="terminology.html#term-acc-status">типы операций</a>). Доступна кнопка <strong>«Сформировать отчёт»</strong> для экспорта данных.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 16. Статистика по дням -->
         <div class="theme-section" id="faq-daily-stats">
-            <h2 class="theme-title">16. Статистика по дням <button class="copy-link-btn" onclick="copyLink('faq-daily-stats')">🔗</button></h2>
+            <h2 class="theme-title">16. Статистика по дням <button class="copy-link-btn" onclick="copyLink('faq-daily-stats', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-daily-stats-info">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Где посмотреть статистику трат по дням?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-daily-stats-info', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-daily-stats-info">
+                <div class="entry-header">
+                    <h3>Где посмотреть статистику трат по дням?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-daily-stats-info', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Раздел <span class="seq">Статистика и отчёты <span class="seq-arrow">→</span> Статистика трат по картам</span>.</p>
                     <p>Здесь отображаются расходы в разбивке EUR / USD по дням, неделям и месяцам.</p>
                     <p><strong>Доступные фильтры:</strong> карты, период, счёт, держатели карт, автор операции, команды, группа.</p>
                     <p><em>*Статистика по дням отображается с учётом часового пояса GMT+03:00.</em></p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 17. Уведомления, 3DS и коды авторизации -->
         <div class="theme-section" id="faq-notifications-3ds">
-            <h2 class="theme-title">17. Уведомления, 3DS и коды <button class="copy-link-btn" onclick="copyLink('faq-notifications-3ds')">🔗</button></h2>
+            <h2 class="theme-title">17. Уведомления, 3DS и коды <button class="copy-link-btn" onclick="copyLink('faq-notifications-3ds', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-receive-codes">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как получать уведомления и коды?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-receive-codes', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-receive-codes">
+                <div class="entry-header">
+                    <h3>Как получать уведомления и коды?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-receive-codes', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Подключите Telegram-бот в <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Уведомления</span>. После подключения туда будут приходить уведомления об операциях, <a href="terminology.html#term-3ds">3DS SMS, 3DS пароль и коды авторизации</a>.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-no-sms">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Не приходит SMS с кодом. Что делать?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-no-sms', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-no-sms">
+                <div class="entry-header">
+                    <h3>Не приходит SMS с кодом. Что делать?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-no-sms', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Напишите в поддержку с указанием ID карты.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-disable-3ds">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Можно ли отключить 3DS на картах?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-disable-3ds', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-disable-3ds">
+                <div class="entry-header">
+                    <h3>Можно ли отключить 3DS на картах?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-disable-3ds', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Нет, отключить 3DS невозможно.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 18. Реферальная программа -->
         <div class="theme-section" id="faq-referral">
-            <h2 class="theme-title">18. Реферальная программа <button class="copy-link-btn" onclick="copyLink('faq-referral')">🔗</button></h2>
+            <h2 class="theme-title">18. Реферальная программа <button class="copy-link-btn" onclick="copyLink('faq-referral', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-referral-works">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как работает реферальная программа?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-referral-works', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-referral-works">
+                <div class="entry-header">
+                    <h3>Как работает реферальная программа?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-referral-works', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Скопируйте реферальную ссылку в разделе <strong>Реферальная программа</strong> и поделитесь ею. Когда <a href="terminology.html#term-referral">реферал</a> зарегистрируется, начнётся начисление комиссии:</p>
                     <ul>
                         <li><strong>Первые 6 месяцев</strong> — 0,25% от пополнений реферала.</li>
                         <li><strong>После 6 месяцев</strong> — 0,1% бессрочно, если реферал пополнил более 10 000 $/€ за первые 6 месяцев.</li>
                     </ul>
                     <p>Начисление происходит с задержкой <strong>14 дней</strong>. Операции типа reversal и refund не учитываются.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-referral-withdraw">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Как вывести реферальные начисления?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-referral-withdraw', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-referral-withdraw">
+                <div class="entry-header">
+                    <h3>Как вывести реферальные начисления?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-referral-withdraw', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Условия вывода обсуждаются индивидуально с поддержкой.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
         <!-- Раздел 19. Возврат средств (Refund) -->
         <div class="theme-section" id="faq-refunds">
-            <h2 class="theme-title">19. Возврат средств (Refund) <button class="copy-link-btn" onclick="copyLink('faq-refunds')">🔗</button></h2>
+            <h2 class="theme-title">19. Возврат средств (Refund) <button class="copy-link-btn" onclick="copyLink('faq-refunds', event)">🔗</button></h2>
 
-            <div class="accordion" id="q-when-refund">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Когда придёт возврат на карту?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-when-refund', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-when-refund">
+                <div class="entry-header">
+                    <h3>Когда придёт возврат на карту?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-when-refund', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Максимальный срок — <strong>до 10 рабочих дней</strong>. Если возврат не пришёл — напишите в поддержку с ID карты и суммой.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-funds-lost">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Средства списались, но в рекламный кабинет не попали. Деньги потеряны?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-funds-lost', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-funds-lost">
+                <div class="entry-header">
+                    <h3>Средства списались, но в рекламный кабинет не попали. Деньги потеряны?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-funds-lost', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Нет. Если деньги списались, но до кабинета не дошли — после обработки банком придёт возврат. Для уточнения — напишите в поддержку.</p>
-                </div></div>
+                </div>
             </div>
 
-            <div class="accordion" id="q-refund-limit-use">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <div class="accordion-title-wrap">
-                        <h3>Возврат пришёл на лимитную карту. Как использовать эти средства?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-refund-limit-use', event)">🔗</button>
-                    </div><div class="chevron">▼</div>
+            <div class="entry" id="q-refund-limit-use">
+                <div class="entry-header">
+                    <h3>Возврат пришёл на лимитную карту. Как использовать эти средства?</h3>
+                    <button class="copy-link-btn" onclick="copyLink('q-refund-limit-use', event)">🔗</button>
                 </div>
-                <div class="accordion-body"><div class="accordion-content">
+                <div class="entry-body">
                     <p>Возврат зачисляется на счёт, с которого выпущена карта. Чтобы использовать средства — нужно поднять лимит карты.</p>
-                </div></div>
+                </div>
             </div>
         </div>
 
-    </div>
+        </div><!-- /page-content -->
 
-    <div class="support-block" style="max-width: 900px; margin: 0 auto 60px; padding: 0 20px;">
+    </div><!-- /page-layout -->
+
+    <div class="support-block" style="max-width: 1200px; margin: 0 auto 60px; padding: 0 20px;">
         <div style="padding: 40px 30px; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 16px; text-align: center;">
             <h3 style="color: var(--text-main); font-size: 22px; margin-bottom: 24px;">Связь с нами</h3>
             <div class="support-grid">
@@ -826,6 +907,12 @@
             <p class="support-footer-text">Если ваш вопрос не нашёл ответа — обращайтесь в поддержку eCards напрямую.</p>
         </div>
     </div>
+
+    <!-- Бургер (мобиле) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <button id="sidebar-burger" class="sidebar-burger" aria-label="Открыть навигацию">
+        <span></span><span></span><span></span>
+    </button>
 
     <div id="toast" class="toast">Ссылка скопирована!</div>
 

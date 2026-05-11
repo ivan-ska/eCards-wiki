@@ -312,6 +312,14 @@ header {
 .nav-card p { color: var(--text-muted); }
 
 /* ИНФО БЛОК: КОНТАКТЫ И ПОДДЕРЖКА */
+.support-wrap {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+.support-wrap .support-block {
+    margin-top: 0;
+}
 .support-block {
     margin-top: 50px;
     padding: 40px 30px;
@@ -511,40 +519,76 @@ header {
 
 .sidebar-group { margin-bottom: 4px; }
 
+.sidebar-group-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.sidebar-group-header:hover {
+    background: var(--surface-color);
+}
+.sidebar-group-header:hover .sidebar-group-link,
+.sidebar-group-header:hover .sidebar-toggle-btn {
+    color: var(--primary-color);
+}
+
 .sidebar-group-link {
+    flex: 1;
     display: block;
     padding: 7px 12px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--text-muted);
-    border-radius: 8px;
     cursor: pointer;
-    transition: color 0.2s, background 0.2s;
+    transition: color 0.2s;
     text-decoration: none;
     line-height: 1.4;
     border-left: 2px solid transparent;
-}
-.sidebar-group-link:hover {
-    color: var(--primary-color);
-    background: var(--surface-color);
-    text-decoration: none;
+    border-radius: 8px 0 0 8px;
+    user-select: none;
 }
 .sidebar-group-link.active {
     color: var(--primary-color);
-    background: var(--surface-color);
     border-left-color: var(--primary-color);
 }
+
+/* Кнопка-шеврон для сворачивания группы */
+.sidebar-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: var(--text-muted);
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.sidebar-chevron {
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar-group.open .sidebar-chevron { transform: rotate(180deg); }
 
 .sidebar-items {
     list-style: none;
     margin: 0;
     padding: 0 0 0 12px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.sidebar-group.open .sidebar-items { max-height: 800px; }
 
 .sidebar-item-link {
     display: block;
     padding: 5px 10px;
     font-size: 12px;
+    font-weight: 400;
     color: var(--text-muted);
     border-radius: 6px;
     cursor: pointer;
@@ -553,16 +597,13 @@ header {
     line-height: 1.4;
     border-left: 2px solid transparent;
 }
-.sidebar-item-link:hover {
-    color: var(--primary-color);
-    background: var(--surface-color);
-    text-decoration: none;
-}
+.sidebar-item-link:hover,
 .sidebar-item-link.active {
     color: var(--primary-color);
     background: rgba(116, 139, 255, 0.08);
     border-left-color: var(--primary-color);
     font-weight: 500;
+    text-decoration: none;
 }
 
 /* ОСНОВНОЙ КОНТЕНТ РЯДОМ С САЙДБАРОМ */

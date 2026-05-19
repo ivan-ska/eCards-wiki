@@ -860,6 +860,10 @@ header {
     text-align: left;
 }
 
+    .nav-card {
+    padding: 20px;
+    padding-right: 60px;
+
     .sidebar {
         position: fixed;
         top: 0;

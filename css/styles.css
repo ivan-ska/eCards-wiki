@@ -398,6 +398,9 @@ header {
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 /* HOME PAGE */
@@ -802,6 +805,9 @@ header {
     margin: 40px auto;
     padding: 0 20px;
     gap: 40px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 /* САЙДБАР */
@@ -1137,28 +1143,28 @@ header {
         padding-right: 60px;
     }
 
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 280px;
-            max-height: 100vh;
-            background: #fff;
-            border-right: 1px solid var(--border-color);
-            box-shadow: var(--shadow);
-            z-index: 400;
-            transform: translateX(-100%);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            padding: 60px 16px 24px;
-            overflow-y: auto;
-        }
-
-        .sidebar.open {
-            transform: translateX(0);
-        }
-
-        .sidebar-burger {
-            display: flex;
-        }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 280px;
+        max-height: 100vh;
+        background: #fff;
+        border-right: 1px solid var(--border-color);
+        box-shadow: var(--shadow);
+        z-index: 400;
+        transform: translateX(-100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 60px 16px 24px;
+        overflow-y: auto;
     }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .sidebar-burger {
+        display: flex;
+    }
+}

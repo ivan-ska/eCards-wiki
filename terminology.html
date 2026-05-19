@@ -11,28 +11,45 @@
 
     <header>
         <div class="header-container">
+        
             <a href="index.html" class="logo">
-                <img src="https://raw.githubusercontent.com/ivan-ska/ecards-premium/refs/heads/main/imgs/0-header/Logo%20main.svg" alt="eCards Logo">
+                <img src="https://raw.githubusercontent.com/ivan-ska/ecards-premium/refs/heads/main/imgs/0-header/Logo%20main.svg"
+                    alt="eCards Logo">
+            </a>
+
+            <div class="back-search-wrapper">
+            <a class="back-btn" href="index.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z"
+                        fill="#748BFF" />
+                </svg>
             </a>
 
             <div class="search-wrapper">
                 <div class="search-input-wrap">
                     <span class="search-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
                         </svg>
                     </span>
-                    <input id="search-input" class="search-input" type="search" placeholder="Поиск по базе знаний..." autocomplete="off">
+                    <input id="search-input" class="search-input" type="search" placeholder="Поиск по eCards Вики"
+                        autocomplete="off">
                     <button id="search-clear" class="search-clear" type="button" aria-label="Очистить поиск">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
                         </svg>
                     </button>
                 </div>
                 <div id="search-dropdown" class="search-dropdown"></div>
             </div>
+            </div>
 
-            <a href="https://ecards.cab/" target="_blank" class="main-link">Перейти на платформу
+            <a href="https://ecardsnew.cab/sign-in" target="_blank" class="main-link">Перейти на платформу
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M5.93311 5.04016C6.13977 2.64016 7.37311 1.66016 10.0731 1.66016H10.1598C13.1398 1.66016 14.3331 2.85349 14.3331 5.83349V10.1802C14.3331 13.1602 13.1398 14.3535 10.1598 14.3535H10.0731C7.39311 14.3535 6.15977 13.3868 5.93977 11.0268"
@@ -131,7 +148,7 @@
         <div class="page-content">
 
             <div class="page-header">
-                <a class="back-btn" href="index.html">← Назад на главную</a>
+                
                 <h1>Терминология сервиса</h1>
             </div>
 
@@ -358,27 +375,53 @@
 
     </div><!-- /page-layout -->
 
-    <div class="support-wrap">
-        <div class="support-block">
-            <h3>Связь с нами</h3>
+    <div class="support-block">
             <div class="support-grid">
                 <div class="support-item">
                     <strong>Поддержка</strong>
-                    <a href="https://t.me/ecards_onboarding_bot" target="_blank">@ecards_onboarding_bot</a>
-                    <a href="https://t.me/tochka_cab_support" target="_blank">@tochka_cab_support</a>
+                    <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                                fill="#636363" />
+                        </svg>
+                        @ecards_support</a>
+                    <a href="https://t.me/ecards_support" target="_blank"><svg width="16" height="16"
+                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                                fill="#636363" />
+                        </svg>
+                        @tochka_cab_support</a>
                 </div>
                 <div class="support-item">
-                    <strong>Бот (частые вопросы)</strong>
-                    <a href="https://t.me/ecards_onboarding_bot" target="_blank">@ecards_onboarding_bot</a>
+                    <strong>Частые вопросы</strong>
+                    <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                                fill="#636363" />
+                        </svg>
+                        @ecards_onboarding_bot</a>
                 </div>
                 <div class="support-item">
                     <strong>Новостной канал</strong>
-                    <a href="https://t.me/eCards_cab" target="_blank">@eCards_cab</a>
+                    <a href="https://t.me/eCards_cab" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                                fill="#636363" />
+                        </svg>
+                        @eCards_cab</a>
                 </div>
             </div>
-            <p class="support-footer-text">Если ваш вопрос не нашёл ответа — обращайтесь в поддержку eCards напрямую.</p>
+            <div class="support-footer-text-wrapper">
+            <p class="support-footer-text">Если ваш вопрос не нашёл ответа — обращайтесь в поддержку eCards напрямую.
+            </p>
+            <p class="support-footer-text">© eCards 2026
+            </p>
+            </div>
         </div>
-    </div>
 
     <!-- Бургер (мобиле) -->
     <div id="sidebar-overlay" class="sidebar-overlay"></div>

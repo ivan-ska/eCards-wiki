@@ -127,6 +127,23 @@ window.addEventListener('hashchange', handleHashOnLoad);
     });
 })();
 
+// Кнопка Наверх
+const scrollTopBtn = document.getElementById('scroll-top-btn');
+if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+        // Показываем кнопку, если проскроллили больше 300px
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
 // ======== БУРГЕР ========
 (function initBurger() {
     const burger  = document.getElementById('sidebar-burger');

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,42 +13,42 @@
 
     <header>
         <div class="header-container">
-        
+
             <a href="index.html" class="logo">
                 <img src="https://raw.githubusercontent.com/ivan-ska/ecards-premium/refs/heads/main/imgs/0-header/Logo%20main.svg"
                     alt="eCards Logo">
             </a>
 
             <div class="back-search-wrapper">
-            <a class="back-btn" href="index.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z"
-                        fill="#748BFF" />
-                </svg>
-            </a>
+                <a class="back-btn" href="index.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z"
+                            fill="#748BFF" />
+                    </svg>
+                </a>
 
-            <div class="search-wrapper">
-                <div class="search-input-wrap">
-                    <span class="search-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8" />
-                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                        </svg>
-                    </span>
-                    <input id="search-input" class="search-input" type="search" placeholder="Поиск по eCards Вики"
-                        autocomplete="off">
-                    <button id="search-clear" class="search-clear" type="button" aria-label="Очистить поиск">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5" stroke-linecap="round">
-                            <line x1="18" y1="6" x2="6" y2="18" />
-                            <line x1="6" y1="6" x2="18" y2="18" />
-                        </svg>
-                    </button>
+                <div class="search-wrapper">
+                    <div class="search-input-wrap">
+                        <span class="search-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                        <input id="search-input" class="search-input" type="search" placeholder="Поиск по eCards Вики"
+                            autocomplete="off">
+                        <button id="search-clear" class="search-clear" type="button" aria-label="Очистить поиск">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="search-dropdown" class="search-dropdown"></div>
                 </div>
-                <div id="search-dropdown" class="search-dropdown"></div>
-            </div>
             </div>
 
             <a href="https://ecardsnew.cab/sign-in" target="_blank" class="main-link">Перейти на платформу
@@ -70,75 +71,119 @@
         <nav class="sidebar" aria-label="Навигация по разделам">
             <ul class="sidebar-nav">
 
-                <li class="sidebar-group open">
+                <li class="sidebar-group">
                     <div class="sidebar-group-header">
                         <span class="sidebar-group-link" data-id="term-group-general">Общие понятия</span>
                         <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </div>
                     <ul class="sidebar-items">
                         <li><a class="sidebar-item-link" data-id="term-2fa" href="#term-2fa">2FA</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-decline-rate" href="#term-decline-rate">Decline Rate</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-decline-rate" href="#term-decline-rate">Decline
+                                Rate</a></li>
                         <li><a class="sidebar-item-link" data-id="term-referral" href="#term-referral">Реферал</a></li>
                     </ul>
                 </li>
 
-                <li class="sidebar-group open">
+                <li class="sidebar-group">
                     <div class="sidebar-group-header">
                         <span class="sidebar-group-link" data-id="term-group-accounts">Счета</span>
                         <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </div>
                     <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="term-base-acc" href="#term-base-acc">Базовые счета</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-limit-acc" href="#term-limit-acc">Лимитные счета</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-unified-acc" href="#term-unified-acc">Единые лимитные счета</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-shared-acc" href="#term-shared-acc">Счета с общим балансом</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-base-acc" href="#term-base-acc">Базовые счета</a>
+                        </li>
+                        <li><a class="sidebar-item-link" data-id="term-limit-acc" href="#term-limit-acc">Лимитные
+                                счета</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-unified-acc" href="#term-unified-acc">Единые
+                                лимитные счета</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-shared-acc" href="#term-shared-acc">Счета с общим
+                                балансом</a></li>
                     </ul>
                 </li>
 
-                <li class="sidebar-group open">
+                <li class="sidebar-group">
                     <div class="sidebar-group-header">
                         <span class="sidebar-group-link" data-id="term-group-cards">Карты и лимиты</span>
                         <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </div>
                     <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="term-limit-cards" href="#term-limit-cards">Лимитные карты</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-shared-cards" href="#term-shared-cards">Карты с общим балансом</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-constant-limits" href="#term-constant-limits">Постоянные лимиты</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-cycle-limits" href="#term-cycle-limits">Циклические лимиты</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-limit-cards" href="#term-limit-cards">Лимитные
+                                карты</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-shared-cards" href="#term-shared-cards">Карты с
+                                общим балансом</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-constant-limits"
+                                href="#term-constant-limits">Постоянные лимиты</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-cycle-limits"
+                                href="#term-cycle-limits">Циклические лимиты</a></li>
                     </ul>
                 </li>
 
-                <li class="sidebar-group open">
+                <li class="sidebar-group">
                     <div class="sidebar-group-header">
                         <span class="sidebar-group-link" data-id="term-group-team">Команды и делегирование</span>
                         <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </div>
                     <ul class="sidebar-items">
                         <li><a class="sidebar-item-link" data-id="term-roles" href="#term-roles">Команды и роли</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-delegation" href="#term-delegation">Делегирование</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-delegation"
+                                href="#term-delegation">Делегирование</a></li>
                     </ul>
                 </li>
 
-                <li class="sidebar-group open">
+                <li class="sidebar-group">
                     <div class="sidebar-group-header">
                         <span class="sidebar-group-link" data-id="term-group-operations">Операции и статистика</span>
                         <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
+                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </div>
                     <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="term-card-status" href="#term-card-status">Статусы по картам</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-acc-status" href="#term-acc-status">Статусы по счетам</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-stat-ops" href="#term-stat-ops">Что входит в статистику</a></li>
-                        <li><a class="sidebar-item-link" data-id="term-3ds" href="#term-3ds">3DS SMS / пароль / код</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-card-status" href="#term-card-status">Статусы по
+                                картам</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-acc-status" href="#term-acc-status">Статусы по
+                                счетам</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-stat-ops" href="#term-stat-ops">Что входит в
+                                статистику</a></li>
+                        <li><a class="sidebar-item-link" data-id="term-3ds" href="#term-3ds">3DS SMS / пароль / код</a>
+                        </li>
                     </ul>
                 </li>
 
@@ -149,155 +194,264 @@
         <div class="page-content">
 
             <div class="page-header">
-                
+                <svg class="terminology-d" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M38.5 19.25V29.75C38.5 36.75 36.75 38.5 29.75 38.5H12.25C5.25 38.5 3.5 36.75 3.5 29.75V12.25C3.5 5.25 5.25 3.5 12.25 3.5H14.875C17.5 3.5 18.0775 4.27 19.075 5.6L21.7 9.1C22.365 9.975 22.75 10.5 24.5 10.5H29.75C36.75 10.5 38.5 12.25 38.5 19.25Z"
+                        stroke="#748BFF" stroke-width="2.625" stroke-miterlimit="10" />
+                    <path d="M14 3.5H29.75C33.25 3.5 35 5.25 35 8.75V11.165" stroke="#748BFF" stroke-width="2.625"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="terminology-m" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M29.3332 14.6665V22.6665C29.3332 27.9998 27.9998 29.3332 22.6665 29.3332H9.33317C3.99984 29.3332 2.6665 27.9998 2.6665 22.6665V9.33317C2.6665 3.99984 3.99984 2.6665 9.33317 2.6665H11.3332C13.3332 2.6665 13.7732 3.25317 14.5332 4.2665L16.5332 6.93317C17.0398 7.59984 17.3332 7.99984 18.6665 7.99984H22.6665C27.9998 7.99984 29.3332 9.33317 29.3332 14.6665Z"
+                        stroke="#748BFF" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M10.6665 2.6665H22.6665C25.3332 2.6665 26.6665 3.99984 26.6665 6.6665V8.5065"
+                        stroke="#748BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
                 <h1>Терминология сервиса</h1>
             </div>
 
             <!-- Группа 1. Общие понятия -->
             <div class="theme-section" id="term-group-general">
-                <h2 class="theme-title">Общие понятия <button class="copy-link-btn" onclick="copyLink('term-group-general', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+                <h2 class="theme-title">Общие понятия <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button></h2>
 
                 <div class="entry" id="term-2fa">
                     <div class="entry-header">
                         <h3>2FA</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-2fa', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Двухфакторная аутентификация — дополнительный уровень защиты аккаунта. После ввода пароля требуется подтвердить вход одноразовым кодом из приложения-аутентификатора. Настраивается в <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Безопасность</span>.</p>
+                        <p>Двухфакторная аутентификация — дополнительный уровень защиты аккаунта. После ввода пароля
+                            требуется подтвердить вход одноразовым кодом из приложения-аутентификатора. Настраивается в
+                            <span class="seq">Мой аккаунт <span class="seq-arrow"></span> Безопасность</span>.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-decline-rate">
                     <div class="entry-header">
                         <h3>Decline Rate</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-decline-rate', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Процент отклонённых операций. Влияет на размер штрафа за каждый деклайн. Рассчитывается при наличии более 100 операций:</p>
+                        <p>Процент отклонённых операций. Влияет на размер штрафа за каждый деклайн. Рассчитывается при
+                            наличии более 100 операций:</p>
                         <blockquote>(деклайны / операции) × 100</blockquote>
-                        <p>Если Decline Rate превышает <strong>50%</strong> — размер штрафа может быть увеличен, аккаунт может быть заблокирован. Текущее значение отображается в <span class="seq">Мой аккаунт <span class="seq-arrow">→</span> Главная</span>.</p>
+                        <p>Если Decline Rate превышает <strong>50%</strong> — размер штрафа может быть увеличен, аккаунт
+                            может быть заблокирован. Текущее значение отображается в <span class="seq">Мой аккаунт <span
+                                    class="seq-arrow"></span> Главная</span>.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-referral">
                     <div class="entry-header">
                         <h3>Реферал</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-referral', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Новый пользователь, зарегистрировавшийся по вашей реферальной ссылке. Вы получаете <strong>0,25%</strong> со всех его платежей в течение 6 месяцев с момента регистрации.</p>
+                        <p>Новый пользователь, зарегистрировавшийся по вашей реферальной ссылке. Вы получаете
+                            <strong>0,25%</strong> со всех его платежей в течение 6 месяцев с момента регистрации.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Группа 2. Счета -->
             <div class="theme-section" id="term-group-accounts">
-                <h2 class="theme-title">Счета <button class="copy-link-btn" onclick="copyLink('term-group-accounts', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+                <h2 class="theme-title">Счета <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button></h2>
 
                 <div class="entry" id="term-base-acc">
                     <div class="entry-header">
                         <h3>Базовые счета</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-base-acc', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Счета для зачисления внешних средств (пополнений). В кабинете доступны два: в <strong>USD</strong> и <strong>EUR</strong>. Пополнение — без комиссии. С базового счёта средства переводятся на счета карт.</p>
+                        <p>Счета для зачисления внешних средств (пополнений). В кабинете доступны два: в
+                            <strong>USD</strong> и <strong>EUR</strong>. Пополнение — без комиссии. С базового счёта
+                            средства переводятся на счета карт.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-limit-acc">
                     <div class="entry-header">
                         <h3>Лимитные счета</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-limit-acc', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Счета, на которых у каждой карты есть собственный баланс (лимит). Средства зачисляются на конкретную карту, а не на общий пул.</p>
+                        <p>Счета, на которых у каждой карты есть собственный баланс (лимит). Средства зачисляются на
+                            конкретную карту, а не на общий пул.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-unified-acc">
                     <div class="entry-header">
                         <h3>Единые лимитные счета</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-unified-acc', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Особый тип лимитного счёта, с которого можно выпускать карты <strong>разных БИНов</strong> (в отличие от обычного лимитного, привязанного к одному БИНу). Делегируется команде. Owner пополняет счёт — сотрудники выпускают на него карты и тратят общий баланс, каждый в своём кабинете.</p>
+                        <p>Особый тип лимитного счёта, с которого можно выпускать карты <strong>разных БИНов</strong> (в
+                            отличие от обычного лимитного, привязанного к одному БИНу). Делегируется команде. Owner
+                            пополняет счёт — сотрудники выпускают на него карты и тратят общий баланс, каждый в своём
+                            кабинете.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-shared-acc">
                     <div class="entry-header">
                         <h3>Счета с общим балансом</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-shared-acc', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Счёт, где все карты тратят из единого пула средств без индивидуальных лимитов. Пополняется общий счёт, а не отдельные карты. Пока доступен только для EUR-BIN.</p>
+                        <p>Счёт, где все карты тратят из единого пула средств без индивидуальных лимитов. Пополняется
+                            общий счёт, а не отдельные карты. Пока доступен только для EUR-BIN.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Группа 3. Карты и лимиты -->
             <div class="theme-section" id="term-group-cards">
-                <h2 class="theme-title">Карты и лимиты <button class="copy-link-btn" onclick="copyLink('term-group-cards', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+                <h2 class="theme-title">Карты и лимиты <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button></h2>
 
                 <div class="entry" id="term-limit-cards">
                     <div class="entry-header">
                         <h3>Лимитные карты</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-limit-cards', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Карты с индивидуальным балансом. Пополняются через увеличение лимита. При выпуске можно задать стартовый баланс.</p>
+                        <p>Карты с индивидуальным балансом. Пополняются через увеличение лимита. При выпуске можно
+                            задать стартовый баланс.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-shared-cards">
                     <div class="entry-header">
                         <h3>Карты с общим балансом</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-shared-cards', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Карты, выпущенные на счёте с общим балансом. Не имеют индивидуального лимита — тратят из общего пула счёта.</p>
+                        <p>Карты, выпущенные на счёте с общим балансом. Не имеют индивидуального лимита — тратят из
+                            общего пула счёта.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-constant-limits">
                     <div class="entry-header">
                         <h3>Постоянные лимиты</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-constant-limits', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Фиксированный лимит на карте, не сбрасывающийся автоматически. Устанавливается вручную через контекстное меню карты → <strong>«Изменить постоянный лимит»</strong>.</p>
+                        <p>Фиксированный лимит на карте, не сбрасывающийся автоматически. Устанавливается вручную через
+                            контекстное меню карты  <strong>«Изменить постоянный лимит»</strong>.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-cycle-limits">
                     <div class="entry-header">
                         <h3>Циклические лимиты</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-cycle-limits', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Лимиты, автоматически сбрасывающиеся по истечении периода: <strong>день / неделя / месяц</strong>. Период отсчитывается от момента совершения транзакции, а не по календарю. Доступность зависит от BIN — уточняйте у поддержки.</p>
+                        <p>Лимиты, автоматически сбрасывающиеся по истечении периода: <strong>день / неделя /
+                                месяц</strong>. Период отсчитывается от момента совершения транзакции, а не по
+                            календарю. Доступность зависит от BIN — уточняйте у поддержки.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Группа 4. Команды и делегирование -->
             <div class="theme-section" id="term-group-team">
-                <h2 class="theme-title">Команды и делегирование <button class="copy-link-btn" onclick="copyLink('term-group-team', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+                <h2 class="theme-title">Команды и делегирование <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button></h2>
 
                 <div class="entry" id="term-roles">
                     <div class="entry-header">
                         <h3>Команды и роли</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-roles', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
                         <p><strong>Команда</strong> — группа сотрудников с общим доступом к определённым счетам.</p>
                         <p><strong>Роли:</strong></p>
                         <ul>
                             <li><strong>Owner (Вл.)</strong> — владелец аккаунта, полный доступ.</li>
-                            <li><strong>Team Lead</strong> — руководитель команды. Имеет полный контроль над картами делегированных команде счетов: делегирует карты, изменяет лимиты, закрывает карты, добавляет в группы, редактирует заметки, переводит средства с/на делегированные счета, видит все операции по ним, получает 3DS коды по картам и уведомления с подтверждением действий фармеров.</li>
-                            <li><strong>Buyer</strong> — медиабайер, работает с картами в рамках делегированных счетов. Может передавать карты коллегам, видит свою команду и список коллег.</li>
-                            <li><strong>Farmer</strong> — работает с картами делегированного счёта, но все действия (выпуск и закрытие карт, изменение лимитов, редактирование заметок, добавление в группы) требуют подтверждения Owner. Owner получает уведомления о каждом действии фармера и может подтвердить или отклонить его. Баланс делегированного счёта для фармера скрыт.</li>
-                            <li><strong>Финансист</strong> — видит все карты и операции по картам/счетам, делегированным команде. Может выгружать отчёты. Не может совершать действия со счетами и картами.</li>
+                            <li><strong>Team Lead</strong> — руководитель команды. Имеет полный контроль над картами
+                                делегированных команде счетов: делегирует карты, изменяет лимиты, закрывает карты,
+                                добавляет в группы, редактирует заметки, переводит средства с/на делегированные счета,
+                                видит все операции по ним, получает 3DS коды по картам и уведомления с подтверждением
+                                действий фармеров.</li>
+                            <li><strong>Buyer</strong> — медиабайер, работает с картами в рамках делегированных счетов.
+                                Может передавать карты коллегам, видит свою команду и список коллег.</li>
+                            <li><strong>Farmer</strong> — работает с картами делегированного счёта, но все действия
+                                (выпуск и закрытие карт, изменение лимитов, редактирование заметок, добавление в группы)
+                                требуют подтверждения Owner. Owner получает уведомления о каждом действии фармера и
+                                может подтвердить или отклонить его. Баланс делегированного счёта для фармера скрыт.
+                            </li>
+                            <li><strong>Финансист</strong> — видит все карты и операции по картам/счетам, делегированным
+                                команде. Может выгружать отчёты. Не может совершать действия со счетами и картами.</li>
                         </ul>
                     </div>
                 </div>
@@ -305,26 +459,40 @@
                 <div class="entry" id="term-delegation">
                     <div class="entry-header">
                         <h3>Делегирование</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-delegation', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Предоставление сотруднику или команде доступа к счёту. Делегированный счёт отображается у сотрудника в кабинете — он может выпускать на него карты и видеть статистику.</p>
+                        <p>Предоставление сотруднику или команде доступа к счёту. Делегированный счёт отображается у
+                            сотрудника в кабинете — он может выпускать на него карты и видеть статистику.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Группа 5. Операции и статистика -->
             <div class="theme-section" id="term-group-operations">
-                <h2 class="theme-title">Операции и статистика <button class="copy-link-btn" onclick="copyLink('term-group-operations', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+                <h2 class="theme-title">Операции и статистика <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button></h2>
 
                 <div class="entry" id="term-card-status">
                     <div class="entry-header">
                         <h3>Статусы операций по картам</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-card-status', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
                         <ul>
-                            <li><strong>Debit (Authorization)</strong> — авторизация / холд (платёж инициирован, ожидает списания).</li>
+                            <li><strong>Debit (Authorization)</strong> — авторизация / холд (платёж инициирован, ожидает
+                                списания).</li>
                             <li><strong>Debit (Declined)</strong> — операция отклонена.</li>
                             <li><strong>Charge (Refund)</strong> — возврат средств на карту.</li>
                         </ul>
@@ -334,10 +502,15 @@
                 <div class="entry" id="term-acc-status">
                     <div class="entry-header">
                         <h3>Статусы операций по счетам</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-acc-status', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Типы операций в разделе <span class="seq">Мои счета <span class="seq-arrow">→</span> Операции по счетам</span>:</p>
+                        <p>Типы операций в разделе <span class="seq">Мои счета <span class="seq-arrow"></span> Операции
+                                по счетам</span>:</p>
                         <ul>
                             <li>Перевод между счетами</li>
                             <li>Изменение лимита карты</li>
@@ -350,23 +523,37 @@
                 <div class="entry" id="term-stat-ops">
                     <div class="entry-header">
                         <h3>Какие операции входят в статистику</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-stat-ops', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>В разделе <strong>Статистика трат по картам</strong> учитываются фактические расходы по картам: операции типа <strong>Debit (Authorization)</strong> и <strong>Charge (Refund)</strong>. Деклайны в статистику расходов не входят.</p>
+                        <p>В разделе <strong>Статистика трат по картам</strong> учитываются фактические расходы по
+                            картам: операции типа <strong>Debit (Authorization)</strong> и <strong>Charge
+                                (Refund)</strong>. Деклайны в статистику расходов не входят.</p>
                     </div>
                 </div>
 
                 <div class="entry" id="term-3ds">
                     <div class="entry-header">
                         <h3>3DS SMS, 3DS пароль, код авторизации</h3>
-                        <button class="copy-link-btn" onclick="copyLink('term-3ds', event)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9902 17.5H16.5002C19.5202 17.5 22.0002 15.03 22.0002 12C22.0002 8.98 19.5302 6.5 16.5002 6.5H14.9902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
                     </div>
                     <div class="entry-body">
                         <ul>
-                            <li><strong>3DS SMS</strong> — одноразовый код, приходящий при 3DS-подтверждении платежа. Поступает в Telegram-бот уведомлений.</li>
-                            <li><strong>3DS пароль</strong> — постоянный код, указанный в реквизитах карты. Запрашивается на некоторых сайтах как второй уровень подтверждения. Одинаковый для всех карт данного BIN.</li>
-                            <li><strong>Код авторизации</strong> — код, который рекламная платформа (Google Ads и др.) запрашивает при привязке карты. Приходит в Telegram-бот.</li>
+                            <li><strong>3DS SMS</strong> — одноразовый код, приходящий при 3DS-подтверждении платежа.
+                                Поступает в Telegram-бот уведомлений.</li>
+                            <li><strong>3DS пароль</strong> — постоянный код, указанный в реквизитах карты.
+                                Запрашивается на некоторых сайтах как второй уровень подтверждения. Одинаковый для всех
+                                карт данного BIN.</li>
+                            <li><strong>Код авторизации</strong> — код, который рекламная платформа (Google Ads и др.)
+                                запрашивает при привязке карты. Приходит в Telegram-бот.</li>
                         </ul>
                     </div>
                 </div>
@@ -377,52 +564,59 @@
     </div><!-- /page-layout -->
 
     <div class="support-block">
-            <div class="support-grid">
-                <div class="support-item">
-                    <strong>Поддержка</strong>
-                    <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                                fill="#636363" />
-                        </svg>
-                        @ecards_support</a>
-                    <a href="https://t.me/ecards_support" target="_blank"><svg width="16" height="16"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                                fill="#636363" />
-                        </svg>
-                        @tochka_cab_support</a>
-                </div>
-                <div class="support-item">
-                    <strong>Частые вопросы</strong>
-                    <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                                fill="#636363" />
-                        </svg>
-                        @ecards_onboarding_bot</a>
-                </div>
-                <div class="support-item">
-                    <strong>Новостной канал</strong>
-                    <a href="https://t.me/eCards_cab" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                                fill="#636363" />
-                        </svg>
-                        @eCards_cab</a>
-                </div>
+        <div class="support-grid">
+            <div class="support-item">
+                <strong>Поддержка</strong>
+                <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                            fill="#636363" />
+                    </svg>
+                    @ecards_support</a>
+                <a href="https://t.me/ecards_support" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                            fill="#636363" />
+                    </svg>
+                    @tochka_cab_support</a>
             </div>
-            <div class="support-footer-text-wrapper">
+            <div class="support-item">
+                <strong>Частые вопросы</strong>
+                <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                            fill="#636363" />
+                    </svg>
+                    @ecards_onboarding_bot</a>
+            </div>
+            <div class="support-item">
+                <strong>Новостной канал</strong>
+                <a href="https://t.me/eCards_cab" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                            fill="#636363" />
+                    </svg>
+                    @eCards_cab</a>
+            </div>
+        </div>
+        <div class="support-footer-text-wrapper">
             <p class="support-footer-text">Если ваш вопрос не нашёл ответа — обращайтесь в поддержку eCards напрямую.
             </p>
             <p class="support-footer-text">© eCards 2026
             </p>
-            </div>
         </div>
+    </div>
+
+    <!-- Кнопка Наверх -->
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
 
     <!-- Бургер (мобиле) -->
     <div id="sidebar-overlay" class="sidebar-overlay"></div>
@@ -437,8 +631,8 @@
     <script src="js/main.js"></script>
     <script>
         // Toggle sidebar groups
-        document.querySelectorAll('.sidebar-group-header').forEach(function(header) {
-            header.addEventListener('click', function() {
+        document.querySelectorAll('.sidebar-group-header').forEach(function (header) {
+            header.addEventListener('click', function () {
                 this.closest('.sidebar-group').classList.toggle('open');
             });
         });
@@ -447,18 +641,19 @@
         const allSidebarLinks = document.querySelectorAll('.sidebar-item-link[data-id], .sidebar-group-link[data-id]');
         const sections = document.querySelectorAll('[id]');
 
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     const id = entry.target.getAttribute('id');
-                    allSidebarLinks.forEach(function(link) {
+                    allSidebarLinks.forEach(function (link) {
                         link.classList.toggle('active', link.getAttribute('data-id') === id);
                     });
                 }
             });
         }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
 
-        sections.forEach(function(section) { observer.observe(section); });
+        sections.forEach(function (section) { observer.observe(section); });
     </script>
 </body>
+
 </html>

@@ -97,15 +97,15 @@ p:last-child {
 }
 
 .seq {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
+    display: inline; /* Включаем текстовый перенос вместо блочного */
     font-weight: 500;
     background: #FFFFFF;
     padding: 2px 8px;
     border-radius: 100px;
     border: 1px solid var(--border-color);
     font-size: 0.95em;
+    box-decoration-break: slice; /* Тот самый эффект "среза ножницами" */
+    -webkit-box-decoration-break: slice;
 }
 
 .seq-arrow {
@@ -116,18 +116,32 @@ p:last-child {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    vertical-align: middle; /* Ставит иконку ровно по центру текста */
+    margin: 0 4px; /* Заменяет удаленный gap: 4px */
+    position: relative;
+    top: -1px;
 }
 
 .seq-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
+    display: inline; /* Включаем текстовый перенос */
     font-weight: 500;
     background-color: var(--surface-20);
     color: var(--dark);
     padding: 2px 8px;
-    border-radius: 100px;
+    border-radius: 12px;
     font-size: 0.95em;
+    box-decoration-break: slice;
+    -webkit-box-decoration-break: slice;
+}
+
+/* Выравнивание для обычных SVG-иконок внутри бейджей */
+.seq svg,
+.seq-button svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+    position: relative;
+    top: -1px;
 }
 
 .important-note {
@@ -138,6 +152,12 @@ p:last-child {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.important-note__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .section-intro>svg,

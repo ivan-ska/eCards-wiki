@@ -154,8 +154,8 @@
                                 href="#q-fee-transactions">Комиссия за транзакции</a></li>
                         <li><a class="sidebar-item-link" data-id="q-fee-withdraw" href="#q-fee-withdraw">Комиссия за
                                 вывод</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-fee-custom" href="#q-fee-custom">Индивидуальные
-                                условия</a></li>
+                        <!--<li><a class="sidebar-item-link" data-id="q-fee-custom" href="#q-fee-custom">Индивидуальные
+                                условия</a></li>-->
                     </ul>
                 </li>
 
@@ -565,14 +565,12 @@
                     </div>
                     <div class="entry-body">
                         <ol>
-                            <li>Перейдите в <span class="seq">Мой аккаунт <span class="seq-arrow"></span>
+                            <li>Перейдите в раздел <span class="seq">Мой аккаунт <span class="seq-arrow"></span>
                                     Безопасность</span>.</li>
                             <li>Включите двухфакторную аутентификацию.</li>
                             <li>Привяжите Google Authenticator, отсканировав QR-код.</li>
                         </ol>
-                        <p>Если потеряли доступ к <a href="terminology.html#term-2fa">2FA</a> (сломался
-                            телефон, удалили
-                            приложение) — напишите в поддержку, 2FA будет отключена вручную после верификации.</p>
+                        <p>Если потеряли доступ к <a href="terminology.html#term-2fa">2FA</a> — напишите в поддержку, 2FA будет отключена вручную после верификации.</p>
                             <img class="img-hero, img-base" src="https://www.dropbox.com/scl/fi/1jcsj62770m0xlndxx36a/ecrards-img-example.jpg?rlkey=vfppp6o15qh0dkljxfdksdboh&st=e0h5a5pq&raw=1"
                     alt="Image example" />
                     </div>
@@ -596,7 +594,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Через <span class="seq">Мой аккаунт <span class="seq-arrow"></span> Безопасность</span>
+                        <p>Через раздел <span class="seq">Мой аккаунт <span class="seq-arrow"></span> Безопасность</span>
                             (настройки профиля). Если возникли трудности — обратитесь в поддержку с указанием текущей
                             почты и новых данных.</p>
                     </div>
@@ -636,7 +634,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Перейдите в <span class="seq">Мой аккаунт <span class="seq-arrow"></span> Уведомления</span>
+                        <p>Перейдите в раздел <span class="seq">Мой аккаунт <span class="seq-arrow"></span> Уведомления</span>
                             и нажмите <span class="seq-button">Перейти</span> в блоке «Активация телеграм-бота». После активации
                             уведомления об операциях, <a href="terminology.html#term-3ds">3DS SMS и коды
                                 авторизации</a>
@@ -700,11 +698,12 @@
                     </div>
                     <div class="entry-body">
                         <ol>
-                            <li>Зайдите в кабинет и выберите нужный метод оплаты.</li>
-                            <li>Создайте инвойс — появятся реквизиты для перевода.</li>
+                            <li>Зайдите в кабинет. На главной странице вверху будет кнопка <span class="seq-button">Пополнить баланс</span>.</li>
+                            <li>Создайте инвойс, заполнив нужные поля — появятся реквизиты для перевода.</li>
                             <li>Переведите средства и скопируйте хэш транзакции.</li>
                             <li>Вставьте хэш в поле инвойса.</li>
-                            <li>Напишите в поддержку — они подтвердят зачисление.</li>
+                            <li>Зачисление должно пройти в автоматическом режиме.</li>
+                            <li>В случае, если автоматически инвойс не зачислился, напишите в поддержку — для ручного проведения платежа.</li>
                         </ol>
                         <p><em>Важно: всегда создавайте инвойс ДО отправки средств — наличие инвойса является условием
                                 автоматического зачисления. Если хэш не вставлен в инвойс — автоматического зачисления
@@ -819,7 +818,8 @@
                             <strong>без
                                 комиссии</strong>.
                         </p>
-                        <p>Комиссия взимается при <strong>переводе с базового счёта на счёт карт</strong>:</p>
+                        <p>Комиссия взимается при <strong>переводе с базового счёта на счёт карт</strong>: <em>Пополнение карточных счетов в долларах — комиссия 3%. Пополнение карточных счетов в евро — комиссия 4,5%</em></p>
+                        <!--
                         <div class="table-responsive">
                             <table>
                                 <tr>
@@ -838,8 +838,9 @@
                                     <td>4,5%</td>
                                 </tr>
                             </table>
-                        </div>
-                        <p>Иные способы пополнения обсуждаются индивидуально.</p>
+                        </div> 
+                        -->
+                        <p>Иных комиссий сервис не берет. Иные способы пополнения обсуждаются индивидуально.</p>
                         <p><em>*При обратном переводе (со счёта карт обратно на базовый) комиссия компенсируется.</em>
                         </p>
                     </div>
@@ -864,10 +865,9 @@
                     </div>
                     <div class="entry-body">
                         <p>За успешные транзакции комиссия не взимается. Исключение: для <strong>карт США</strong> —
-                            если принимающая сторона транзакции не из США, банк дополнительно удерживает
-                            <strong>1,5%</strong> за каждый платёж.
+                            если плата производится не в USD, банк может брать дополнительную комиссию за конвертацию.
                         </p>
-                        <p>За каждую <strong>отклонённую операцию</strong> удерживается штраф в зависимости от <a
+                        <p>За каждую <strong>отклонённую операцию (Decline)</strong> удерживается штраф в зависимости от <a
                                 href="terminology.html#term-decline-rate">Decline Rate</a>:</p>
                         <div class="table-responsive">
                             <table>
@@ -877,19 +877,19 @@
                                 </tr>
                                 <tr>
                                     <td>0–3%</td>
-                                    <td>0,2 €</td>
+                                    <td>0,2 USD/EUR</td>
                                 </tr>
                                 <tr>
                                     <td>3–5%</td>
-                                    <td>0,3 €</td>
+                                    <td>0,3 USD/EUR</td>
                                 </tr>
                                 <tr>
                                     <td>5–20%</td>
-                                    <td>0,4 €</td>
+                                    <td>0,4 USD/EUR</td>
                                 </tr>
                                 <tr>
                                     <td>от 20%</td>
-                                    <td>0,5 €</td>
+                                    <td>0,5 USD/EUR</td>
                                 </tr>
                             </table>
                         </div>
@@ -914,11 +914,12 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Нет. Вывод без комиссии. Срок — от <strong>2 до 10 рабочих дней</strong>. После отправки
+                        <p>Вывод без комиссии. Срок — от <strong>2 до 14 рабочих дней</strong>. После отправки
                             поддержка пришлёт хэш транзакции.</p>
                     </div>
                 </div>
 
+                <!--
                 <div class="entry" id="q-fee-custom">
                     <div class="entry-header">
                         <h3>Можно ли договориться об индивидуальных условиях?</h3>
@@ -940,6 +941,7 @@
                         <p>Да, при значительном обороте условия обсуждаются индивидуально. Напишите в поддержку.</p>
                     </div>
                 </div>
+                -->
             </div>
 
             <!-- Раздел 5. Базовые счета -->
@@ -968,7 +970,7 @@
                     </svg>
                     <div>
                     <a href="terminology.html#term-base-acc">Базовый счёт</a> — счёт для
-                    зачисления внешних средств. В кабинете доступны два базовых счёта: в <strong>USD</strong> и
+                    зачисления средств через USDT/Wire. В кабинете доступны два базовых счёта: в <strong>USD</strong> и
                     <strong>EUR</strong>.</div>
                 </div>
 
@@ -1023,7 +1025,7 @@
                     </svg>
                     <div>
                     <a href="terminology.html#term-limit-acc">Лимитный счёт</a> — счёт, на
-                    котором у каждой карты собственный баланс.</div>
+                    котором ыпускаются лимитные карты. С такого счета нужно пополнять каждую карту отдельно (они имеют свой собственный баланс), путем увеличения лимита на этой карте. Можно делегировать команде для работы.</div>
                 </div>
 
                 <div class="entry" id="q-fund-limit-acc">
@@ -1068,7 +1070,7 @@
                     </div>
                     <div class="entry-body">
                         <p>Возврат зачисляется на счёт, с которого выпущена карта. Чтобы снова использовать средства,
-                            нужно поднять лимит карты.</p>
+                            нужно снова поднять лимит карты (пополнить).</p>
                     </div>
                 </div>
             </div>
@@ -1099,8 +1101,8 @@
                     </svg>
                     <div>
                     <a href="terminology.html#term-unified-acc">Единый лимитный счёт</a> — особый
-                    тип лимитного счёта, с которого можно выпускать карты <strong>разных БИНов</strong>. Делегируется
-                    команде.</div>
+                    тип лимитного счёта, с которого можно выпускать лимитные карты <strong>разных БИНов</strong>. Можно делегировать
+                    команде для работы.</div>
                 </div>
 
                 <div class="entry" id="q-unified-teamwork">
@@ -1176,7 +1178,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Пока доступен только для EUR-BIN. Для BIN США — в разработке.</p>
+                        <p>Для всех карт. В разделе <span class="seq">Виртуальные карты<span class="seq-arrow"></span> вкладка «С общим балансом»</span> нажмите <span class="seq-button">Выпустить карты</span>.</p>
                     </div>
                 </div>
             </div>
@@ -1216,8 +1218,8 @@
                     <div class="entry-body">
                         <p>Перейдите в <span class="seq">Виртуальные карты <span class="seq-arrow"></span> Выпустить
                                 карты</span>. Выберите BIN, укажите счёт и количество карт (до 100 за раз). Для <a
-                                href="terminology.html#term-limit-cards">лимитных карт</a> можно задать стартовый
-                            баланс. Нажмите <span class="seq-button">Купить</span>. Количество карт не ограничено.</p>
+                                href="terminology.html#term-limit-cards">лимитных карт</a> нужно задать стартовый
+                            баланс (лимит). Нажмите <span class="seq-button">Купить</span>. Количество карт не ограничено.</p>
                     </div>
                 </div>
 
@@ -1239,9 +1241,9 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Карты в <strong>USD и EUR</strong> с разными BIN (США, Эстония, Гонконг). Карты бесплатные, с
-                            поддержкой 3DS. Начальный лимит выпуска — <strong>20 карт</strong>, увеличивается после 100
-                            успешных транзакций.</p>
+                        <p>Карты в <strong>USD и EUR</strong> с разными BIN. Карты бесплатные, с
+                            поддержкой 3DS. Начальный лимит выпуска — <strong>20 карт</strong>, далее безлимит после 100
+                            успешных транзакций и определения статистики в кабинете.</p>
                         <p>Типы карт:</p>
                         <ul>
                             <li><a href="terminology.html#term-limit-cards">Лимитные карты</a> — у
@@ -1251,7 +1253,6 @@
                                 — все карты
                                 списывают средства с единого баланса счёта.</li>
                         </ul>
-                        <p>Актуальный список рабочих BIN уточняйте у поддержки.</p>
                     </div>
                 </div>
 
@@ -1273,8 +1274,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Google Ads, TikTok Ads, Facebook/Meta, домены, хостинги и другие онлайн-сервисы. Привязать
-                            карту к Apple Pay нельзя.</p>
+                        <p>Google Ads, TikTok Ads, Facebook/Meta, домены, хостинги и другие онлайн-сервисы.</p>
                     </div>
                 </div>
 
@@ -1296,6 +1296,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
+                        <!--
                         <div class="table-responsive">
                             <table>
                                 <tr>
@@ -1342,17 +1343,20 @@
                                     </td>
                                 </tr>
                             </table>
-                        </div>
+                        </div> -->
+                        <!--
                         <p><strong>Примечания:</strong></p>
                         <ul>
                             <li>Провайдеры №1 и №2 не требуют подтверждения адреса — можно вводить любой из
                                 соответствующей страны.</li>
                             <li>Провайдер №4 — настоятельно рекомендуется указывать реальный адрес. Имя и фамилию можно
                                 указать любые.</li>
-                        </ul>
+                        </ul>-->
+                        <p><strong>В реквизитах карты</strong> указывается billing address карты. Если в реквизитах нет адреса, можете указывать любой. За дополнительной информацией обращайтесь в поддержку.</p>
                     </div>
                 </div>
 
+                <!--
                 <div class="entry" id="q-card-declined">
                     <div class="entry-header">
                         <h3>Карту не принимает рекламная площадка. Что делать?</h3>
@@ -1393,7 +1397,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="entry" id="q-forbidden">
                     <div class="entry-header">
@@ -1413,7 +1417,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Мошеннические действия и first-billing. За нарушения аккаунт блокируется со списанием
+                        <p>Мошеннические действия и первобиллинг. За явные нарушения аккаунт может быть заблокирован со списанием
                             баланса.</p>
                     </div>
                 </div>
@@ -1438,7 +1442,7 @@
                     <div class="entry-body">
                         <p>При закрытии большого количества карт без расходов аккаунт может быть заблокирован.
                             Рекомендуем следить за тем, чтобы средний спенд по картам составлял <strong>не менее 10
-                                USD</strong>:</p>
+                                USD/EUR</strong>:</p>
                         <blockquote>Потраченные средства / (закрытые + активные карты)</blockquote>
                     </div>
                 </div>
@@ -1467,7 +1471,7 @@
                             <li>Напишите в поддержку с номером кошелька (TRC20) и суммой.</li>
                         </ol>
                         <p><em>*Средства выводятся на тот кошелёк, с которого производилось пополнение.</em></p>
-                        <p>Срок вывода — от <strong>2 до 10 рабочих дней</strong>. После отправки поддержка пришлёт хэш
+                        <p>Срок вывода — от <strong>2 до 14 рабочих дней</strong>. После отправки поддержка пришлёт хэш
                             транзакции. При наличии активных деклайнов или штрафов вывод может быть задержан.</p>
                     </div>
                 </div>
@@ -1581,7 +1585,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Перейдите в <span class="seq">Все сотрудники <span class="seq-arrow"></span> Команды</span>
+                        <p>Перейдите в раздел <span class="seq">Все сотрудники <span class="seq-arrow"></span> Команды</span>
                             и нажмите <span class="seq-button">+ Добавить команду</span>. Укажите название, добавьте сотрудников с <a
                                 href="terminology.html#term-roles">ролями</a> и привяжите счета.</p>
                         <div class="important-note">
@@ -1595,10 +1599,13 @@
                                 <path d="M12 17H12.009" stroke="#FFB800" stroke-width="3" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-                            <div>
-                                <strong>Важно:</strong> роль сотрудника активируется только при одновременном выполнении
+                            <div class="important-note__info">
+                                <p><strong>Важно:</strong></p>
+                                <p>Pоль сотрудника активируется только при одновременном выполнении
                                 двух условий — сотрудник добавлен в команду, и счёт делегирован этой команде. Если счёт
                                 делегирован напрямую сотруднику (минуя команду) — роль и её ограничения не применяются.
+                                </p>
+                                <p>Не делегируйте счет одновременно команде в которой состоит сотрудник и сотруднику напрямую. Данные действия могут приводить к ошибкам.</p>
                             </div>
                         </div>
                     </div>
@@ -1625,7 +1632,7 @@
                         <p>Перейдите в <span class="seq">Все сотрудники <span class="seq-arrow"></span>
                                 Сотрудники</span> и нажмите <span class="seq-button">+ Пригласить сотрудника</span>. Введите email,
                             добавьте пары «команда / роль» и нажмите <span class="seq-button">Пригласить</span>. Сотрудник должен
-                            принять приглашение в своём кабинете.</p>
+                            принять приглашение в своём кабинете в разделе уведомлений.</p>
                     </div>
                 </div>
 
@@ -1647,7 +1654,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Да. При приглашении или редактировании можно добавить несколько пар «команда / роль».</p>
+                        <p>Да. Но только в команды одного и того же овнерского кабинета. При приглашении или редактировании можно добавить несколько пар «команда / роль».</p>
                     </div>
                 </div>
 
@@ -1846,7 +1853,7 @@
                     </div>
                     <div class="entry-body">
                         <p>В контекстном меню карты выберите <span class="seq-button">Редактировать карту</span> и назначьте группу.
-                            Группы создаются в <span class="seq">Виртуальные карты <span class="seq-arrow"></span>
+                            Группы создаются в разделе <span class="seq">Виртуальные карты <span class="seq-arrow"></span>
                                 Группы карт</span>.</p>
                     </div>
                 </div>
@@ -1905,8 +1912,8 @@
                         <ol>
                             <li>Перейдите в <span class="seq">Виртуальные карты <span class="seq-arrow"></span>
                                     Операции по картам</span>.</li>
-                            <li>Выставьте нужные фильтры.</li>
                             <li>Нажмите кнопку <span class="seq-button">Сформировать отчёт</span> в правом верхнем углу.</li>
+                            <li>Выставьте нужные фильтры.</li>
                             <li>Готовый отчёт появится в разделе <span class="seq">Уведомления</span> — оттуда его можно
                                 скачать.</li>
                         </ol>
@@ -1923,7 +1930,7 @@
             <!-- Раздел 15. Отчёты по счетам -->
             <div class="theme-section" id="faq-account-reports">
                 <h2 class="theme-title">15. Отчёты по счетам <button class="copy-link-btn"
-                        onclick="copyLink('q-fee-transactions', event)"><svg width="16" height="16" viewBox="0 0 16 16"
+                        onclick="copyLink('faq-account-reports', event)"><svg width="16" height="16" viewBox="0 0 16 16"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1934,6 +1941,22 @@
                             <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg></button></h2>
+
+                <div class="section-intro"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 1C18.0477 1 23 5.95228 23 12C23 18.0477 18.0477 23 12 23C5.95228 23 1 18.0477 1 12C1 5.95228 5.95228 1 12 1Z"
+                            stroke="#748BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12V18" stroke="#748BFF" stroke-width="2.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 7.5H12.009" stroke="#748BFF" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <div>
+                        Раздел <span class="seq">Мои счета <span class="seq-arrow"></span> Операции по счетам</span>.<br>
+                        Отображаются переводы, изменения лимитов, штрафы и системные списания (см. <a href="terminology.html#term-acc-status">статусы операций по счетам</a>).
+                    </div>
+                </div>
 
                 <div class="entry" id="q-account-reports-info">
                     <div class="entry-header">
@@ -1954,10 +1977,227 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>В разделе <span class="seq">Виртуальные карты <span class="seq-arrow"></span> Операции по
-                                картам</span>.</p>
+                        <p>Доступна кнопка <span class="seq-button">Сформировать отчёт</span> для экспорта всех операций.</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Раздел 16. Статистика по дням -->
+            <div class="theme-section" id="faq-daily-stats">
+                <h2 class="theme-title">16. Статистика по дням <button class="copy-link-btn"
+                        onclick="copyLink('faq-daily-stats', event)"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button></h2>
+
+                <div class="section-intro"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 1C18.0477 1 23 5.95228 23 12C23 18.0477 18.0477 23 12 23C5.95228 23 1 18.0477 1 12C1 5.95228 5.95228 1 12 1Z"
+                            stroke="#748BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12V18" stroke="#748BFF" stroke-width="2.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 7.5H12.009" stroke="#748BFF" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <div>
+                        Расходы в разбивке EUR / USD по дням, неделям и месяцам.<br>
+                        <em>*Статистика по дням отображается с учётом GMT+03:00.</em>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-daily-stats-info">
+                    <div class="entry-header">
+                        <h3>Где смотреть статистику?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-daily-stats-info', event)"><svg
+                                width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Перейдите в раздел <span class="seq">Статистика и отчёты <span class="seq-arrow"></span> Статистика трат по картам</span>.</p>
+                        <p><strong>Фильтры:</strong> карты, период, счёт, держатели карт, автор операции (в т.ч. можно выбрать себя), команды, группа.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Раздел 17. Уведомления и 3DS -->
+            <div class="theme-section" id="faq-notifications-3ds">
+                <h2 class="theme-title">17. Уведомления и 3DS <button class="copy-link-btn"
+                        onclick="copyLink('faq-notifications-3ds', event)"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button></h2>
+
+                <div class="entry" id="q-receive-codes">
+                    <div class="entry-header">
+                        <h3>Как получать уведомления и коды?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-receive-codes', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Подключите Telegram-бот в разделе <span class="seq">Мой аккаунт <span class="seq-arrow"></span> Уведомления</span>. После подключения туда будут приходить уведомления об операциях, <a href="terminology.html#term-3ds">3DS SMS и коды авторизации</a>.</p>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-no-sms">
+                    <div class="entry-header">
+                        <h3>Не приходит SMS с кодом. Что делать?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-no-sms', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Напишите в поддержку с ID карты.</p>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-disable-3ds">
+                    <div class="entry-header">
+                        <h3>Можно ли отключить 3DS на картах?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-disable-3ds', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Нет.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Раздел 18. Реферальная программа -->
+            <div class="theme-section" id="faq-referral">
+                <h2 class="theme-title">18. Реферальная программа <button class="copy-link-btn"
+                        onclick="copyLink('faq-referral', event)"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button></h2>
+
+                <div class="entry" id="q-referral-works">
+                    <div class="entry-header">
+                        <h3>Как работает реферальная программа?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-referral-works', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Скопируйте реферальную ссылку в разделе <strong>Реферальная программа</strong> и поделитесь ею. Когда <a href="terminology.html#term-referral">реферал</a> зарегистрируется, начнётся начисление комиссии:</p>
+                        <ul>
+                            <li><strong>Первые 6 месяцев</strong> — 0,25% от пополнений реферала.</li>
+                        </ul>
+                        <p>Начисление происходит 1-го числа каждого месяца.</p>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-referral-withdraw">
+                    <div class="entry-header">
+                        <h3>Как вывести реферальные начисления?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-referral-withdraw', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Условия вывода обсуждаются индивидуально с поддержкой.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Раздел 19. Возвраты (Refund) -->
+            <div class="theme-section" id="faq-refunds">
+                <h2 class="theme-title">19. Возвраты (Refund) <button class="copy-link-btn"
+                        onclick="copyLink('faq-refunds', event)"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                stroke="#748BFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button></h2>
 
                 <div class="entry" id="q-when-refund">
                     <div class="entry-header">
@@ -1977,8 +2217,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Максимальный срок — <strong>до 10 рабочих дней</strong>. Если возврат не пришёл — напишите в
-                            поддержку с ID карты и суммой.</p>
+                        <p>Максимальный срок — <strong>до 10 рабочих дней</strong>. В исключительных случаях срок может быть увеличен — <strong>до 30 рабочих дней</strong>. Если возврат не пришёл по истечении указанных сроков — напишите в поддержку с ID карты и суммой.</p>
                     </div>
                 </div>
 
@@ -2000,8 +2239,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Нет. Если деньги списались, но до кабинета не дошли — после обработки банком придёт возврат.
-                            Для уточнения — напишите в поддержку.</p>
+                        <p>Нет. Если деньги списались, но до кабинета не дошли — после обработки банком придёт возврат. Для уточнения — напишите в поддержку.</p>
                     </div>
                 </div>
 
@@ -2023,8 +2261,7 @@
                             </svg></button>
                     </div>
                     <div class="entry-body">
-                        <p>Возврат зачисляется на счёт, с которого выпущена карта. Чтобы использовать средства — нужно
-                            поднять лимит карты.</p>
+                        <p>Возврат зачисляется на счёт, с которого выпущена карта. Чтобы использовать средства — нужно поднять лимит карты.</p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. Выпуск карт | eCards</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <img src="https://raw.githubusercontent.com/ivan-ska/ecards-premium/refs/heads/main/imgs/0-header/Logo%20main.svg"
+                    alt="eCards Logo">
+            </a>
+
+            <div class="back-search-wrapper">
+
+                <div class="search-wrapper">
+                    <div class="search-input-wrap">
+                        <span class="search-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                        <input id="search-input" class="search-input" type="search" placeholder="Поиск по eCards Вики"
+                            autocomplete="off">
+                        <button id="search-clear" class="search-clear" type="button" aria-label="Очистить поиск">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="search-dropdown" class="search-dropdown"></div>
+                </div>
+            </div>
+
+            <a href="https://ecardsnew.cab/sign-in" target="_blank" class="main-link">Перейти на платформу
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.93311 5.04016C6.13977 2.64016 7.37311 1.66016 10.0731 1.66016H10.1598C13.1398 1.66016 14.3331 2.85349 14.3331 5.83349V10.1802C14.3331 13.1602 13.1398 14.3535 10.1598 14.3535H10.0731C7.39311 14.3535 6.15977 13.3868 5.93977 11.0268"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M1.3335 8H9.92016" stroke="white" stroke-width="1.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M8.43311 5.7666L10.6664 7.99994L8.43311 10.2333" stroke="white" stroke-width="1.2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="page-layout">
+
+        <!-- ЛЕВЫЙ САЙДБАР (навигация по страницам, заполняется JS) -->
+        <nav class="sidebar" id="sidebar-left" aria-label="Разделы базы знаний"></nav>
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <div class="page-content">
+
+            <!-- Раздел 9. Выпуск карт -->
+            <div class="theme-section" id="faq-issue-cards">
+                <h2 class="theme-title">9. Выпуск карт</h2>
+
+                <div class="entry" id="q-how-issue">
+                    <div class="entry-header">
+                        <h3>Как выпустить карты?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-how-issue', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Перейдите в <span class="seq">Виртуальные карты <span class="seq-arrow"></span> Выпустить
+                                карты</span>. Выберите BIN, укажите счёт и количество карт (до 100 за раз). Для <a
+                                href="terminology.html#term-limit-cards">лимитных карт</a> нужно задать стартовый
+                            баланс (лимит). Нажмите <span class="seq-button">Купить</span>. Количество карт не ограничено.</p>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-available-cards">
+                    <div class="entry-header">
+                        <h3>Какие карты доступны?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-available-cards', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Карты в <strong>USD и EUR</strong> с разными BIN. Карты бесплатные, с
+                            поддержкой 3DS. Начальный лимит выпуска — <strong>20 карт</strong>, далее безлимит после 100
+                            успешных транзакций и определения статистики в кабинете.</p>
+                        <p>Типы карт:</p>
+                        <ul>
+                            <li><a href="terminology.html#term-limit-cards">Лимитные карты</a> — у
+                                каждой карты
+                                собственный баланс.</li>
+                            <li><a href="terminology.html#term-shared-cards">Карты с общим балансом</a>
+                                — все карты
+                                списывают средства с единого баланса счёта.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-services-cards">
+                    <div class="entry-header">
+                        <h3>Для каких сервисов можно использовать карты?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-services-cards', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Google Ads, TikTok Ads, Facebook/Meta, домены, хостинги и другие онлайн-сервисы.</p>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-billing-address">
+                    <div class="entry-header">
+                        <h3>Какой billing address указывать для разных BIN?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-billing-address', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <!--
+                        <div class="table-responsive">
+                            <table>
+                                <tr>
+                                    <th>Провайдер</th>
+                                    <th>BIN</th>
+                                    <th>Валюта</th>
+                                    <th>Комиссия</th>
+                                    <th>Billing address</th>
+                                </tr>
+                                <tr>
+                                    <td>Провайдер №1 (Эстония)</td>
+                                    <td>474362, 474345</td>
+                                    <td>EUR</td>
+                                    <td>4,5%</td>
+                                    <td>Любой эстонский адрес</td>
+                                </tr>
+                                <tr>
+                                    <td>Провайдер №1 (Эстония)</td>
+                                    <td>47972601</td>
+                                    <td>USD</td>
+                                    <td>3%</td>
+                                    <td>Любой эстонский адрес</td>
+                                </tr>
+                                <tr>
+                                    <td>Провайдер №2 (Великобритания)</td>
+                                    <td>519769</td>
+                                    <td>EUR</td>
+                                    <td>4,5%</td>
+                                    <td>Любой британский адрес <em>(доступен по запросу)</em></td>
+                                </tr>
+                                <tr>
+                                    <td>Провайдер №3 (Гонконг / США)</td>
+                                    <td>49387519, 537100, 517746, 428852</td>
+                                    <td>USD</td>
+                                    <td>3%</td>
+                                    <td><span class="code-inline">20 Barneson Ave, San Mateo, CA, 94402, US</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Провайдер №4 (США)</td>
+                                    <td>450897, 428842</td>
+                                    <td>USD</td>
+                                    <td>3%</td>
+                                    <td><span class="code-inline">1133 Meadow Ln APT 82, Concord, CA, 94520, US</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> -->
+                        <!--
+                        <p><strong>Примечания:</strong></p>
+                        <ul>
+                            <li>Провайдеры №1 и №2 не требуют подтверждения адреса — можно вводить любой из
+                                соответствующей страны.</li>
+                            <li>Провайдер №4 — настоятельно рекомендуется указывать реальный адрес. Имя и фамилию можно
+                                указать любые.</li>
+                        </ul>-->
+                        <p><strong>В реквизитах карты</strong> указывается billing address карты. Если в реквизитах нет адреса, можете указывать любой. За дополнительной информацией обращайтесь в поддержку.</p>
+                    </div>
+                </div>
+
+                <!--
+                <div class="entry" id="q-card-declined">
+                    <div class="entry-header">
+                        <h3>Карту не принимает рекламная площадка. Что делать?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-card-declined', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <ol>
+                            <li><strong>Проверьте гео BIN и гео рекламного аккаунта</strong> — они должны совпадать. Гео
+                                аккаунта важнее, чем гео прокси.</li>
+                            <li><strong>Проверьте billing address</strong> — для каждого провайдера свой адрес (см.
+                                таблицу выше). Если деклайны не приходят вообще — попробуйте ввести точный реальный
+                                адрес.</li>
+                            <li><strong>Попробуйте другой BIN</strong> — поддержка может подобрать подходящий BIN под
+                                вашу площадку и гео.</li>
+                            <li><strong>Пришлите в поддержку ID карты и скриншот ошибки</strong> — поддержка проверит,
+                                приходят ли деклайны со стороны банка.</li>
+                            <li><strong>Если деклайны не приходят вообще</strong> — значит мерчант не отправляет запрос
+                                в банк. Причина может быть на стороне площадки.</li>
+                        </ol>
+                        <p><em>*Примечания по конкретным площадкам:</em></p>
+                        <ul>
+                            <li><strong>Google Ads</strong> — первоочередное значение имеет гео рекламного аккаунта,
+                                прокси вторично.</li>
+                            <li><strong>ChatGPT</strong> — чувствителен к гео, требует соответствия.</li>
+                            <li><strong>Google Books</strong> — не рекомендуется к оплате, высокий уровень деклайнов.
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="entry" id="q-forbidden">
+                    <div class="entry-header">
+                        <h3>Что запрещено оплачивать?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-forbidden', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Мошеннические действия и первобиллинг. За явные нарушения аккаунт может быть заблокирован со списанием
+                            баланса.</p>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-closing-no-spend">
+                    <div class="entry-header">
+                        <h3>Что будет при закрытии карт без расходов?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-closing-no-spend', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>При закрытии большого количества карт без расходов аккаунт может быть заблокирован.
+                            Рекомендуем следить за тем, чтобы средний спенд по картам составлял <strong>не менее 10
+                                USD/EUR</strong>:</p>
+                        <blockquote>Потраченные средства / (закрытые + активные карты)</blockquote>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-withdraw-funds">
+                    <div class="entry-header">
+                        <h3>Как вывести средства?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-withdraw-funds', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <ol>
+                            <li>Закройте все активные карты.</li>
+                            <li>Переведите средства на базовый счёт.</li>
+                            <li>Напишите в поддержку с номером кошелька (TRC20) и суммой.</li>
+                        </ol>
+                        <p><em>*Средства выводятся на тот кошелёк, с которого производилось пополнение.</em></p>
+                        <p>Срок вывода — от <strong>2 до 14 рабочих дней</strong>. После отправки поддержка пришлёт хэш
+                            транзакции. При наличии активных деклайнов или штрафов вывод может быть задержан.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /page-content -->
+
+        <!-- ПРАВЫЙ САЙДБАР (якоря h3 текущей страницы, заполняется JS) -->
+        <nav class="sidebar-right" id="sidebar-right" data-mode="h3" aria-label="Навигация по вопросам"></nav>
+
+    </div><!-- /page-layout -->
+
+    <div class="support-block">
+        <div class="support-grid">
+            <div class="support-item">
+                <strong>Поддержка</strong>
+                <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @ecards_support</a>
+                <a href="https://t.me/ecards_support" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @tochka_cab_support</a>
+            </div>
+            <div class="support-item">
+                <strong>Частые вопросы</strong>
+                <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @ecards_onboarding_bot</a>
+            </div>
+            <div class="support-item">
+                <strong>Новостной канал</strong>
+                <a href="https://t.me/eCards_cab" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @eCards_cab</a>
+            </div>
+        </div>
+        <div class="support-footer-text-wrapper">
+            <p class="support-footer-text">Если ваш вопрос не нашёл ответа — обращайтесь в поддержку eCards напрямую.
+            </p>
+            <p class="support-footer-text">© eCards 2026
+            </p>
+        </div>
+    </div>
+
+    <!-- Кнопка Наверх -->
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Бургер (мобиле) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <button id="sidebar-burger" class="sidebar-burger" aria-label="Открыть навигацию">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div id="toast" class="toast">Ссылка скопирована!</div>
+
+    <script src="js/search-data.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav-config.js"></script>
+    <script src="js/sidebar-left.js"></script>
+    <script src="js/sidebar-right.js"></script>
+    <script>
+        // Toggle sidebar groups (для совместимости с terminology.html если там ещё старый сайдбар)
+        document.querySelectorAll('.sidebar-group-header').forEach(function (header) {
+            header.addEventListener('click', function () {
+                this.closest('.sidebar-group').classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

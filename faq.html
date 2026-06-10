@@ -20,13 +20,6 @@
             </a>
 
             <div class="back-search-wrapper">
-                <a class="back-btn" href="index.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z"
-                            fill="#748BFF" />
-                    </svg>
-                </a>
 
                 <div class="search-wrapper">
                     <div class="search-input-wrap">
@@ -67,422 +60,8 @@
 
     <div class="page-layout">
 
-        <!-- САЙДБАР -->
-        <nav class="sidebar" aria-label="Навигация по разделам">
-            <ul class="sidebar-nav">
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-security">1. Безопасность</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-2fa" href="#q-2fa">Настроить 2FA</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-change-login" href="#q-change-login">Сменить логин /
-                                почту</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-tg-bot">2. Telegram-бот</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-tg" href="#q-tg">Подключить бота</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-deposit">3. Пополнение баланса</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-how-deposit" href="#q-how-deposit">Как
-                                пополнить?</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-min-deposit" href="#q-min-deposit">Минимальное
-                                пополнение</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-deposit-stuck" href="#q-deposit-stuck">Пополнение
-                                зависло</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-deposit-weekend" href="#q-deposit-weekend">В
-                                нерабочее время</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-fees">4. Комиссия сервиса</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-fee-deposit" href="#q-fee-deposit">Комиссия при
-                                пополнении</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-fee-transactions"
-                                href="#q-fee-transactions">Комиссия за транзакции</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-fee-withdraw" href="#q-fee-withdraw">Комиссия за
-                                вывод</a></li>
-                        <!--<li><a class="sidebar-item-link" data-id="q-fee-custom" href="#q-fee-custom">Индивидуальные
-                                условия</a></li>-->
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-base-acc">5. Базовые счета</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-transfer-acc" href="#q-transfer-acc">Перевод между
-                                счетами</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-limit-acc">6. Лимитные счета</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-fund-limit-acc" href="#q-fund-limit-acc">Пополнить
-                                лимитный счёт</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-refund-limit-card"
-                                href="#q-refund-limit-card">Возврат на лимитную карту</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-unified-acc">7. Единые лимитные счета</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-unified-teamwork"
-                                href="#q-unified-teamwork">Командная работа</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-shared-acc">8. Счета с общим балансом</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-shared-acc-cards" href="#q-shared-acc-cards">Для
-                                каких карт?</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-issue-cards">9. Выпуск карт</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-how-issue" href="#q-how-issue">Как выпустить?</a>
-                        </li>
-                        <li><a class="sidebar-item-link" data-id="q-available-cards" href="#q-available-cards">Какие
-                                карты доступны?</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-services-cards" href="#q-services-cards">Для каких
-                                сервисов?</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-billing-address" href="#q-billing-address">Billing
-                                address по BIN</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-card-declined" href="#q-card-declined">Карту не
-                                принимает площадка</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-forbidden" href="#q-forbidden">Что запрещено?</a>
-                        </li>
-                        <li><a class="sidebar-item-link" data-id="q-closing-no-spend"
-                                href="#q-closing-no-spend">Закрытие без расходов</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-withdraw-funds" href="#q-withdraw-funds">Вывод
-                                средств</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-card-limits">10. Лимиты карт</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-change-limit" href="#q-change-limit">Изменить
-                                лимит</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-one-time-limit" href="#q-one-time-limit">Лимит на
-                                транзакцию</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-teams-roles">11. Команды и роли</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-create-team" href="#q-create-team">Создать
-                                команду</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-invite-employee"
-                                href="#q-invite-employee">Пригласить сотрудника</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-multiple-teams" href="#q-multiple-teams">Несколько
-                                команд</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-edit-team" href="#q-edit-team">Изменить состав</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-delegation">12. Делегирование</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-delegate-new" href="#q-delegate-new">При создании
-                                счёта</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-delegate-existing" href="#q-delegate-existing">Для
-                                существующего счёта</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-transfer-card" href="#q-transfer-card">Перенос
-                                карты</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-card-filters">13. Фильтры карт</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-add-card-group" href="#q-add-card-group">Добавить
-                                карту в группу</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-card-reports">14. Отчёты по картам</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-how-to-card-report"
-                                href="#q-how-to-card-report">Сформировать отчёт</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-account-reports">15. Отчёты по счетам</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-account-reports-info"
-                                href="#q-account-reports-info">Где посмотреть?</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-daily-stats">16. Статистика по дням</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-daily-stats-info" href="#q-daily-stats-info">Где
-                                смотреть статистику?</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-notifications-3ds">17. Уведомления и 3DS</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-receive-codes" href="#q-receive-codes">Как получать
-                                коды?</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-no-sms" href="#q-no-sms">Не приходит SMS</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-disable-3ds" href="#q-disable-3ds">Отключить
-                                3DS?</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-referral">18. Реферальная программа</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-referral-works" href="#q-referral-works">Как
-                                работает?</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-referral-withdraw" href="#q-referral-withdraw">Вывод
-                                начислений</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-group">
-                    <div class="sidebar-group-header">
-                        <span class="sidebar-group-link" data-id="faq-refunds">19. Возвраты (Refund)</span>
-                        <button class="sidebar-toggle-btn" type="button" aria-label="Toggle">
-                            <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.28 5.96667L8.93333 10.3133C8.42 10.8267 7.58 10.8267 7.06667 10.3133L2.72 5.96667"
-                                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="sidebar-items">
-                        <li><a class="sidebar-item-link" data-id="q-when-refund" href="#q-when-refund">Когда придёт
-                                возврат?</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-funds-lost" href="#q-funds-lost">Деньги
-                                потеряны?</a></li>
-                        <li><a class="sidebar-item-link" data-id="q-refund-limit-use" href="#q-refund-limit-use">Возврат
-                                на лимитную карту</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </nav>
+        <!-- ЛЕВЫЙ САЙДБАР (навигация по страницам, заполняется JS) -->
+        <nav class="sidebar" id="sidebar-left" aria-label="Разделы базы знаний"></nav>
 
         <!-- ОСНОВНОЙ КОНТЕНТ -->
         <div class="page-content">
@@ -977,7 +556,7 @@
                 <div class="entry" id="q-transfer-acc">
                     <div class="entry-header">
                         <h3>Как перевести средства между счетами?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-transfer-acc', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1031,7 +610,7 @@
                 <div class="entry" id="q-fund-limit-acc">
                     <div class="entry-header">
                         <h3>Как пополнить лимитный счёт?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-fund-limit-acc', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1054,7 +633,7 @@
                 <div class="entry" id="q-refund-limit-card">
                     <div class="entry-header">
                         <h3>Что происходит с возвратом на лимитную карту?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-refund-limit-card', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1108,7 +687,7 @@
                 <div class="entry" id="q-unified-teamwork">
                     <div class="entry-header">
                         <h3>Как использовать для командной работы?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-unified-teamwork', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1163,7 +742,7 @@
                 <div class="entry" id="q-shared-acc-cards">
                     <div class="entry-header">
                         <h3>Для каких карт доступен?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-shared-acc-cards', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1201,7 +780,7 @@
                 <div class="entry" id="q-how-issue">
                     <div class="entry-header">
                         <h3>Как выпустить карты?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-how-issue', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1360,7 +939,7 @@
                 <div class="entry" id="q-card-declined">
                     <div class="entry-header">
                         <h3>Карту не принимает рекламная площадка. Что делать?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-card-declined', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1402,7 +981,7 @@
                 <div class="entry" id="q-forbidden">
                     <div class="entry-header">
                         <h3>Что запрещено оплачивать?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-forbidden', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1503,12 +1082,13 @@
                     </svg>
                     <div>
                     Карты поддерживают два вида лимитов: <a href="terminology.html#term-constant-limits">постоянные</a>
-                    и <a href="terminology.html#term-cycle-limits">циклические</a>.</div></div>
+                    и <a href="terminology.html#term-cycle-limits">циклические</a>.</div>
+                </div>
 
                 <div class="entry" id="q-change-limit">
                     <div class="entry-header">
                         <h3>Как изменить лимит карты?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-change-limit', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1532,7 +1112,7 @@
                 <div class="entry" id="q-one-time-limit">
                     <div class="entry-header">
                         <h3>Можно ли установить лимит на одну транзакцию?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-one-time-limit', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1570,7 +1150,7 @@
                 <div class="entry" id="q-create-team">
                     <div class="entry-header">
                         <h3>Как создать команду?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-create-team', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1614,7 +1194,7 @@
                 <div class="entry" id="q-invite-employee">
                     <div class="entry-header">
                         <h3>Как пригласить сотрудника?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-invite-employee', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1639,7 +1219,7 @@
                 <div class="entry" id="q-multiple-teams">
                     <div class="entry-header">
                         <h3>Можно ли назначить сотрудника в несколько команд?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-multiple-teams', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -1661,7 +1241,7 @@
                 <div class="entry" id="q-edit-team">
                     <div class="entry-header">
                         <h3>Как изменить состав команды?</h3>
-                        <button class="copy-link-btn" onclick="copyLink('q-fee-transactions', event)"><svg width="16"
+                        <button class="copy-link-btn" onclick="copyLink('q-edit-team', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
@@ -2008,7 +1588,7 @@
                             stroke-linejoin="round" />
                     </svg>
                     <div>
-                        Расходы в разбивке EUR / USD по дням, неделям и месяцам.<br>
+                        Расходы в разбивке EUR / USD по дням, неделям и месяцам.
                         <em>*Статистика по дням отображается с учётом GMT+03:00.</em>
                     </div>
                 </div>
@@ -2033,7 +1613,7 @@
                     </div>
                     <div class="entry-body">
                         <p>Перейдите в раздел <span class="seq">Статистика и отчёты <span class="seq-arrow"></span> Статистика трат по картам</span>.</p>
-                        <p><strong>Фильтры:</strong> карты, период, счёт, держатели карт, автор операции (в т.ч. можно выбрать себя), команды, группа.</p>
+                        <p><strong>Фильтры:</strong> карты, период, счёт, держатель карты, автор операции (в т.ч. можно выбрать себя), команды, группа.</p>
                     </div>
                 </div>
             </div>
@@ -2099,7 +1679,7 @@
 
                 <div class="entry" id="q-disable-3ds">
                     <div class="entry-header">
-                        <h3>Можно ли отключить 3DS на картах?</h3>
+                        <h3>Можно ли отключить 3DS на карты?</h3>
                         <button class="copy-link-btn" onclick="copyLink('q-disable-3ds', event)"><svg width="16"
                                 height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -2266,7 +1846,17 @@
                 </div>
             </div>
 
+            <!-- Кнопка Наверх -->
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
         </div><!-- /page-content -->
+
+        <!-- ПРАВЫЙ САЙДБАР (якоря h3 текущей страницы, заполняется JS) -->
+        <nav class="sidebar-right" id="sidebar-right" data-mode="h3" aria-label="Навигация по вопросам"></nav>
 
     </div><!-- /page-layout -->
 
@@ -2275,37 +1865,37 @@
             <div class="support-item">
                 <strong>Поддержка</strong>
                 <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
-                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                            fill="#636363" />
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
                     </svg>
                     @ecards_support</a>
                 <a href="https://t.me/ecards_support" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                            fill="#636363" />
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
                     </svg>
                     @tochka_cab_support</a>
             </div>
             <div class="support-item">
                 <strong>Частые вопросы</strong>
                 <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
-                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                            fill="#636363" />
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
                     </svg>
                     @ecards_onboarding_bot</a>
             </div>
             <div class="support-item">
                 <strong>Новостной канал</strong>
                 <a href="https://t.me/eCards_cab" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
-                            fill="#636363" />
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
                     </svg>
                     @eCards_cab</a>
             </div>
@@ -2318,13 +1908,6 @@
         </div>
     </div>
 
-    <!-- Кнопка Наверх -->
-    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Наверх">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-    </button>
-
     <!-- Бургер (мобиле) -->
     <div id="sidebar-overlay" class="sidebar-overlay"></div>
     <button id="sidebar-burger" class="sidebar-burger" aria-label="Открыть навигацию">
@@ -2336,30 +1919,16 @@
     <script src="js/search-data.js"></script>
     <script src="js/search.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/nav-config.js"></script>
+    <script src="js/sidebar-left.js"></script>
+    <script src="js/sidebar-right.js"></script>
     <script>
-        // Toggle sidebar groups
+        // Toggle sidebar groups (для совместимости с terminology.html если там ещё старый сайдбар)
         document.querySelectorAll('.sidebar-group-header').forEach(function (header) {
             header.addEventListener('click', function () {
                 this.closest('.sidebar-group').classList.toggle('open');
             });
         });
-
-        // Active sidebar items on scroll
-        const allSidebarLinks = document.querySelectorAll('.sidebar-item-link[data-id], .sidebar-group-link[data-id]');
-        const sections = document.querySelectorAll('[id]');
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    allSidebarLinks.forEach(function (link) {
-                        link.classList.toggle('active', link.getAttribute('data-id') === id);
-                    });
-                }
-            });
-        }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
-
-        sections.forEach(function (section) { observer.observe(section); });
     </script>
 </body>
 

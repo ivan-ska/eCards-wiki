@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Лимитные счета | eCards</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <img src="https://raw.githubusercontent.com/ivan-ska/ecards-premium/refs/heads/main/imgs/0-header/Logo%20main.svg"
+                    alt="eCards Logo">
+            </a>
+
+            <div class="back-search-wrapper">
+
+                <div class="search-wrapper">
+                    <div class="search-input-wrap">
+                        <span class="search-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                        <input id="search-input" class="search-input" type="search" placeholder="Поиск по eCards Вики"
+                            autocomplete="off">
+                        <button id="search-clear" class="search-clear" type="button" aria-label="Очистить поиск">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="search-dropdown" class="search-dropdown"></div>
+                </div>
+            </div>
+
+            <a href="https://ecardsnew.cab/sign-in" target="_blank" class="main-link">Перейти на платформу
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.93311 5.04016C6.13977 2.64016 7.37311 1.66016 10.0731 1.66016H10.1598C13.1398 1.66016 14.3331 2.85349 14.3331 5.83349V10.1802C14.3331 13.1602 13.1398 14.3535 10.1598 14.3535H10.0731C7.39311 14.3535 6.15977 13.3868 5.93977 11.0268"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M1.3335 8H9.92016" stroke="white" stroke-width="1.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M8.43311 5.7666L10.6664 7.99994L8.43311 10.2333" stroke="white" stroke-width="1.2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="page-layout">
+
+        <!-- ЛЕВЫЙ САЙДБАР (навигация по страницам, заполняется JS) -->
+        <nav class="sidebar" id="sidebar-left" aria-label="Разделы базы знаний"></nav>
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <div class="page-content">
+
+            <!-- Раздел 6. Лимитные счета -->
+            <div class="theme-section" id="faq-limit-acc">
+                <h2 class="theme-title">6. Лимитные счета</h2>
+                <div class="section-intro"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 1C18.0477 1 23 5.95228 23 12C23 18.0477 18.0477 23 12 23C5.95228 23 1 18.0477 1 12C1 5.95228 5.95228 1 12 1Z"
+                            stroke="#748BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12V18" stroke="#748BFF" stroke-width="2.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 7.5H12.009" stroke="#748BFF" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <div>
+                    <a href="terminology.html#term-limit-acc">Лимитный счёт</a> — счёт, на
+                    котором ыпускаются лимитные карты. С такого счета нужно пополнять каждую карту отдельно (они имеют свой собственный баланс), путем увеличения лимита на этой карте. Можно делегировать команде для работы.</div>
+                </div>
+
+                <div class="entry" id="q-fund-limit-acc">
+                    <div class="entry-header">
+                        <h3>Как пополнить лимитный счёт?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-fund-limit-acc', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Переведите средства с базового счёта на лимитный, затем пополните нужные карты через
+                            увеличение их лимита.</p>
+                    </div>
+                </div>
+
+                <div class="entry" id="q-refund-limit-card">
+                    <div class="entry-header">
+                        <h3>Что происходит с возвратом на лимитную карту?</h3>
+                        <button class="copy-link-btn" onclick="copyLink('q-refund-limit-card', event)"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99365 11.6668H11.0003C13.0137 11.6668 14.667 10.0202 14.667 8.00016C14.667 5.98683 13.0203 4.3335 11.0003 4.3335H9.99365"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.00016 4.3335H5.00016C2.98016 4.3335 1.3335 5.98016 1.3335 8.00016C1.3335 10.0135 2.98016 11.6668 5.00016 11.6668H6.00016"
+                                    stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.3335 8H10.6668" stroke="#748BFF" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="entry-body">
+                        <p>Возврат зачисляется на счёт, с которого выпущена карта. Чтобы снова использовать средства,
+                            нужно снова поднять лимит карты (пополнить).</p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /page-content -->
+
+        <!-- ПРАВЫЙ САЙДБАР (якоря h3 текущей страницы, заполняется JS) -->
+        <nav class="sidebar-right" id="sidebar-right" data-mode="h3" aria-label="Навигация по вопросам"></nav>
+
+    </div><!-- /page-layout -->
+
+    <div class="support-block">
+        <div class="support-grid">
+            <div class="support-item">
+                <strong>Поддержка</strong>
+                <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @ecards_support</a>
+                <a href="https://t.me/ecards_support" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @tochka_cab_support</a>
+            </div>
+            <div class="support-item">
+                <strong>Частые вопросы</strong>
+                <a href="https://t.me/ecards_onboarding_bot" target="_blank"><svg width="16" height="16"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @ecards_onboarding_bot</a>
+            </div>
+            <div class="support-item">
+                <strong>Новостной канал</strong>
+                <a href="https://t.me/eCards_cab" target="_blank"><svg width="16" height="16" viewBox="0 0 16 16"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.82494 7.23543C6.04616 5.68307 8.19414 4.65967 9.26889 4.16521C12.3375 2.75343 12.9751 2.50818 13.3907 2.50009C13.4822 2.49831 13.6865 2.52336 13.8189 2.64219C13.9307 2.74252 13.9615 2.87805 13.9762 2.97318C13.9909 3.06831 14.0092 3.285 13.9947 3.45433C13.8284 5.38695 13.1088 10.0769 12.7428 12.2415C12.5879 13.1574 12.2829 13.4645 11.9876 13.4945C11.346 13.5599 10.8587 13.0255 10.2372 12.5749C9.26468 11.8697 8.71527 11.4308 7.77127 10.7427C6.68032 9.94746 7.38754 9.5104 8.00927 8.79612C8.17198 8.60919 10.9992 5.76471 11.054 5.50668C11.0608 5.4744 11.0671 5.35411 11.0025 5.29059C10.9379 5.22707 10.8426 5.24879 10.7738 5.26606C10.6762 5.29055 9.1226 6.4264 6.11292 8.6736C5.67193 9.00854 5.2725 9.17174 4.91462 9.16319C4.52009 9.15376 3.76117 8.91644 3.19699 8.71359C2.505 8.46478 1.95502 8.33324 2.00291 7.91069C2.02785 7.6906 2.30186 7.46551 2.82494 7.23543Z"
+                        fill="#636363" />
+                    </svg>
+                    @eCards_cab</a>
+            </div>
+        </div>
+        <div class="support-footer-text-wrapper">
+            <p class="support-footer-text">Если ваш вопрос не нашёл ответа — обращайтесь в поддержку eCards напрямую.
+            </p>
+            <p class="support-footer-text">© eCards 2026
+            </p>
+        </div>
+    </div>
+
+    <!-- Кнопка Наверх -->
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Бургер (мобиле) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <button id="sidebar-burger" class="sidebar-burger" aria-label="Открыть навигацию">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div id="toast" class="toast">Ссылка скопирована!</div>
+
+    <script src="js/search-data.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav-config.js"></script>
+    <script src="js/sidebar-left.js"></script>
+    <script src="js/sidebar-right.js"></script>
+    <script>
+        // Toggle sidebar groups (для совместимости с terminology.html если там ещё старый сайдбар)
+        document.querySelectorAll('.sidebar-group-header').forEach(function (header) {
+            header.addEventListener('click', function () {
+                this.closest('.sidebar-group').classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

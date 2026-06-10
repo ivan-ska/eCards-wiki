@@ -11,14 +11,14 @@ const SEARCH_INDEX = [
 
     // 1. Безопасность
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '01-security', pageLabel: 'Безопасность', pageUrl: '01-security.html',
         sectionId: 'faq-security', sectionTitle: '1. Безопасность',
         id: 'q-2fa',
         title: 'Как настроить двухфакторную аутентификацию?',
         keywords: '2fa двухфакторная аутентификация google authenticator qr код безопасность пароль вход потеряли доступ телефон сломался'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '01-security', pageLabel: 'Безопасность', pageUrl: '01-security.html',
         sectionId: 'faq-security', sectionTitle: '1. Безопасность',
         id: 'q-change-login',
         title: 'Как сменить логин или почту?',
@@ -27,7 +27,7 @@ const SEARCH_INDEX = [
 
     // 2. Telegram-бот
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '02-tg-bot', pageLabel: 'Telegram-бот', pageUrl: '02-tg-bot.html',
         sectionId: 'faq-tg-bot', sectionTitle: '2. Подключение Telegram-бота',
         id: 'q-tg',
         title: 'Как подключить Telegram-бот для уведомлений?',
@@ -36,28 +36,28 @@ const SEARCH_INDEX = [
 
     // 3. Пополнение баланса
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '03-deposit', pageLabel: 'Пополнение баланса', pageUrl: '03-deposit.html',
         sectionId: 'faq-deposit', sectionTitle: '3. Пополнение баланса',
         id: 'q-how-deposit',
         title: 'Как пополнить баланс?',
         keywords: 'пополнить баланс инвойс хэш транзакция usdt trc20 erc20 wire sepa зачисление реквизиты перевод'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '03-deposit', pageLabel: 'Пополнение баланса', pageUrl: '03-deposit.html',
         sectionId: 'faq-deposit', sectionTitle: '3. Пополнение баланса',
         id: 'q-min-deposit',
         title: 'Какое минимальное пополнение?',
         keywords: 'минимальное пополнение минимум 500 100 usd первое пополнение'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '03-deposit', pageLabel: 'Пополнение баланса', pageUrl: '03-deposit.html',
         sectionId: 'faq-deposit', sectionTitle: '3. Пополнение баланса',
         id: 'q-deposit-stuck',
         title: 'Пополнение зависло / не зачисляется. Что делать?',
         keywords: 'пополнение зависло не зачисляется задержка проблема поддержка хэш инвойс'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '03-deposit', pageLabel: 'Пополнение баланса', pageUrl: '03-deposit.html',
         sectionId: 'faq-deposit', sectionTitle: '3. Пополнение баланса',
         id: 'q-deposit-weekend',
         title: 'Можно ли пополнить в нерабочее время?',
@@ -66,28 +66,28 @@ const SEARCH_INDEX = [
 
     // 4. Комиссия
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '04-fees', pageLabel: 'Комиссия', pageUrl: '04-fees.html',
         sectionId: 'faq-fees', sectionTitle: '4. Комиссия сервиса',
         id: 'q-fee-deposit',
         title: 'Какая комиссия при пополнении?',
         keywords: 'комиссия пополнение 3% 4.5% usdt wire sepa eur usd базовый счет перевод'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '04-fees', pageLabel: 'Комиссия', pageUrl: '04-fees.html',
         sectionId: 'faq-fees', sectionTitle: '4. Комиссия сервиса',
         id: 'q-fee-transactions',
         title: 'Есть ли комиссия за транзакции?',
         keywords: 'комиссия транзакция платеж успешная отклоненная декалайн штраф decline rate процент'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '04-fees', pageLabel: 'Комиссия', pageUrl: '04-fees.html',
         sectionId: 'faq-fees', sectionTitle: '4. Комиссия сервиса',
         id: 'q-fee-withdraw',
         title: 'Есть ли комиссия за вывод?',
         keywords: 'комиссия вывод средства без комиссии рабочие дни срок'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '04-fees', pageLabel: 'Комиссия', pageUrl: '04-fees.html',
         sectionId: 'faq-fees', sectionTitle: '4. Комиссия сервиса',
         id: 'q-fee-custom',
         title: 'Можно ли договориться об индивидуальных условиях?',
@@ -96,7 +96,7 @@ const SEARCH_INDEX = [
 
     // 5. Базовые счета
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '05-base-acc', pageLabel: 'Базовые счета', pageUrl: '05-base-acc.html',
         sectionId: 'faq-base-acc', sectionTitle: '5. Базовые счета',
         id: 'q-transfer-acc',
         title: 'Как перевести средства между счетами?',
@@ -105,14 +105,14 @@ const SEARCH_INDEX = [
 
     // 6. Лимитные счета
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '06-limit-acc', pageLabel: 'Лимитные счета', pageUrl: '06-limit-acc.html',
         sectionId: 'faq-limit-acc', sectionTitle: '6. Лимитные счета',
         id: 'q-fund-limit-acc',
         title: 'Как пополнить лимитный счёт?',
         keywords: 'пополнить лимитный счет лимит карта базовый перевод'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '06-limit-acc', pageLabel: 'Лимитные счета', pageUrl: '06-limit-acc.html',
         sectionId: 'faq-limit-acc', sectionTitle: '6. Лимитные счета',
         id: 'q-refund-limit-card',
         title: 'Что происходит с возвратом на лимитную карту?',
@@ -121,7 +121,7 @@ const SEARCH_INDEX = [
 
     // 7. Единые лимитные счета
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '07-unified-acc', pageLabel: 'Единые лимитные счета', pageUrl: '07-unified-acc.html',
         sectionId: 'faq-unified-acc', sectionTitle: '7. Единые лимитные счета',
         id: 'q-unified-teamwork',
         title: 'Как использовать единый лимитный счёт для командной работы?',
@@ -130,7 +130,7 @@ const SEARCH_INDEX = [
 
     // 8. Счета с общим балансом
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '08-shared-acc', pageLabel: 'Счета с общим балансом', pageUrl: '08-shared-acc.html',
         sectionId: 'faq-shared-acc', sectionTitle: '8. Счета с общим балансом',
         id: 'q-shared-acc-cards',
         title: 'Для каких карт доступен счёт с общим балансом?',
@@ -139,56 +139,56 @@ const SEARCH_INDEX = [
 
     // 9. Выпуск карт
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-how-issue',
         title: 'Как выпустить карты?',
         keywords: 'выпустить карту виртуальные карты bin счет количество 100 стартовый баланс купить'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-available-cards',
         title: 'Какие карты доступны?',
         keywords: 'какие карты доступны usd eur bin сша эстония гонконг 3ds бесплатные лимит 20 100 транзакций'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-services-cards',
         title: 'Для каких сервисов можно использовать карты?',
         keywords: 'google ads tiktok facebook meta домены хостинг apple pay реклама площадки'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-billing-address',
         title: 'Какой billing address указывать для разных BIN?',
         keywords: 'billing address адрес bin провайдер эстония великобритания гонконг сша san mateo concord ca'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-card-declined',
         title: 'Карту не принимает рекламная площадка. Что делать?',
         keywords: 'карту не принимает декалайн declined площадка google ads chatgpt гео аккаунт прокси billing address bin проблема ошибка'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-forbidden',
         title: 'Что запрещено оплачивать?',
         keywords: 'запрещено мошенничество first billing блокировка нарушение'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-closing-no-spend',
         title: 'Что будет при закрытии карт без расходов?',
         keywords: 'закрытие карт без расходов спенд блокировка минимум 10 usd'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '09-issue-cards', pageLabel: 'Выпуск карт', pageUrl: '09-issue-cards.html',
         sectionId: 'faq-issue-cards', sectionTitle: '9. Выпуск карт',
         id: 'q-withdraw-funds',
         title: 'Как вывести средства?',
@@ -197,14 +197,14 @@ const SEARCH_INDEX = [
 
     // 10. Лимиты карт
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '10-card-limits', pageLabel: 'Лимиты карт', pageUrl: '10-card-limits.html',
         sectionId: 'faq-card-limits', sectionTitle: '10. Лимиты карт',
         id: 'q-change-limit',
         title: 'Как изменить лимит карты?',
         keywords: 'изменить лимит карта +50 +100 +200 +500 пополнить сумма'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '10-card-limits', pageLabel: 'Лимиты карт', pageUrl: '10-card-limits.html',
         sectionId: 'faq-card-limits', sectionTitle: '10. Лимиты карт',
         id: 'q-one-time-limit',
         title: 'Можно ли установить лимит на одну транзакцию?',
@@ -213,28 +213,28 @@ const SEARCH_INDEX = [
 
     // 11. Команды и роли
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '11-teams-roles', pageLabel: 'Команды и роли', pageUrl: '11-teams-roles.html',
         sectionId: 'faq-teams-roles', sectionTitle: '11. Команды и роли',
         id: 'q-create-team',
         title: 'Как создать команду?',
         keywords: 'создать команду сотрудники роли добавить счет делегирование important'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '11-teams-roles', pageLabel: 'Команды и роли', pageUrl: '11-teams-roles.html',
         sectionId: 'faq-teams-roles', sectionTitle: '11. Команды и роли',
         id: 'q-invite-employee',
         title: 'Как пригласить сотрудника?',
         keywords: 'пригласить сотрудника email роль команда приглашение принять кабинет'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '11-teams-roles', pageLabel: 'Команды и роли', pageUrl: '11-teams-roles.html',
         sectionId: 'faq-teams-roles', sectionTitle: '11. Команды и роли',
         id: 'q-multiple-teams',
         title: 'Можно ли назначить сотрудника в несколько команд?',
         keywords: 'несколько команд сотрудник несколько ролей назначить'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '11-teams-roles', pageLabel: 'Команды и роли', pageUrl: '11-teams-roles.html',
         sectionId: 'faq-teams-roles', sectionTitle: '11. Команды и роли',
         id: 'q-edit-team',
         title: 'Как изменить состав команды?',
@@ -243,21 +243,21 @@ const SEARCH_INDEX = [
 
     // 12. Делегирование
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '12-delegation', pageLabel: 'Делегирование', pageUrl: '12-delegation.html',
         sectionId: 'faq-delegation', sectionTitle: '12. Делегирование',
         id: 'q-delegate-new',
         title: 'Как делегировать счёт при его создании?',
         keywords: 'делегировать счет создание новый сотрудник команда доступ'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '12-delegation', pageLabel: 'Делегирование', pageUrl: '12-delegation.html',
         sectionId: 'faq-delegation', sectionTitle: '12. Делегирование',
         id: 'q-delegate-existing',
         title: 'Как делегировать уже открытый счёт?',
         keywords: 'делегировать открытый счет три точки меню действий сотрудник команда'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '12-delegation', pageLabel: 'Делегирование', pageUrl: '12-delegation.html',
         sectionId: 'faq-delegation', sectionTitle: '12. Делегирование',
         id: 'q-transfer-card',
         title: 'Можно ли перенести карту между счетами?',
@@ -266,7 +266,7 @@ const SEARCH_INDEX = [
 
     // 13. Фильтры карт
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '13-card-filters', pageLabel: 'Фильтры карт', pageUrl: '13-card-filters.html',
         sectionId: 'faq-card-filters', sectionTitle: '13. Виртуальные карты — фильтры и отображение',
         id: 'q-add-card-group',
         title: 'Как добавить карту в группу?',
@@ -275,7 +275,7 @@ const SEARCH_INDEX = [
 
     // 14. Отчёты по картам
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '14-card-reports', pageLabel: 'Отчёты по картам', pageUrl: '14-card-reports.html',
         sectionId: 'faq-card-reports', sectionTitle: '14. Отчёты по картам',
         id: 'q-how-to-card-report',
         title: 'Как сформировать отчёт по картам?',
@@ -284,7 +284,7 @@ const SEARCH_INDEX = [
 
     // 15. Отчёты по счетам
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '15-account-reports', pageLabel: 'Отчёты по счетам', pageUrl: '15-account-reports.html',
         sectionId: 'faq-account-reports', sectionTitle: '15. Отчёты по счетам',
         id: 'q-account-reports-info',
         title: 'Где посмотреть и скачать отчёт по счетам?',
@@ -293,7 +293,7 @@ const SEARCH_INDEX = [
 
     // 16. Статистика по дням
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '16-daily-stats', pageLabel: 'Статистика по дням', pageUrl: '16-daily-stats.html',
         sectionId: 'faq-daily-stats', sectionTitle: '16. Статистика по дням',
         id: 'q-daily-stats-info',
         title: 'Где посмотреть статистику трат по дням?',
@@ -302,21 +302,21 @@ const SEARCH_INDEX = [
 
     // 17. Уведомления, 3DS
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '17-notifications-3ds', pageLabel: 'Уведомления и 3DS', pageUrl: '17-notifications-3ds.html',
         sectionId: 'faq-notifications-3ds', sectionTitle: '17. Уведомления, 3DS и коды',
         id: 'q-receive-codes',
         title: 'Как получать уведомления и коды авторизации?',
         keywords: 'уведомления коды авторизации telegram 3ds смс подключить'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '17-notifications-3ds', pageLabel: 'Уведомления и 3DS', pageUrl: '17-notifications-3ds.html',
         sectionId: 'faq-notifications-3ds', sectionTitle: '17. Уведомления, 3DS и коды',
         id: 'q-no-sms',
         title: 'Не приходит SMS с кодом. Что делать?',
         keywords: 'не приходит смс код 3ds проблема поддержка id карты'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '17-notifications-3ds', pageLabel: 'Уведомления и 3DS', pageUrl: '17-notifications-3ds.html',
         sectionId: 'faq-notifications-3ds', sectionTitle: '17. Уведомления, 3DS и коды',
         id: 'q-disable-3ds',
         title: 'Можно ли отключить 3DS на картах?',
@@ -325,14 +325,14 @@ const SEARCH_INDEX = [
 
     // 18. Реферальная программа
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '18-referral', pageLabel: 'Реферальная программа', pageUrl: '18-referral.html',
         sectionId: 'faq-referral', sectionTitle: '18. Реферальная программа',
         id: 'q-referral-works',
         title: 'Как работает реферальная программа?',
         keywords: 'реферальная программа реферал ссылка 0.25% 0.1% комиссия 6 месяцев 10000 пополнения reversal refund задержка 14 дней'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '18-referral', pageLabel: 'Реферальная программа', pageUrl: '18-referral.html',
         sectionId: 'faq-referral', sectionTitle: '18. Реферальная программа',
         id: 'q-referral-withdraw',
         title: 'Как вывести реферальные начисления?',
@@ -341,21 +341,21 @@ const SEARCH_INDEX = [
 
     // 19. Возврат средств
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '19-refunds', pageLabel: 'Возвраты', pageUrl: '19-refunds.html',
         sectionId: 'faq-refunds', sectionTitle: '19. Возврат средств (Refund)',
         id: 'q-when-refund',
         title: 'Когда придёт возврат на карту?',
         keywords: 'возврат карта refund срок 10 рабочих дней поддержка'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '19-refunds', pageLabel: 'Возвраты', pageUrl: '19-refunds.html',
         sectionId: 'faq-refunds', sectionTitle: '19. Возврат средств (Refund)',
         id: 'q-funds-lost',
         title: 'Средства списались, но в рекламный кабинет не попали. Деньги потеряны?',
         keywords: 'списались не попали рекламный кабинет потеряны деньги возврат банк'
     },
     {
-        page: 'faq', pageLabel: 'FAQ', pageUrl: 'faq.html',
+        page: '19-refunds', pageLabel: 'Возвраты', pageUrl: '19-refunds.html',
         sectionId: 'faq-refunds', sectionTitle: '19. Возврат средств (Refund)',
         id: 'q-refund-limit-use',
         title: 'Возврат пришёл на лимитную карту. Как использовать эти средства?',

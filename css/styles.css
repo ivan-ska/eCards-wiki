@@ -1218,7 +1218,7 @@ header {
     flex-direction: column;
     flex: 1;
     min-width: 0;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
 /* ======== ENTRY ======== */
@@ -1371,6 +1371,85 @@ header {
 .sidebar-overlay.open {
     display: block;
 }
+
+
+/* ======== НАВИГАЦИЯ МЕЖДУ СТРАНИЦАМИ ======== */
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--light-grey);
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    transition: color 0.2s;
+    max-width: 48%; /* Чтобы кнопки не столкнулись лбами при очень длинном тексте */
+}
+
+.page-nav-link:hover {
+    color: var(--violet);
+    text-decoration: none;
+}
+
+.page-nav-prev {
+    margin-right: auto; /* Всегда держим слева */
+    text-align: left;
+}
+
+.page-nav-next {
+    margin-left: auto; /* Всегда держим справа */
+    text-align: right; /* Текст внутри выровнен по левому краю */
+    justify-content: flex-end; /* Контент прижат к правому краю самой кнопки */
+}
+
+/* Иконки кнопок через маску для удобной смены цвета */
+.page-nav-prev::before,
+.page-nav-next::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: var(--light-grey);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transition: background-color 0.2s;
+}
+
+.page-nav-link:hover::before,
+.page-nav-link:hover::after {
+    background-color: var(--violet);
+}
+
+/* SVG: Левая стрелка */
+.page-nav-prev::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z'/%3E%3C/svg%3E");
+}
+
+/* SVG: Правая стрелка */
+.page-nav-next::after {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.91058 4.41058C7.23602 4.08514 7.76366 4.08514 8.08909 4.41058L13.0891 9.41058C13.4145 9.73602 13.4145 10.2637 13.0891 10.5891L8.08909 15.5891C7.76366 15.9145 7.23602 15.9145 6.91058 15.5891C6.58514 15.2637 6.58514 14.736 6.91058 14.4106L11.3213 9.99984L6.91058 5.58909C6.58514 5.26366 6.58514 4.73602 6.91058 4.41058Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.91058 4.41058C7.23602 4.08514 7.76366 4.08514 8.08909 4.41058L13.0891 9.41058C13.4145 9.73602 13.4145 10.2637 13.0891 10.5891L8.08909 15.5891C7.76366 15.9145 7.23602 15.9145 6.91058 15.5891C6.58514 15.2637 6.58514 14.736 6.91058 14.4106L11.3213 9.99984L6.91058 5.58909C6.58514 5.26366 6.58514 4.73602 6.91058 4.41058Z'/%3E%3C/svg%3E");
+}
+
+
+
 
 /* ======== АДАПТИВНОСТЬ ======== */
 
@@ -1532,5 +1611,12 @@ header {
 
     .terminology-d {
         display: none;
+    }
+
+    .page-navigation {
+        gap: 20px;
+    }
+    .page-nav-link {
+        font-size: 14px; /* На мобилках сделаем шрифт чуть компактнее */
     }
 }

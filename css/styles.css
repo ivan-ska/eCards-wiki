@@ -222,6 +222,33 @@ blockquote {
     flex-shrink: 0;
 }
 
+/* Кликабельный заголовок тултипа */
+.term-tooltip-title-link {
+    color: var(--violet);
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.term-tooltip-title-link:hover {
+    text-decoration: underline;
+}
+
+/* Ссылка "Читать полностью" при обрезке длинного текста */
+.term-read-more {
+    display: inline-block;
+    color: var(--violet);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+    align-self: flex-start; /* Чтобы подчеркивалась только сама ссылка, а не вся строка */
+}
+
+.term-read-more:hover {
+    text-decoration: underline;
+}
+
 .term-tooltip-body {
     font-size: 14px;
     color: var(--dark);
@@ -1226,7 +1253,7 @@ header {
     Display: flex;
     flex-direction: column;
     gap: 12px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 100px;
 }
 
 .entry-header {
@@ -1255,7 +1282,7 @@ header {
 .theme-section {
     display: flex;
     flex-direction: column;
-    scroll-margin-top: 90px;
+    scroll-margin-top: 100px;
     gap: 40px;
     margin-bottom: 40px;
 }
@@ -1449,6 +1476,35 @@ header {
 }
 
 
+/* ======== ПОДСВЕТКА ЯКОРЯ ======== */
+.target-highlighted {
+    position: relative;
+    z-index: 0; /* Создает новый контекст наложения, чтобы фон не ушел под body */
+}
+
+.target-highlighted::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -10px;
+    right: -10px;
+    /* rgba(116, 139, 255) — это ваш цвет --violet (#748BFF) в RGB */
+    background-color: rgba(116, 139, 255, 0.1); 
+    border-radius: 16px;
+    z-index: -1; /* Прячем под сам текст блока */
+    pointer-events: none; /* Чтобы фон не перекрывал кликабельные ссылки внутри */
+    opacity: 0;
+    animation: highlight-fade 1.5s ease-out forwards;
+}
+
+@keyframes highlight-fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 
 
 /* ======== АДАПТИВНОСТЬ ======== */
@@ -1545,7 +1601,7 @@ header {
 
     .page-layout {
         display: block;
-        padding: 0 16px;
+        padding: 0 20px;
         margin: 24px auto;
     }
 
@@ -1585,7 +1641,8 @@ header {
         z-index: 400;
         transform: translateX(-100%);
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 60px 16px 24px;
+        padding: 40px 16px 80px 24px;
+        border-radius: 0px;
         overflow-y: auto;
     }
 

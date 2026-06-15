@@ -202,6 +202,30 @@ if (scrollTopBtn) {
 // fallback если closeSidebar вызван до инита бургера
 if (typeof window.closeSidebar === 'undefined') window.closeSidebar = function() {};
 
+// ======== ТИПОГРАФ: ИСПРАВЛЕНИЕ ВИСЯЧИХ ПРЕДЛОГОВ ========
+window.runTypograph = function(rootNode) {
+    function traverse(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            let text = node.nodeValue;
+            let prevText = "";
+            while (text !== prevText) {
+                prevText = text;
+                text = text.replace(/(^|[\s\xA0(«"'\-—])([А-Яа-яЁёA-Za-z0-9]{1,2}|без|для|под|над|при|про|или|как|что|это|где|кто|там|тут)\s+/gi, '$1$2\u00A0');
+            }
+            node.nodeValue = text;
+        } 
+        else if (node.nodeType === Node.ELEMENT_NODE) {
+            const tag = node.tagName.toLowerCase();
+            if (['script', 'style', 'pre', 'code', 'svg'].includes(tag)) return;
+            node.childNodes.forEach(child => traverse(child));
+        }
+    }
+    traverse(rootNode);
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    window.runTypograph(document.body);
+});
 
 // ======== УМНЫЕ ТУЛТИПЫ ДЛЯ ТЕРМИНОВ ========
 document.addEventListener('DOMContentLoaded', () => {
@@ -341,6 +365,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${readMoreLink}
                     </div>
                 `;
+
+                // ЗАПУСКАЕМ ТИПОГРАФ ДЛЯ ПОПАПА
+                if (typeof window.runTypograph === 'function') {
+                    window.runTypograph(tooltip);
+                }
 
                 const closeBtn = tooltip.querySelector('.term-tooltip-close');
                 closeBtn.addEventListener('click', () => {

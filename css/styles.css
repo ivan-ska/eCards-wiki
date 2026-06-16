@@ -134,6 +134,18 @@ p:last-child {
     -webkit-box-decoration-break: slice;
 }
 
+.seq-button-test {
+    display: inline; /* Включаем текстовый перенос */
+    font-weight: 500;
+    background-color: var(--surface-20);
+    color: var(--violet);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.95em;
+    box-decoration-break: slice;
+    -webkit-box-decoration-break: slice;
+}
+
 /* Выравнивание для обычных SVG-иконок внутри бейджей */
 .seq svg,
 .seq-button svg {

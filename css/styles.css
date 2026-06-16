@@ -108,6 +108,19 @@ p:last-child {
     -webkit-box-decoration-break: slice;
 }
 
+.seq-test {
+    display: inline; /* Включаем текстовый перенос вместо блочного */
+    font-weight: 500;
+    background: #FFFFFF;
+    color: var(--violet);
+    padding: 2px 8px;
+    border-radius: 100px;
+    border: 1px solid var(--border-color);
+    font-size: 0.95em;
+    box-decoration-break: slice; /* Тот самый эффект "среза ножницами" */
+    -webkit-box-decoration-break: slice;
+}
+
 .seq-arrow {
     display: inline-block;
     width: 16px;

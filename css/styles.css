@@ -112,7 +112,7 @@ p:last-child {
     display: inline; /* Включаем текстовый перенос вместо блочного */
     font-weight: 500;
     background: #FFFFFF;
-    color: var(--violet);
+    color: var(--violetw);
     padding: 2px 8px;
     border-radius: 100px;
     border: 1px solid var(--border-color);

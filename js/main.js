@@ -393,3 +393,65 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// ======== МОДАЛКА ДЛЯ ПРОСМОТРА КАРТИНОК ========
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Создаем элементы модалки один раз и добавляем в body
+    const modal = document.createElement('div');
+    modal.className = 'image-modal';
+    modal.innerHTML = `
+        <button class="image-modal-close" aria-label="Закрыть">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <img class="image-modal-content" src="" alt="Enlarged image">
+    `;
+    document.body.appendChild(modal);
+
+    const modalImg = modal.querySelector('.image-modal-content');
+    const closeBtn = modal.querySelector('.image-modal-close');
+
+    // 2. Функция закрытия
+    const closeModal = () => {
+        modal.classList.remove('open');
+        document.body.style.overflow = ''; // Возвращаем скролл страницы
+        
+        // Очищаем источник картинки после окончания анимации
+        setTimeout(() => { modalImg.src = ''; }, 300); 
+    };
+
+    // 3. Открытие по клику на любую контентную картинку
+    // Ищем картинки в основном тексте, в блоке img-row и на главном экране (hero)
+    const images = document.querySelectorAll('.page-content img, .img-row img, .hero img');
+    
+    images.forEach(img => {
+        // Игнорируем иконки и мелкие svg
+        if (img.tagName.toLowerCase() === 'svg' || img.classList.contains('hero-icon-desktop') || img.classList.contains('hero-icon-mobile')) return;
+
+        img.addEventListener('click', () => {
+            modalImg.src = img.src;
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden'; // Убираем скролл страницы
+        });
+    });
+
+    // 4. Закрытие по крестику
+    closeBtn.addEventListener('click', closeModal);
+
+    // 5. Закрытие по клику вне картинки (в полупрозрачный фон)
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // 6. Закрытие по клавише Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('open')) {
+            closeModal();
+        }
+    });
+});

@@ -97,19 +97,22 @@ p:last-child {
 }
 
 .seq {
-    display: inline; /* Включаем текстовый перенос вместо блочного */
+    display: inline;
+    /* Включаем текстовый перенос вместо блочного */
     font-weight: 500;
     background: #FFFFFF;
     padding: 2px 8px;
     border-radius: 100px;
     border: 1px solid var(--border-color);
     font-size: 0.95em;
-    box-decoration-break: slice; /* Тот самый эффект "среза ножницами" */
+    box-decoration-break: slice;
+    /* Тот самый эффект "среза ножницами" */
     -webkit-box-decoration-break: slice;
 }
 
 .seq-test {
-    display: inline; /* Включаем текстовый перенос вместо блочного */
+    display: inline;
+    /* Включаем текстовый перенос вместо блочного */
     font-weight: 500;
     background: #FFFFFF;
     color: var(--violetw);
@@ -117,7 +120,8 @@ p:last-child {
     border-radius: 100px;
     border: 1px solid var(--border-color);
     font-size: 0.95em;
-    box-decoration-break: slice; /* Тот самый эффект "среза ножницами" */
+    box-decoration-break: slice;
+    /* Тот самый эффект "среза ножницами" */
     -webkit-box-decoration-break: slice;
 }
 
@@ -129,14 +133,17 @@ p:last-child {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    vertical-align: middle; /* Ставит иконку ровно по центру текста */
-    margin: 0 4px; /* Заменяет удаленный gap: 4px */
+    vertical-align: middle;
+    /* Ставит иконку ровно по центру текста */
+    margin: 0 4px;
+    /* Заменяет удаленный gap: 4px */
     position: relative;
     top: -1px;
 }
 
 .seq-button {
-    display: inline; /* Включаем текстовый перенос */
+    display: inline;
+    /* Включаем текстовый перенос */
     font-weight: 500;
     background-color: var(--surface-20);
     color: var(--dark);
@@ -148,7 +155,8 @@ p:last-child {
 }
 
 .seq-button-test {
-    display: inline; /* Включаем текстовый перенос */
+    display: inline;
+    /* Включаем текстовый перенос */
     font-weight: 500;
     background-color: var(--surface-20);
     color: var(--violet);
@@ -267,7 +275,8 @@ blockquote {
     text-decoration: none;
     font-size: 14px;
     transition: 0.2s;
-    align-self: flex-start; /* Чтобы подчеркивалась только сама ссылка, а не вся строка */
+    align-self: flex-start;
+    /* Чтобы подчеркивалась только сама ссылка, а не вся строка */
 }
 
 .term-read-more:hover {
@@ -402,6 +411,8 @@ header {
 .logo img {
     height: 32px;
     display: block;
+    border-radius: 0px;
+    border: none;
 }
 
 .main-link {
@@ -559,13 +570,14 @@ header {
     font-size: 11px;
     color: var(--dark-grey);
     /* Убираем display: flex, чтобы текст внутри переносился естественно */
-    display: block; 
+    display: block;
     line-height: 1.5;
     margin-bottom: 2px;
 }
 
 .search-result-breadcrumb .badge {
-    display: inline; /* Делаем бейджик строчным элементом */
+    display: inline;
+    /* Делаем бейджик строчным элементом */
     font-size: 10px;
     font-weight: 500;
     padding: 2px 6px;
@@ -575,21 +587,25 @@ header {
     /* Эффект среза ножницами при переносе */
     box-decoration-break: slice;
     -webkit-box-decoration-break: slice;
-    margin-right: 4px; /* Заменяет gap из flexbox */
+    margin-right: 4px;
+    /* Заменяет gap из flexbox */
 }
 
 .search-result-title {
     font-size: 14px;
     font-weight: 500;
     color: var(--dark);
-    line-height: 1.4; /* Добавляем межстрочный интервал для длинных заголовков */
+    line-height: 1.4;
+    /* Добавляем межстрочный интервал для длинных заголовков */
 }
 
 .search-result-title mark {
-    display: inline; /* Тоже делаем строчным */
+    display: inline;
+    /* Тоже делаем строчным */
     background: var(--surface-20);
     color: var(--violet);
-    border-radius: 4px; /* Чуть смягчим углы у подсветки */
+    border-radius: 4px;
+    /* Чуть смягчим углы у подсветки */
     padding: 2px 4px;
     font-weight: 500;
     /* Тот же эффект среза для длинных подсвеченных совпадений */
@@ -656,7 +672,7 @@ header {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-   padding-right: 20px;
+    padding-right: 20px;
 }
 
 .most-searched {
@@ -669,7 +685,8 @@ header {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* По умолчанию 2 колонки (для больших цветных карточек) */
+    grid-template-columns: 1fr 1fr;
+    /* По умолчанию 2 колонки (для больших цветных карточек) */
     gap: 10px;
     margin-bottom: 120px;
 }
@@ -677,7 +694,8 @@ header {
 /* А вот для карточек внутри "Чаще всего ищут" делаем 4 колонки */
 .most-searched .cards-grid {
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 0; /* Отступ вниз задается родителем */
+    margin-bottom: 0;
+    /* Отступ вниз задается родителем */
 }
 
 
@@ -706,8 +724,8 @@ header {
 .nav-card-small:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow);
-        text-decoration: none;
-        color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-card-small svg {
@@ -768,7 +786,7 @@ header {
     line-height: 1.4;
 }
 
-.img-base {
+img {
     width: 100%;
     height: auto;
     display: block;
@@ -776,29 +794,26 @@ header {
     border: 1px solid var(--border-color);
 }
 
-.img-hero {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-    border: 1px solid var(--border-color);
-}
 
 /* ======== УМНАЯ СЕТКА КАРТИНОК ======== */
 .img-row {
     display: flex;
-    flex-wrap: wrap; /* Позволяет картинкам переноситься на новые строки */
-    gap: 20px;
-    align-items: flex-start; /* Выравнивание разной высоты строго по верхнему краю */
-    justify-content: center; /* Центрирует одиночную узкую картинку */
+    flex-wrap: wrap;
+    /* Позволяет картинкам переноситься на новые строки */
+    gap: 12px;
+    align-items: flex-start;
+    /* Выравнивание разной высоты строго по верхнему краю */
+    justify-content: center;
+    /* Центрирует одиночную узкую картинку */
     width: 100%;
-    margin: 16px 0;
+    margin: 12px 0;
 }
 
 /* Обычная (широкая) картинка внутри ряда */
 .img-row img {
     /* flex: 1 (растет), 1 (сжимается), базовая ширина 300px (чтобы не плющились) */
-    flex: 1 1 300px; 
+    flex: 1 1 300px;
+    min-width: 0;
     max-width: 100%;
     height: auto;
     border-radius: 20px;
@@ -809,8 +824,83 @@ header {
 /* Узкая картинка */
 .img-row img.img-narrow {
     /* Запрещаем расти, разрешаем сжиматься, базовая ширина строго 33% */
-    flex: 0 1 calc(33.333% - 14px); 
+    flex: 0 1 calc(33.333% - 14px);
     max-width: 33.333%;
+}
+
+/* ======== ИЗОБРАЖЕНИЯ И ПРОСМОТР (МОДАЛКА) ======== */
+
+/* Защита картинок от деформации (сплющивания) + курсор-лупа */
+.page-content img,
+.hero img,
+.img-row img {
+    height: auto !important;
+    cursor: zoom-in;
+    /* Курсор при наведении */
+}
+
+/* Фон модалки */
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Открытое состояние */
+.image-modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Сама картинка внутри модалки */
+.image-modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+    transform: scale(0.95);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    object-fit: contain;
+}
+
+.image-modal.open .image-modal-content {
+    transform: scale(1);
+}
+
+/* Кнопка-крестик */
+.image-modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    background: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--violet);
+    transition: 0.2s;
+    z-index: 10000;
+}
+
+.image-modal-close:hover {
+    background: var(--light-violet);
 }
 
 
@@ -1095,7 +1185,7 @@ header {
     transition: all 0.3s;
     z-index: 1000;
     box-shadow: var(--shadow);
-    
+
     /* Добавляем Flexbox для выстраивания иконки и текста в ряд */
     display: flex;
     align-items: center;
@@ -1112,16 +1202,18 @@ header {
     content: '';
     display: block;
     flex-shrink: 0;
-    width: 24px;  /* 20px иконка + по 2px отступ с каждой стороны */
+    width: 24px;
+    /* 20px иконка + по 2px отступ с каждой стороны */
     height: 24px;
     background-color: #B3EDDD;
     border-radius: 100px;
-    
+
     /* Вшитая SVG галочка */
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5834 6C15.25 5.66667 14.75 5.66667 14.4167 6L8.16669 12.25L5.58335 9.66667C5.25002 9.33333 4.75002 9.33333 4.41669 9.66667C4.08335 10 4.08335 10.5 4.41669 10.8333L7.58335 14C7.75002 14.1667 7.91669 14.25 8.16669 14.25C8.41669 14.25 8.58335 14.1667 8.75002 14L15.5834 7.16667C15.9167 6.83333 15.9167 6.33333 15.5834 6Z' fill='%2300C48C'/%3E%3C/svg%3E");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 20px 20px; /* Размер самой галочки внутри кружка */
+    background-size: 20px 20px;
+    /* Размер самой галочки внутри кружка */
 }
 
 /* ======== LAYOUT С ДВУМЯ САЙДБАРАМИ ======== */
@@ -1154,9 +1246,18 @@ header {
     scrollbar-color: var(--border-color) transparent;
 }
 
-.sidebar::-webkit-scrollbar { width: 4px; }
-.sidebar::-webkit-scrollbar-track { background: transparent; }
-.sidebar::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
 
 .sidebar-left-nav {
     list-style: none;
@@ -1167,7 +1268,8 @@ header {
 }
 
 .sidebar-left-link {
-    display: flex; /* ИЗМЕНЕНО с block на flex */
+    display: flex;
+    /* ИЗМЕНЕНО с block на flex */
     align-items: flex-start;
     padding: 10px 12px;
     font-size: 14px;
@@ -1182,11 +1284,13 @@ header {
 /* ДОБАВЛЯЕМ НОВЫЕ ПРАВИЛА: */
 .sidebar-left-link .nav-num {
     flex-shrink: 0;
-    min-width: 24px; /* Фиксированная ширина, чтобы текст во всех пунктах (и в 1. и в 19.) начинался на одной линии */
+    min-width: 24px;
+    /* Фиксированная ширина, чтобы текст во всех пунктах (и в 1. и в 19.) начинался на одной линии */
 }
 
 .sidebar-left-link .nav-text {
-    flex: 1; /* Разрешаем тексту занимать остаток ширины и переноситься */
+    flex: 1;
+    /* Разрешаем тексту занимать остаток ширины и переноситься */
 }
 
 .sidebar-left-link:hover {
@@ -1214,9 +1318,18 @@ header {
     padding: 8px 0px;
 }
 
-.sidebar-right::-webkit-scrollbar { width: 4px; }
-.sidebar-right::-webkit-scrollbar-track { background: transparent; }
-.sidebar-right::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+.sidebar-right::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar-right::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-right::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
 
 .sidebar-right-nav {
     list-style: none;
@@ -1279,21 +1392,115 @@ header {
 }
 
 /* Убираем старые стили sidebar-group, sidebar-group-header и т.д. только если они не используются */
-.sidebar-nav { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-.sidebar-group { display: flex; flex-direction: column; gap: 2px; }
-.sidebar-group-header { display: flex; align-items: center; cursor: pointer; border-radius: 16px; transition: background 0.2s; }
-.sidebar-group-header:hover, .sidebar-group.open > .sidebar-group-header { background: var(--light-violet); }
-.sidebar-group-header:hover .sidebar-group-link, .sidebar-group-header:hover .sidebar-toggle-btn,
-.sidebar-group.open > .sidebar-group-header .sidebar-group-link, .sidebar-group.open > .sidebar-group-header .sidebar-toggle-btn { color: var(--violet); }
-.sidebar-group-link { flex: 1; display: block; padding: 12px 0px 12px 12px; font-size: 14px; font-weight: 500; line-height: 1.2; color: var(--dark-grey); cursor: pointer; transition: color 0.2s; text-decoration: none; border-left: 2px solid transparent; border-radius: 8px 0 0 8px; user-select: none; }
-.sidebar-group-link.active { color: var(--violet); }
-.sidebar-toggle-btn { background: none; border: none; cursor: pointer; padding: 12px 12px; color: var(--dark-grey); transition: color 0.2s; display: flex; align-items: center; flex-shrink: 0; border-radius: 0 8px 8px 0; }
-.sidebar-chevron { display: block; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-.sidebar-group.open .sidebar-chevron { transform: rotate(180deg); }
-.sidebar-items { list-style: none; margin: 0; margin-top: 4px; padding: 0 0 0 12px; max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
-.sidebar-group.open .sidebar-items { max-height: 800px; }
-.sidebar-item-link { display: block; padding: 8px 12px; font-size: 12px; font-weight: 500; line-height: 1.2; color: var(--dark-grey); border-radius: 16px; cursor: pointer; transition: color 0.2s; text-decoration: none; }
-.sidebar-item-link:hover, .sidebar-item-link.active { color: var(--violet); text-decoration: none; }
+.sidebar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sidebar-group-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background 0.2s;
+}
+
+.sidebar-group-header:hover,
+.sidebar-group.open>.sidebar-group-header {
+    background: var(--light-violet);
+}
+
+.sidebar-group-header:hover .sidebar-group-link,
+.sidebar-group-header:hover .sidebar-toggle-btn,
+.sidebar-group.open>.sidebar-group-header .sidebar-group-link,
+.sidebar-group.open>.sidebar-group-header .sidebar-toggle-btn {
+    color: var(--violet);
+}
+
+.sidebar-group-link {
+    flex: 1;
+    display: block;
+    padding: 12px 0px 12px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--dark-grey);
+    cursor: pointer;
+    transition: color 0.2s;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    border-radius: 8px 0 0 8px;
+    user-select: none;
+}
+
+.sidebar-group-link.active {
+    color: var(--violet);
+}
+
+.sidebar-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px 12px;
+    color: var(--dark-grey);
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.sidebar-chevron {
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-group.open .sidebar-chevron {
+    transform: rotate(180deg);
+}
+
+.sidebar-items {
+    list-style: none;
+    margin: 0;
+    margin-top: 4px;
+    padding: 0 0 0 12px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-group.open .sidebar-items {
+    max-height: 800px;
+}
+
+.sidebar-item-link {
+    display: block;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--dark-grey);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.sidebar-item-link:hover,
+.sidebar-item-link.active {
+    color: var(--violet);
+    text-decoration: none;
+}
 
 /* ОСНОВНОЙ КОНТЕНТ РЯДОМ С САЙДБАРОМ */
 .page-content {
@@ -1477,7 +1684,8 @@ header {
     line-height: 1.2;
     font-weight: 500;
     transition: color 0.2s;
-    max-width: 48%; /* Чтобы кнопки не столкнулись лбами при очень длинном тексте */
+    max-width: 48%;
+    /* Чтобы кнопки не столкнулись лбами при очень длинном тексте */
 }
 
 .page-nav-link:hover {
@@ -1486,14 +1694,18 @@ header {
 }
 
 .page-nav-prev {
-    margin-right: auto; /* Всегда держим слева */
+    margin-right: auto;
+    /* Всегда держим слева */
     text-align: left;
 }
 
 .page-nav-next {
-    margin-left: auto; /* Всегда держим справа */
-    text-align: right; /* Текст внутри выровнен по левому краю */
-    justify-content: flex-end; /* Контент прижат к правому краю самой кнопки */
+    margin-left: auto;
+    /* Всегда держим справа */
+    text-align: right;
+    /* Текст внутри выровнен по левому краю */
+    justify-content: flex-end;
+    /* Контент прижат к правому краю самой кнопки */
 }
 
 /* Иконки кнопок через маску для удобной смены цвета */
@@ -1535,7 +1747,8 @@ header {
 /* ======== ПОДСВЕТКА ЯКОРЯ ======== */
 .target-highlighted {
     position: relative;
-    z-index: 0; /* Создает новый контекст наложения, чтобы фон не ушел под body */
+    z-index: 0;
+    /* Создает новый контекст наложения, чтобы фон не ушел под body */
 }
 
 .target-highlighted::before {
@@ -1546,19 +1759,32 @@ header {
     left: -10px;
     right: -10px;
     /* rgba(116, 139, 255) — это ваш цвет --violet (#748BFF) в RGB */
-    background-color: rgba(116, 139, 255, 0.1); 
+    background-color: rgba(116, 139, 255, 0.1);
     border-radius: 16px;
-    z-index: -1; /* Прячем под сам текст блока */
-    pointer-events: none; /* Чтобы фон не перекрывал кликабельные ссылки внутри */
+    z-index: -1;
+    /* Прячем под сам текст блока */
+    pointer-events: none;
+    /* Чтобы фон не перекрывал кликабельные ссылки внутри */
     opacity: 0;
     animation: highlight-fade 1.5s ease-out forwards;
 }
 
 @keyframes highlight-fade {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    70% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 
@@ -1571,18 +1797,18 @@ header {
     .most-searched .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
 }
 
 @media (max-width: 1100px) {
     .sidebar-right {
         display: none;
     }
-    
+
     .sidebar-right {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 768px) {
@@ -1598,23 +1824,47 @@ header {
 
     /* Мобильный вид для умной сетки картинок */
     .img-row {
-        flex-direction: column; /* Выстраиваем в один столбец */
-        align-items: center; /* Центрируем узкие */
+        flex-direction: column;
+        /* Выстраиваем в один столбец */
+        align-items: center;
+        /* Центрируем узкие */
     }
 
     .img-row img {
-        width: 100%; /* Обычные занимают всю ширину экрана */
+        width: 100%;
+        /* Обычные занимают всю ширину экрана */
         max-width: 100%;
+        flex-basis: auto;
     }
 
     .img-row img.img-narrow {
-        max-width: 70%; /* Узкая картинка на мобиле всё равно остается компактной по центру */
+        max-width: 70%;
+        /* Узкая картинка на мобиле всё равно остается компактной по центру */
+    }
+
+    img {
+        border-radius: 16px;
+    }
+
+    .image-modal-close {
+        top: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .image-modal {
+        padding: 16px;
+    }
+
+    .image-modal-content {
+        border-radius: 16px;
     }
 
 
     .hero {
-    flex-direction: column;
-}
+        flex-direction: column;
+    }
 
     .hero h2 {
         font-size: 32px;
@@ -1743,7 +1993,9 @@ header {
     .page-navigation {
         gap: 20px;
     }
+
     .page-nav-link {
-        font-size: 14px; /* На мобилках сделаем шрифт чуть компактнее */
+        font-size: 14px;
+        /* На мобилках сделаем шрифт чуть компактнее */
     }
 }

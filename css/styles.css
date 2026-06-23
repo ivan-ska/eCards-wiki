@@ -784,6 +784,36 @@ header {
     border: 1px solid var(--border-color);
 }
 
+/* ======== УМНАЯ СЕТКА КАРТИНОК ======== */
+.img-row {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет картинкам переноситься на новые строки */
+    gap: 20px;
+    align-items: flex-start; /* Выравнивание разной высоты строго по верхнему краю */
+    justify-content: center; /* Центрирует одиночную узкую картинку */
+    width: 100%;
+    margin: 16px 0;
+}
+
+/* Обычная (широкая) картинка внутри ряда */
+.img-row img {
+    /* flex: 1 (растет), 1 (сжимается), базовая ширина 300px (чтобы не плющились) */
+    flex: 1 1 300px; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+
+/* Узкая картинка */
+.img-row img.img-narrow {
+    /* Запрещаем расти, разрешаем сжиматься, базовая ширина строго 33% */
+    flex: 0 1 calc(33.333% - 14px); 
+    max-width: 33.333%;
+}
+
+
 /* ИНФО БЛОК: КОНТАКТЫ И ПОДДЕРЖКА */
 .support-wrap {
     max-width: 1200px;
@@ -1566,7 +1596,21 @@ header {
         grid-template-columns: 1fr;
     }
 
-    /* h1-m стиль */
+    /* Мобильный вид для умной сетки картинок */
+    .img-row {
+        flex-direction: column; /* Выстраиваем в один столбец */
+        align-items: center; /* Центрируем узкие */
+    }
+
+    .img-row img {
+        width: 100%; /* Обычные занимают всю ширину экрана */
+        max-width: 100%;
+    }
+
+    .img-row img.img-narrow {
+        max-width: 70%; /* Узкая картинка на мобиле всё равно остается компактной по центру */
+    }
+
 
     .hero {
     flex-direction: column;

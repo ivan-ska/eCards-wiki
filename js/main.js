@@ -419,8 +419,11 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.remove('open');
         document.body.style.overflow = ''; // Возвращаем скролл страницы
         
-        // Очищаем источник картинки после окончания анимации
-        setTimeout(() => { modalImg.src = ''; }, 300); 
+        // Очищаем источник картинки и спец. классы после окончания анимации
+        setTimeout(() => { 
+            modalImg.src = ''; 
+            modal.classList.remove('is-narrow'); 
+        }, 300); 
     };
 
     // 3. Открытие по клику на любую контентную картинку
@@ -433,6 +436,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         img.addEventListener('click', () => {
             modalImg.src = img.src;
+            
+            // Проверяем, узкая ли картинка, и добавляем модалке спец. класс
+            if (img.classList.contains('img-narrow')) {
+                modal.classList.add('is-narrow');
+            } else {
+                modal.classList.remove('is-narrow');
+            }
+            
             modal.classList.add('open');
             document.body.style.overflow = 'hidden'; // Убираем скролл страницы
         });

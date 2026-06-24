@@ -828,6 +828,14 @@ img {
     max-width: 33.333%;
 }
 
+/* Если в блоке ровно две картинки, и обе узкие — они делят место 50/50 */
+.img-row img.img-narrow:first-child:nth-last-child(2),
+.img-row img.img-narrow:first-child:nth-last-child(2) ~ img.img-narrow {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+
 /* ======== ИЗОБРАЖЕНИЯ И ПРОСМОТР (МОДАЛКА) ======== */
 
 /* Защита картинок от деформации (сплющивания) + курсор-лупа */
@@ -868,16 +876,29 @@ img {
 
 /* Сама картинка внутри модалки */
 .image-modal-content {
-    max-width: 90%;
-    max-height: 90%;
+    /* Меняем % на vw/vh (единицы ширины/высоты экрана), чтобы опираться на размер окна */
+    max-width: 90vw;
+    max-height: 90vh;
+    
+    /* Жестко заставляем коробку тега <img> облегать саму картинку */
+    width: auto !important;
+    height: auto !important;
+    
     border-radius: 20px;
     transform: scale(0.95);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    object-fit: contain;
+    
+    /* Убрали object-fit: contain, так как при width: auto и height: auto он больше не нужен */
 }
 
 .image-modal.open .image-modal-content {
     transform: scale(1);
+}
+
+/* Если модалка открыта в режиме "узкой картинки" */
+.image-modal.is-narrow .image-modal-content {
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
 /* Кнопка-крестик */
@@ -1837,10 +1858,14 @@ img {
         flex-basis: auto;
     }
 
-    .img-row img.img-narrow {
+    /* Принудительно сбрасываем ширину на мобилках для любых узких картинок */
+    .img-row img.img-narrow,
+    .img-row img.img-narrow:first-child:nth-last-child(2),
+    .img-row img.img-narrow:first-child:nth-last-child(2) ~ img.img-narrow {
         max-width: 70%;
-        /* Узкая картинка на мобиле всё равно остается компактной по центру */
+        width: 100%;
     }
+    
 
     img {
         border-radius: 16px;

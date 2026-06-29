@@ -7,7 +7,6 @@
     ul.className = 'sidebar-right-nav';
 
     if (mode === 'h2') {
-        // Ищем все h2 внутри основного контента
         const allH2s = document.querySelectorAll('.page-content h2, .container h2');
         
         if (!allH2s.length) {
@@ -18,14 +17,12 @@
         let addedCount = 0;
 
         allH2s.forEach(function (h2) {
-            // Берем сам h2 (если у него есть id), либо ближайшего родителя с id
             const section = h2.closest('[id]');
             if (!section || section === document.body || section === document.documentElement) return;
 
             const title = h2.textContent.trim();
             if (!title) return;
 
-            // Защита от дублей: если ссылка на этот ID уже есть в сайдбаре, пропускаем
             if (ul.querySelector(`a[data-id="${section.id}"]`)) return;
 
             const li = document.createElement('li');
@@ -46,7 +43,6 @@
         }
 
     } else {
-        // Логика для страниц вроде 01-security (где ищем h3 внутри entry)
         const entries = document.querySelectorAll('.entry[id]');
         
         if (!entries.length) {
@@ -100,7 +96,6 @@
         }
     });
 
-    // Подсветка активного пункта при скролле
     const allLinks = container.querySelectorAll('[data-id]');
     const targets = [];
     allLinks.forEach(link => {

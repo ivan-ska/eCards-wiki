@@ -22,7 +22,6 @@ function copyLink(id, event) {
 window.highlightAnchor = function(id) {
     if (!id) return;
     
-    // Убираем подсветку с предыдущих элементов
     document.querySelectorAll('.target-highlighted').forEach(el => {
         el.classList.remove('target-highlighted');
     });
@@ -30,13 +29,11 @@ window.highlightAnchor = function(id) {
     const target = document.getElementById(id);
     if (!target) return;
 
-    // "Сбрасываем" класс, чтобы анимация сработала при повторном клике по тому же якорю
     target.classList.remove('target-highlighted');
-    void target.offsetWidth; // Хак для перезапуска CSS-анимации
+    void target.offsetWidth;
     
     target.classList.add('target-highlighted');
     
-    // Удаляем класс после завершения анимации (через 2 сек)
     setTimeout(() => {
         target.classList.remove('target-highlighted');
     }, 2000);
@@ -50,14 +47,12 @@ function handleHashOnLoad() {
         const target = document.getElementById(hash);
         if (!target) return;
         
-        // Плавный скролл до элемента с учетом высоты шапки
         const headerH = (document.querySelector('header') || { offsetHeight: 80 }).offsetHeight + 40;
         const top = target.getBoundingClientRect().top + window.scrollY - headerH;
         window.scrollTo({ top: top, behavior: 'smooth' });
         
-        // Включаем красивую подсветку
         window.highlightAnchor(hash);
-    }, 150); // Небольшая задержка, чтобы страница успела отрисоваться
+    }, 150);
 }
 
 window.addEventListener('load', handleHashOnLoad);
@@ -68,7 +63,6 @@ window.addEventListener('hashchange', handleHashOnLoad);
     const sidebar = document.querySelector('.sidebar');
     if (!sidebar) return;
 
-    // Собираем все секции и entries, у которых есть id
     const sections = Array.from(document.querySelectorAll('.theme-section[id]'));
     const entries  = Array.from(document.querySelectorAll('.entry[id]'));
     const allAnchors = [...sections, ...entries];
@@ -95,11 +89,9 @@ window.addEventListener('hashchange', handleHashOnLoad);
             const scrollY = window.scrollY;
             const headerH = (document.querySelector('header') || {offsetHeight: 80}).offsetHeight + 16;
 
-            // Сброс всех активных
             groupLinks.forEach(l => l.classList.remove('active'));
             itemLinks.forEach(l => l.classList.remove('active'));
 
-            // Найдём текущий entry
             let currentEntry = null;
             for (let i = entries.length - 1; i >= 0; i--) {
                 if (entries[i].getBoundingClientRect().top - headerH <= 8) {
@@ -108,7 +100,6 @@ window.addEventListener('hashchange', handleHashOnLoad);
                 }
             }
 
-            // Найдём текущую секцию
             let currentSection = null;
             for (let i = sections.length - 1; i >= 0; i--) {
                 if (sections[i].getBoundingClientRect().top - headerH <= 8) {
@@ -120,7 +111,6 @@ window.addEventListener('hashchange', handleHashOnLoad);
             if (currentEntry) {
                 const entryLink = itemLinks.find(l => l.dataset.id === currentEntry.id);
                 if (entryLink) entryLink.classList.add('active');
-                // Подсветим родительскую группу
                 const parentSection = currentEntry.closest('.theme-section');
                 if (parentSection) {
                     const gl = groupLinks.find(l => l.dataset.id === parentSection.id);
@@ -138,7 +128,6 @@ window.addEventListener('hashchange', handleHashOnLoad);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    // Клик по ссылке сайдбара
     sidebar.addEventListener('click', function(e) {
         const link = e.target.closest('[data-id]');
         if (!link) return;
@@ -151,16 +140,13 @@ window.addEventListener('hashchange', handleHashOnLoad);
             window.scrollTo({ top, behavior: 'smooth' });
             history.pushState(null, null, '#' + id);
         }
-        // На мобиле — закрыть сайдбар
         closeSidebar();
     });
 })();
 
-// Кнопка Наверх
 const scrollTopBtn = document.getElementById('scroll-top-btn');
 if (scrollTopBtn) {
     window.addEventListener('scroll', () => {
-        // Показываем кнопку, если проскроллили больше 300px
         if (window.scrollY > 300) {
             scrollTopBtn.classList.add('visible');
         } else {
@@ -199,7 +185,6 @@ if (scrollTopBtn) {
     if (overlay) overlay.addEventListener('click', closeSidebar);
 })();
 
-// fallback если closeSidebar вызван до инита бургера
 if (typeof window.closeSidebar === 'undefined') window.closeSidebar = function() {};
 
 // ======== ТИПОГРАФ: ИСПРАВЛЕНИЕ ВИСЯЧИХ ПРЕДЛОГОВ ========
@@ -257,7 +242,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return fetchPromise;
     }
 
-    // Умная функция обрезки HTML-текста по количеству слов (не ломает теги)
     function truncateHTMLByWords(htmlStr, maxWords) {
         const div = document.createElement('div');
         div.innerHTML = htmlStr;
@@ -266,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function traverse(node) {
             if (truncated) {
-                node.remove(); // Удаляем все узлы, которые идут после обрезки
+                node.remove();
                 return;
             }
             if (node.nodeType === Node.TEXT_NODE) {
@@ -305,13 +289,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = targetHref.split('#')[1];
             if (!targetId) return;
 
-            // ЗАКРЫТИЕ ПО ПОВТОРНОМУ КЛИКУ НА ТУ ЖЕ ССЫЛКУ
             if (tooltip.classList.contains('visible') && tooltip.dataset.activeId === targetId) {
                 tooltip.classList.remove('visible');
                 tooltip.dataset.activeId = '';
                 return;
             }
-            // Запоминаем, какая ссылка сейчас активна
             tooltip.dataset.activeId = targetId;
 
             const rect = link.getBoundingClientRect();
@@ -339,12 +321,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const titleText = titleObj ? titleObj.textContent : 'Термин';
                 let bodyHTML = bodyObj ? bodyObj.innerHTML : '';
 
-                // ОБРЕЗКА ТЕКСТА (Здесь настраивается лимит слов: сейчас 30)
                 const MAX_WORDS = 30;
                 const truncatedResult = truncateHTMLByWords(bodyHTML, MAX_WORDS);
                 bodyHTML = truncatedResult.html;
 
-                // Добавляем ссылку "Читать полностью", если текст обрезался
                 let readMoreLink = '';
                 if (truncatedResult.isTruncated) {
                     readMoreLink = `<a href="${targetHref}" target="_blank" class="term-read-more">Читать полностью</a>`;
@@ -366,7 +346,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
 
-                // ЗАПУСКАЕМ ТИПОГРАФ ДЛЯ ПОПАПА
                 if (typeof window.runTypograph === 'function') {
                     window.runTypograph(tooltip);
                 }
@@ -389,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (!isClickInsideTooltip && !isClickOnTermLink) {
             tooltip.classList.remove('visible');
-            tooltip.dataset.activeId = ''; // Сбрасываем ID при клике в "молоко"
+            tooltip.dataset.activeId = '';
         }
     });
 });
@@ -397,7 +376,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ======== МОДАЛКА ДЛЯ ПРОСМОТРА КАРТИНОК ========
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Создаем элементы модалки один раз и добавляем в body
     const modal = document.createElement('div');
     modal.className = 'image-modal';
     modal.innerHTML = `
@@ -414,30 +392,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalImg = modal.querySelector('.image-modal-content');
     const closeBtn = modal.querySelector('.image-modal-close');
 
-    // 2. Функция закрытия
     const closeModal = () => {
         modal.classList.remove('open');
-        document.body.style.overflow = ''; // Возвращаем скролл страницы
+        document.body.style.overflow = ''
         
-        // Очищаем источник картинки и спец. классы после окончания анимации
         setTimeout(() => { 
             modalImg.src = ''; 
             modal.classList.remove('is-narrow'); 
         }, 300); 
     };
 
-    // 3. Открытие по клику на любую контентную картинку
-    // Ищем картинки в основном тексте, в блоке img-row и на главном экране (hero)
+
     const images = document.querySelectorAll('.page-content img, .img-row img, .hero img');
     
     images.forEach(img => {
-        // Игнорируем иконки и мелкие svg
         if (img.tagName.toLowerCase() === 'svg' || img.classList.contains('hero-icon-desktop') || img.classList.contains('hero-icon-mobile')) return;
 
         img.addEventListener('click', () => {
             modalImg.src = img.src;
             
-            // Проверяем, узкая ли картинка, и добавляем модалке спец. класс
             if (img.classList.contains('img-narrow')) {
                 modal.classList.add('is-narrow');
             } else {
@@ -445,21 +418,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             modal.classList.add('open');
-            document.body.style.overflow = 'hidden'; // Убираем скролл страницы
+            document.body.style.overflow = 'hidden';
         });
     });
 
-    // 4. Закрытие по крестику
     closeBtn.addEventListener('click', closeModal);
 
-    // 5. Закрытие по клику вне картинки (в полупрозрачный фон)
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             closeModal();
         }
     });
 
-    // 6. Закрытие по клавише Escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('open')) {
             closeModal();

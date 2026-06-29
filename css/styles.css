@@ -1,4 +1,3 @@
-/* ПОДКЛЮЧЕНИЕ ФИРМЕННЫХ ШРИФТОВ STEM */
 @font-face {
     font-family: 'Stem';
     src: url('https://raw.githubusercontent.com/ivan-ska/ecards-premium/main/fonts/stem_regular.woff2') format('woff2');
@@ -13,7 +12,6 @@
     font-style: normal;
 }
 
-/* CSS ПЕРЕМЕННЫЕ */
 :root {
     --bg-color: #FAFAFF;
     --white: #FFFFFF;
@@ -33,7 +31,6 @@
     --shadow: 0 10px 30px rgba(30, 30, 30, 0.1);
 }
 
-/* БАЗОВЫЕ СТИЛИ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -87,7 +84,6 @@ p:last-child {
     margin-bottom: 0;
 }
 
-/* ОФОРМЛЕНИЕ ТЕКСТА */
 .highlight {
     background-color: var(--surface-20);
     color: var(--violet);
@@ -98,7 +94,6 @@ p:last-child {
 
 .seq {
     display: inline;
-    /* Включаем текстовый перенос вместо блочного */
     font-weight: 500;
     background: #FFFFFF;
     padding: 2px 8px;
@@ -106,13 +101,11 @@ p:last-child {
     border: 1px solid var(--border-color);
     font-size: 0.95em;
     box-decoration-break: slice;
-    /* Тот самый эффект "среза ножницами" */
     -webkit-box-decoration-break: slice;
 }
 
 .seq-test {
     display: inline;
-    /* Включаем текстовый перенос вместо блочного */
     font-weight: 500;
     background: #FFFFFF;
     color: var(--violetw);
@@ -121,7 +114,6 @@ p:last-child {
     border: 1px solid var(--border-color);
     font-size: 0.95em;
     box-decoration-break: slice;
-    /* Тот самый эффект "среза ножницами" */
     -webkit-box-decoration-break: slice;
 }
 
@@ -134,16 +126,13 @@ p:last-child {
     background-position: center;
     background-size: contain;
     vertical-align: middle;
-    /* Ставит иконку ровно по центру текста */
     margin: 0 4px;
-    /* Заменяет удаленный gap: 4px */
     position: relative;
     top: -1px;
 }
 
 .seq-button {
     display: inline;
-    /* Включаем текстовый перенос */
     font-weight: 500;
     background-color: var(--surface-20);
     color: var(--dark);
@@ -156,7 +145,6 @@ p:last-child {
 
 .seq-button-test {
     display: inline;
-    /* Включаем текстовый перенос */
     font-weight: 500;
     background-color: var(--surface-20);
     color: var(--violet);
@@ -167,7 +155,6 @@ p:last-child {
     -webkit-box-decoration-break: slice;
 }
 
-/* Выравнивание для обычных SVG-иконок внутри бейджей */
 .seq svg,
 .seq-button svg {
     display: inline-block;
@@ -215,7 +202,6 @@ blockquote {
     color: var(--violet);
 }
 
-/* ======== УМНЫЕ ТУЛТИПЫ ДЛЯ ТЕРМИНОВ (WIKI STYLE) ======== */
 .term-tooltip {
     position: absolute;
     z-index: 1000;
@@ -255,7 +241,6 @@ blockquote {
     flex-shrink: 0;
 }
 
-/* Кликабельный заголовок тултипа */
 .term-tooltip-title-link {
     color: var(--violet);
     text-decoration: none;
@@ -267,7 +252,6 @@ blockquote {
     text-decoration: underline;
 }
 
-/* Ссылка "Читать полностью" при обрезке длинного текста */
 .term-read-more {
     display: inline-block;
     color: var(--violet);
@@ -276,7 +260,6 @@ blockquote {
     font-size: 14px;
     transition: 0.2s;
     align-self: flex-start;
-    /* Чтобы подчеркивалась только сама ссылка, а не вся строка */
 }
 
 .term-read-more:hover {
@@ -292,7 +275,6 @@ blockquote {
     gap: 10px;
 }
 
-/* Кнопка закрытия (крестик) */
 .term-tooltip-close {
     background: none;
     border: none;
@@ -305,36 +287,28 @@ blockquote {
     border-radius: 6px;
     transition: background 0.2s;
     margin-right: -4px;
-    /* Компенсируем внутренние отступы кнопки */
 }
 
 .term-tooltip-close:hover {
     background: var(--light-violet);
 }
 
-/* Треугольник-указатель */
 .term-tooltip::before {
     content: '';
     position: absolute;
     top: -14px;
-    /* Выдвигаем за пределы рамки вверх */
     left: 50%;
     margin-left: -12px;
-    /* Половина ширины для точного центрирования */
     width: 24px;
     height: 24px;
     background: var(--white);
     border-top: 2px solid var(--violet);
     border-left: 2px solid var(--violet);
     border-top-left-radius: 4px;
-    /* Скругляем только острый кончик */
     transform: rotate(45deg);
-    /* Превращаем квадрат в треугольник */
     z-index: 1;
-    /* Перекрывает рамку родителя, но остается под текстом */
 }
 
-/* Спиннер загрузки */
 .term-tooltip-loading {
     display: flex;
     justify-content: center;
@@ -350,7 +324,6 @@ blockquote {
 }
 
 
-/* ТАБЛИЦЫ */
 .table-responsive {
     overflow-x: auto;
     border-radius: 20px;
@@ -388,7 +361,6 @@ td:last-child {
     border-right: none;
 }
 
-/* HEADER */
 header {
     background: var(--white);
     backdrop-filter: blur(10px);
@@ -439,7 +411,6 @@ header {
     text-decoration: none;
 }
 
-/* ======== ПОИСК ======== */
 .back-search-wrapper {
     display: flex;
     align-items: center;
@@ -516,7 +487,6 @@ header {
     display: flex;
 }
 
-/* Дропдаун результатов поиска */
 .search-dropdown {
     position: absolute;
     top: calc(100% + 8px);
@@ -569,7 +539,6 @@ header {
 .search-result-breadcrumb {
     font-size: 11px;
     color: var(--dark-grey);
-    /* Убираем display: flex, чтобы текст внутри переносился естественно */
     display: block;
     line-height: 1.5;
     margin-bottom: 2px;
@@ -577,18 +546,15 @@ header {
 
 .search-result-breadcrumb .badge {
     display: inline;
-    /* Делаем бейджик строчным элементом */
     font-size: 10px;
     font-weight: 500;
     padding: 2px 6px;
     border-radius: 12px;
     background: var(--surface-20);
     color: var(--violet);
-    /* Эффект среза ножницами при переносе */
     box-decoration-break: slice;
     -webkit-box-decoration-break: slice;
     margin-right: 4px;
-    /* Заменяет gap из flexbox */
 }
 
 .search-result-title {
@@ -596,19 +562,15 @@ header {
     font-weight: 500;
     color: var(--dark);
     line-height: 1.4;
-    /* Добавляем межстрочный интервал для длинных заголовков */
 }
 
 .search-result-title mark {
     display: inline;
-    /* Тоже делаем строчным */
     background: var(--surface-20);
     color: var(--violet);
     border-radius: 4px;
-    /* Чуть смягчим углы у подсветки */
     padding: 2px 4px;
     font-weight: 500;
-    /* Тот же эффект среза для длинных подсвеченных совпадений */
     box-decoration-break: slice;
     -webkit-box-decoration-break: slice;
 }
@@ -620,7 +582,6 @@ header {
     font-size: 14px;
 }
 
-/* MAIN CONTAINER */
 .container {
     display: flex;
     flex-direction: column;
@@ -632,7 +593,6 @@ header {
     box-sizing: border-box;
 }
 
-/* HOME PAGE */
 .hero {
     display: flex;
     flex-direction: column;
@@ -686,16 +646,13 @@ header {
 .cards-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* По умолчанию 2 колонки (для больших цветных карточек) */
     gap: 10px;
     margin-bottom: 120px;
 }
 
-/* А вот для карточек внутри "Чаще всего ищут" делаем 4 колонки */
 .most-searched .cards-grid {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 0;
-    /* Отступ вниз задается родителем */
 }
 
 
@@ -795,23 +752,17 @@ img {
 }
 
 
-/* ======== УМНАЯ СЕТКА КАРТИНОК ======== */
 .img-row {
     display: flex;
     flex-wrap: wrap;
-    /* Позволяет картинкам переноситься на новые строки */
     gap: 12px;
     align-items: flex-start;
-    /* Выравнивание разной высоты строго по верхнему краю */
     justify-content: center;
-    /* Центрирует одиночную узкую картинку */
     width: 100%;
     margin: 12px 0;
 }
 
-/* Обычная (широкая) картинка внутри ряда */
 .img-row img {
-    /* flex: 1 (растет), 1 (сжимается), базовая ширина 300px (чтобы не плющились) */
     flex: 1 1 300px;
     min-width: 0;
     max-width: 100%;
@@ -821,14 +772,11 @@ img {
     box-sizing: border-box;
 }
 
-/* Узкая картинка */
 .img-row img.img-narrow {
-    /* Запрещаем расти, разрешаем сжиматься, базовая ширина строго 33% */
     flex: 0 1 calc(33.333% - 14px);
     max-width: 33.333%;
 }
 
-/* Если в блоке ровно две картинки, и обе узкие — они делят место 50/50 */
 .img-row img.img-narrow:first-child:nth-last-child(2),
 .img-row img.img-narrow:first-child:nth-last-child(2) ~ img.img-narrow {
     flex: 1 1 calc(50% - 10px);
@@ -836,18 +784,14 @@ img {
 }
 
 
-/* ======== ИЗОБРАЖЕНИЯ И ПРОСМОТР (МОДАЛКА) ======== */
 
-/* Защита картинок от деформации (сплющивания) + курсор-лупа */
 .page-content img,
 .hero img,
 .img-row img {
     height: auto !important;
     cursor: zoom-in;
-    /* Курсор при наведении */
 }
 
-/* Фон модалки */
 .image-modal {
     position: fixed;
     top: 0;
@@ -868,40 +812,30 @@ img {
     transition: opacity 0.3s, visibility 0.3s;
 }
 
-/* Открытое состояние */
 .image-modal.open {
     opacity: 1;
     visibility: visible;
 }
 
-/* Сама картинка внутри модалки */
 .image-modal-content {
-    /* Меняем % на vw/vh (единицы ширины/высоты экрана), чтобы опираться на размер окна */
     max-width: 90vw;
     max-height: 90vh;
-    
-    /* Жестко заставляем коробку тега <img> облегать саму картинку */
     width: auto !important;
     height: auto !important;
-    
     border-radius: 20px;
     transform: scale(0.95);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* Убрали object-fit: contain, так как при width: auto и height: auto он больше не нужен */
 }
 
 .image-modal.open .image-modal-content {
     transform: scale(1);
 }
 
-/* Если модалка открыта в режиме "узкой картинки" */
 .image-modal.is-narrow .image-modal-content {
     max-width: 70vw;
     max-height: 70vh;
 }
 
-/* Кнопка-крестик */
 .image-modal-close {
     position: absolute;
     top: 24px;
@@ -925,7 +859,6 @@ img {
 }
 
 
-/* ИНФО БЛОК: КОНТАКТЫ И ПОДДЕРЖКА */
 .support-wrap {
     max-width: 1200px;
     width: 100%;
@@ -955,14 +888,12 @@ img {
     text-align: center;
 }
 
-/* Отменяем двойные отступы, если блок уже лежит внутри контейнера */
 .container .support-block,
 .support-wrap .support-block {
     width: 100%;
     margin-bottom: 0;
 }
 
-/* footer-header стиль */
 
 .support-grid {
     display: grid;
@@ -979,7 +910,6 @@ img {
     box-shadow: none;
 }
 
-/* footer-header стиль */
 .support-item strong {
     color: var(--dark);
     font-size: 16px;
@@ -987,7 +917,6 @@ img {
     line-height: 1.4;
 }
 
-/* footer-text стиль */
 .support-item a {
     display: flex;
     align-items: center;
@@ -1010,7 +939,6 @@ img {
     text-decoration: none;
 }
 
-/* footer-text стиль */
 
 .support-footer-text-wrapper {
     display: flex;
@@ -1028,7 +956,6 @@ img {
     margin: 0;
 }
 
-/* INNER PAGES */
 .page-header {
     display: flex;
     align-items: center;
@@ -1044,7 +971,6 @@ img {
     display: none;
 }
 
-/* h1-d стиль */
 .page-header h1 {
     font-size: 42px;
     font-weight: 500;
@@ -1077,7 +1003,6 @@ img {
 }
 
 
-/* h2 стиль */
 .theme-title {
     font-size: 24px;
     font-weight: 500;
@@ -1110,7 +1035,6 @@ img {
     opacity: 1;
 }
 
-/* ACCORDION */
 .accordion {
     background: #FFFFFF;
     border: 1px solid var(--border-color);
@@ -1187,8 +1111,6 @@ img {
     background: var(--light-violet-hover);
 }
 
-/* TOAST */
-/* TOAST */
 .toast {
     position: fixed;
     bottom: 30px;
@@ -1206,8 +1128,6 @@ img {
     transition: all 0.3s;
     z-index: 1000;
     box-shadow: var(--shadow);
-
-    /* Добавляем Flexbox для выстраивания иконки и текста в ряд */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1218,26 +1138,20 @@ img {
     opacity: 1;
 }
 
-/* Иконка-галочка в зеленом боксе */
 .toast::before {
     content: '';
     display: block;
     flex-shrink: 0;
     width: 24px;
-    /* 20px иконка + по 2px отступ с каждой стороны */
     height: 24px;
     background-color: #B3EDDD;
     border-radius: 100px;
-
-    /* Вшитая SVG галочка */
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5834 6C15.25 5.66667 14.75 5.66667 14.4167 6L8.16669 12.25L5.58335 9.66667C5.25002 9.33333 4.75002 9.33333 4.41669 9.66667C4.08335 10 4.08335 10.5 4.41669 10.8333L7.58335 14C7.75002 14.1667 7.91669 14.25 8.16669 14.25C8.41669 14.25 8.58335 14.1667 8.75002 14L15.5834 7.16667C15.9167 6.83333 15.9167 6.33333 15.5834 6Z' fill='%2300C48C'/%3E%3C/svg%3E");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    /* Размер самой галочки внутри кружка */
 }
 
-/* ======== LAYOUT С ДВУМЯ САЙДБАРАМИ ======== */
 .page-layout {
     display: flex;
     align-items: flex-start;
@@ -1252,7 +1166,6 @@ img {
     box-sizing: border-box;
 }
 
-/* ======== ЛЕВЫЙ САЙДБАР (навигация по страницам) ======== */
 .sidebar {
     width: 240px;
     padding: 8px;
@@ -1290,7 +1203,6 @@ img {
 
 .sidebar-left-link {
     display: flex;
-    /* ИЗМЕНЕНО с block на flex */
     align-items: flex-start;
     padding: 10px 12px;
     font-size: 14px;
@@ -1302,16 +1214,13 @@ img {
     transition: color 0.2s, background 0.2s;
 }
 
-/* ДОБАВЛЯЕМ НОВЫЕ ПРАВИЛА: */
 .sidebar-left-link .nav-num {
     flex-shrink: 0;
     min-width: 24px;
-    /* Фиксированная ширина, чтобы текст во всех пунктах (и в 1. и в 19.) начинался на одной линии */
 }
 
 .sidebar-left-link .nav-text {
     flex: 1;
-    /* Разрешаем тексту занимать остаток ширины и переноситься */
 }
 
 .sidebar-left-link:hover {
@@ -1326,7 +1235,6 @@ img {
     text-decoration: none;
 }
 
-/* ======== ПРАВЫЙ САЙДБАР (якоря текущей страницы) ======== */
 .sidebar-right {
     width: 180px;
     flex-shrink: 0;
@@ -1412,7 +1320,6 @@ img {
     text-decoration: none;
 }
 
-/* Убираем старые стили sidebar-group, sidebar-group-header и т.д. только если они не используются */
 .sidebar-nav {
     list-style: none;
     margin: 0;
@@ -1523,16 +1430,13 @@ img {
     text-decoration: none;
 }
 
-/* ОСНОВНОЙ КОНТЕНТ РЯДОМ С САЙДБАРОМ */
 .page-content {
     display: flex;
     flex-direction: column;
     flex: 1;
     min-width: 0;
-    /* gap: 40px; */
 }
 
-/* ======== ENTRY ======== */
 .entry {
     Display: flex;
     flex-direction: column;
@@ -1546,7 +1450,6 @@ img {
     gap: 4px;
 }
 
-/* h3 стиль */
 .entry-header h3 {
     font-size: 17px;
     font-weight: 500;
@@ -1562,7 +1465,6 @@ img {
     color: var(--dark);
 }
 
-/* Тема-секция */
 .theme-section {
     display: flex;
     flex-direction: column;
@@ -1580,35 +1482,30 @@ img {
     font-size: 14px;
     display: flex;
     align-items: center;
-    /* Иконка по центру по вертикали */
     gap: 12px;
 }
 
 
-/* ======== КНОПКА НАВЕРХ ======== */
 .scroll-top-btn {
     position: fixed;
     bottom: 24px;
-    right: 20px;
-    /* Кнопка справа (бургер слева) */
+    right: 24px;
     z-index: 500;
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
-    background: var(--violet);
-    color: #fff;
-    border: none;
+    background: var(--white);
+    color: var(--violet);
+    border: 2px solid var(--border-color);
     cursor: pointer;
     box-shadow: var(--shadow);
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* Анимация появления */
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s;
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s, background 0.2s;
 }
 
 .scroll-top-btn.visible {
@@ -1618,21 +1515,22 @@ img {
 }
 
 .scroll-top-btn:hover {
-    background: var(--violet-hover);
+    background: var(--light-violet);
+    transform: scale(1.05);
+
 }
 
-/* ======== БУРГЕР ======== */
 .sidebar-burger {
     display: none;
     position: fixed;
     bottom: 24px;
-    left: 20px;
+    left: 24px;
     z-index: 500;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border-radius: 20px;
     background: var(--violet);
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
     box-shadow: var(--shadow);
     align-items: center;
@@ -1670,7 +1568,6 @@ img {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Оверлей */
 .sidebar-overlay {
     display: none;
     position: fixed;
@@ -1684,7 +1581,6 @@ img {
 }
 
 
-/* ======== НАВИГАЦИЯ МЕЖДУ СТРАНИЦАМИ ======== */
 .page-navigation {
     display: flex;
     justify-content: space-between;
@@ -1706,7 +1602,6 @@ img {
     font-weight: 500;
     transition: color 0.2s;
     max-width: 48%;
-    /* Чтобы кнопки не столкнулись лбами при очень длинном тексте */
 }
 
 .page-nav-link:hover {
@@ -1716,20 +1611,15 @@ img {
 
 .page-nav-prev {
     margin-right: auto;
-    /* Всегда держим слева */
     text-align: left;
 }
 
 .page-nav-next {
     margin-left: auto;
-    /* Всегда держим справа */
     text-align: right;
-    /* Текст внутри выровнен по левому краю */
     justify-content: flex-end;
-    /* Контент прижат к правому краю самой кнопки */
 }
 
-/* Иконки кнопок через маску для удобной смены цвета */
 .page-nav-prev::before,
 .page-nav-next::after {
     content: '';
@@ -1752,24 +1642,20 @@ img {
     background-color: var(--violet);
 }
 
-/* SVG: Левая стрелка */
 .page-nav-prev::before {
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z'/%3E%3C/svg%3E");
     mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.0894 4.41058C12.764 4.08514 12.2363 4.08514 11.9109 4.41058L6.91091 9.41058C6.58547 9.73602 6.58547 10.2637 6.91091 10.5891L11.9109 15.5891C12.2363 15.9145 12.764 15.9145 13.0894 15.5891C13.4149 15.2637 13.4149 14.736 13.0894 14.4106L8.67867 9.99984L13.0894 5.58909C13.4149 5.26366 13.4149 4.73602 13.0894 4.41058Z'/%3E%3C/svg%3E");
 }
 
-/* SVG: Правая стрелка */
 .page-nav-next::after {
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.91058 4.41058C7.23602 4.08514 7.76366 4.08514 8.08909 4.41058L13.0891 9.41058C13.4145 9.73602 13.4145 10.2637 13.0891 10.5891L8.08909 15.5891C7.76366 15.9145 7.23602 15.9145 6.91058 15.5891C6.58514 15.2637 6.58514 14.736 6.91058 14.4106L11.3213 9.99984L6.91058 5.58909C6.58514 5.26366 6.58514 4.73602 6.91058 4.41058Z'/%3E%3C/svg%3E");
     mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.91058 4.41058C7.23602 4.08514 7.76366 4.08514 8.08909 4.41058L13.0891 9.41058C13.4145 9.73602 13.4145 10.2637 13.0891 10.5891L8.08909 15.5891C7.76366 15.9145 7.23602 15.9145 6.91058 15.5891C6.58514 15.2637 6.58514 14.736 6.91058 14.4106L11.3213 9.99984L6.91058 5.58909C6.58514 5.26366 6.58514 4.73602 6.91058 4.41058Z'/%3E%3C/svg%3E");
 }
 
 
-/* ======== ПОДСВЕТКА ЯКОРЯ ======== */
 .target-highlighted {
     position: relative;
     z-index: 0;
-    /* Создает новый контекст наложения, чтобы фон не ушел под body */
 }
 
 .target-highlighted::before {
@@ -1779,13 +1665,10 @@ img {
     bottom: -6px;
     left: -10px;
     right: -10px;
-    /* rgba(116, 139, 255) — это ваш цвет --violet (#748BFF) в RGB */
     background-color: rgba(116, 139, 255, 0.1);
     border-radius: 16px;
     z-index: -1;
-    /* Прячем под сам текст блока */
     pointer-events: none;
-    /* Чтобы фон не перекрывал кликабельные ссылки внутри */
     opacity: 0;
     animation: highlight-fade 1.5s ease-out forwards;
 }
@@ -1810,11 +1693,8 @@ img {
 
 
 
-/* ======== АДАПТИВНОСТЬ ======== */
-
 @media (max-width: 1200px) {
 
-    /* Большие карточки остаются 1fr 1fr, а вот 4 маленьких ломаем на 2 по 2 */
     .most-searched .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1843,22 +1723,17 @@ img {
         grid-template-columns: 1fr;
     }
 
-    /* Мобильный вид для умной сетки картинок */
     .img-row {
         flex-direction: column;
-        /* Выстраиваем в один столбец */
         align-items: center;
-        /* Центрируем узкие */
     }
 
     .img-row img {
         width: 100%;
-        /* Обычные занимают всю ширину экрана */
         max-width: 100%;
         flex-basis: auto;
     }
 
-    /* Принудительно сбрасываем ширину на мобилках для любых узких картинок */
     .img-row img.img-narrow,
     .img-row img.img-narrow:first-child:nth-last-child(2),
     .img-row img.img-narrow:first-child:nth-last-child(2) ~ img.img-narrow {
@@ -1907,7 +1782,6 @@ img {
         font-size: 32px;
     }
 
-    /* card-m стиль */
     .nav-card h2 {
         font-size: 32px;
     }
@@ -1922,7 +1796,6 @@ img {
     }
 
     .header-container>.search-wrapper,
-    /* Для внутренних страниц */
     .back-search-wrapper {
         max-width: 100%;
         order: 3;
@@ -1934,7 +1807,6 @@ img {
         width: 100%;
     }
 
-    /* Отменяем перенос строки для самого поиска внутри обертки */
     .back-search-wrapper .search-wrapper {
         order: unset;
         flex-basis: auto;
@@ -2021,6 +1893,5 @@ img {
 
     .page-nav-link {
         font-size: 14px;
-        /* На мобилках сделаем шрифт чуть компактнее */
     }
 }

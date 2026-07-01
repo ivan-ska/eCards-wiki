@@ -1471,7 +1471,7 @@ img {
     border-radius: 50%;
     background: var(--white);
     color: var(--violet);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     cursor: pointer;
     box-shadow: var(--shadow);
     display: flex;
@@ -1505,7 +1505,7 @@ img {
     height: 52px;
     border-radius: 20px;
     background: var(--violet);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
     box-shadow: var(--shadow);
     align-items: center;
